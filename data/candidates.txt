@@ -1,0 +1,54 @@
+# Candidate gateways collected 2026-04-22
+# One URL per line; we'll validate + classify automatically.
+
+# Already in gateways.json (10)
+https://openrouter.ai
+https://github.com/songquanpeng/one-api
+https://road2all.com
+https://deepbricks.ai
+https://aihubmix.com
+https://www.ohmygpt.com
+https://api2d.com
+https://together.ai
+https://groq.com
+https://fireworks.ai
+
+# Newly discovered Chinese-market gateways
+https://apirouter.ai
+https://ai.tokencloud.ai
+https://api.kissapi.ai
+https://derouter.ai
+https://ofox.ai
+https://302.ai
+https://siliconflow.cn
+https://www.siliconflow.com
+https://portal.qiniu.com/ai
+https://apimart.ai
+https://apizhongzhuan.com
+https://flow2api.com
+https://quickrouter.ai
+https://onetoken.one
+https://jeniya.cn
+https://apid.aaife.cn
+https://holysheep.ai
+https://poloapi.com
+https://jiekou.ai
+https://wentuo.ai
+https://aiberm.com
+https://linkapi.cn
+https://ohmy-gpt.com
+https://lingyaai.com
+
+# Global / open-source gateways
+https://llmgateway.io
+https://ominigate.com
+https://megallm.io
+https://unifiedapi.cloud
+https://www.requesty.ai
+https://portkey.ai
+https://litellm.ai
+https://ai.cloudflare.com/gateway
+https://aigateway.vercel.app
+https://openpipe.ai
+https://helicone.ai
+https://langdb.ai

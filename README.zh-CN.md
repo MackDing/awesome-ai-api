@@ -40,20 +40,42 @@
 
 ## 🏆 排行榜
 
-*最后更新: 2026-04-22 · [评分方法](./reviews/methodology.md)*
+每日 **新加坡时间 10:00 (UTC+8)** 自动从实时探测数据生成。查看 [评分方法](./reviews/methodology.md) · [历史存档](./data/history/) · [原始数据](./data/gateways.json)
 
-| 排名 | 中转站 | 类型 | 模型数 | Claude Code | 支付 | 评分 | 评测 |
-|------|--------|------|--------|-------------|------|------|------|
-| 🥇 1 | [OpenRouter](./gateways/openrouter.md) | 全球 | 300+ | ✅ | 💳 卡/加密货币 | 9.4 | [查看](./gateways/openrouter.md) |
-| 🥈 2 | [One API (自部署)](./gateways/one-api.md) | 自部署 | 任意 | ✅ | N/A | 9.2 | [查看](./gateways/one-api.md) |
-| 🥉 3 | [Road2All](./gateways/road2all.md) | 国内 | 100+ | ✅ | 💳 支付宝/微信 | 9.0 | [查看](./gateways/road2all.md) |
-| 4 | [DeepBricks](./gateways/deepbricks.md) | 国内 | 80+ | ✅ | 💳 支付宝 | 8.8 | [查看](./gateways/deepbricks.md) |
-| 5 | [AiHubMix](./gateways/aihubmix.md) | 国内 | 150+ | ✅ | 💳 支付宝/微信 | 8.7 | [查看](./gateways/aihubmix.md) |
-| 6 | [OhMyGPT](./gateways/ohmygpt.md) | 国内 | 100+ | ✅ | 💳 支付宝/微信 | 8.6 | [查看](./gateways/ohmygpt.md) |
-| 7 | [API2D](./gateways/api2d.md) | 国内 | 60+ | ✅ | 💳 支付宝/微信 | 8.5 | [查看](./gateways/api2d.md) |
-| 8 | [Together AI](./gateways/together-ai.md) | 全球 | 100+ | ❌ | 💳 信用卡 | 8.4 | [查看](./gateways/together-ai.md) |
-| 9 | [Groq](./gateways/groq.md) | 全球 | 20+ | ❌ | 💳 信用卡 | 8.3 | [查看](./gateways/groq.md) |
-| 10 | [Fireworks AI](./gateways/fireworks-ai.md) | 全球 | 50+ | ❌ | 💳 信用卡 | 8.2 | [查看](./gateways/fireworks-ai.md) |
+<!-- LEADERBOARD_ZH:BEGIN -->
+_Last updated: 2026-04-22 15:17 (SGT)_
+
+| 排名 | 中转站 | 地区 | 模型信号 | 支付 | 评分 | 访问 | 响应 |
+|------|--------|------|----------|------|------|------|--------|
+| 🥇 | [Aggregate Discounts for Global Top AI API: GPT-5, Sora 2 &am](https://apimart.ai) | global | claude, gpt, gemini, anthropic, openai | alipay, wechat, card, crypto | 9.2 | ✅ 200 | 349 ms |
+| 🥈 | [API中转站](https://apid.aaife.cn) | cn | claude, gpt, gemini, chatgpt, anthropic | wechat | 9.2 | ✅ 200 | 447 ms |
+| 🥉 | [API中转站](https://apizhongzhuan.com) | cn | claude, gpt, gemini, anthropic, openai | alipay, wechat, crypto | 9.2 | ✅ 200 | 582 ms |
+| 4 | [Full-Spec Claude &amp; GPT API — Up to 90% Off](https://derouter.ai) | cn | claude, gpt, chatgpt, anthropic, openai | wechat, card, crypto | 9.2 | ✅ 200 | 418 ms |
+| 5 | [HolySheep AI](https://holysheep.ai) | cn | claude, gpt, gemini, anthropic, openai | alipay, wechat, crypto | 9.2 | ✅ 200 | 2578 ms |
+| 6 | [OfoxAI](https://ofox.ai) | global | claude, gpt, gemini, anthropic, openai | wechat, card, crypto | 9.2 | ✅ 200 | 428 ms |
+| 7 | [OhMyGPT](https://www.ohmygpt.com) | global | claude, gpt, gemini, chatgpt, anthropic | alipay, wechat, card | 9.2 | ✅ 200 | 590 ms |
+| 8 | [OminiGate](https://ominigate.com) | global | claude, gpt, gemini, anthropic, openai | card | 9.2 | ✅ 200 | 2832 ms |
+| 9 | [PoloAPI-直连官转中转API](https://poloapi.com) | cn | claude, gpt, gemini, chatgpt, openai | wechat | 9.2 | ✅ 200 | 1665 ms |
+| 10 | [QuickRouter API](https://quickrouter.ai) | cn | claude, gpt, gemini, chatgpt, anthropic | card | 9.2 | ✅ 200 | 2490 ms |
+| 11 | [Unified LLM Gateway](https://www.requesty.ai) | global | claude, gpt, gemini, anthropic, openai | card | 9.2 | ✅ 200 | 449 ms |
+| 12 | [企业级AI资源平台](https://302.ai) | cn | claude, gpt, gemini, anthropic, openai | wechat | 9.2 | ✅ 200 | 639 ms |
+| 13 | [AIHubMix](https://aihubmix.com) | global | claude, gpt, gemini, chatgpt, openai | — | 9.0 | ✅ 200 | 544 ms |
+| 14 | [API Access 文档中心](https://aigateway.vercel.app) | cn | claude, gpt, gemini, anthropic, openai | — | 9.0 | ✅ 200 | 771 ms |
+| 15 | [Claude Code/GPT/Gemini API 中转代理](https://ai.tokencloud.ai) | cn | claude, gpt, gemini | wechat | 9.0 | ✅ 200 | 728 ms |
+| 16 | [Flow2API](https://flow2api.com) | cn | claude, gpt, gemini, chatgpt, openai | — | 9.0 | ✅ 200 | 1209 ms |
+| 17 | [GitHub](https://github.com/songquanpeng/one-api) | cn | claude, gpt, gemini, chatgpt, anthropic | — | 9.0 | ✅ 200 | 1292 ms |
+| 18 | [MegaLLM](https://megallm.io) | global | claude, gpt, gemini, anthropic, openai | — | 9.0 | ✅ 200 | 815 ms |
+| 19 | [OneToken](https://onetoken.one) | cn | claude, gpt, gemini, chatgpt, openai | — | 9.0 | ✅ 200 | 554 ms |
+| 20 | [OpenRouter](https://openrouter.ai) | global | claude, gpt, gemini, anthropic, openai | — | 9.0 | ✅ 200 | 782 ms |
+| 21 | [接口AI 一站式多模型 API 中转平台，快速集成智能应用](https://jiekou.ai) | cn | claude, gpt, gemini, anthropic, openai | — | 9.0 | ✅ 200 | 758 ms |
+| 22 | [首页](https://jeniya.cn) | cn | claude, gpt, chatgpt, openai, deepseek | — | 9.0 | ✅ 200 | 824 ms |
+| 23 | [LLM Gateway](https://llmgateway.io) | global | anthropic, openai | card | 8.9 | ✅ 200 | 1312 ms |
+| 24 | [Aiberm](https://aiberm.com) | global | claude, gemini, openai | — | 8.8 | ✅ 200 | 664 ms |
+| 25 | [New API](https://apirouter.ai) | cn | claude, gemini, openai | — | 8.8 | ✅ 200 | 1126 ms |
+| 26 | [Helicone / AI Gateway &amp; LLM Observability](https://helicone.ai) | global | gemini, anthropic, openai, deepseek, mistral | card | 8.5 | ✅ 200 | 2116 ms |
+| 27 | [Groq is fast, low cost inference.](https://groq.com) | global | gpt, anthropic, openai, qwen, mistral | — | 8.3 | ✅ 200 | 434 ms |
+
+<!-- LEADERBOARD_ZH:END -->
 
 > 📌 **想上榜?** 用[中转站模板](./gateways/_template.md)提交 PR,符合[收录标准](./CONTRIBUTING.md#收录标准)即可收录。
 

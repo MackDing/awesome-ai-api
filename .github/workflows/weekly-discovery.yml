@@ -1,0 +1,28 @@
+name: Weekly Discovery
+
+on:
+  schedule:
+    # Every Monday 09:00 SGT = 01:00 UTC
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Log reminder
+        run: |
+          echo "Weekly discovery placeholder."
+          echo "Add search-crawler here when API keys are available (Tavily/SerpAPI)."
+          echo "New candidates should be appended to data/candidates.txt and validated."
