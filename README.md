@@ -53,6 +53,19 @@ Confused by 200+ gateways? Start here.
 
 ---
 
+## 💚 Support this project
+
+This repo is free, ad-free, and has no paid placement. If the leaderboard saved you from topping up a rug-pull, consider chipping in:
+
+- **USDT (any EVM chain — ERC20 / BSC / Polygon / Arbitrum / Base / Optimism):**  
+  `0xa5c74e7D3f0c8f1c0d7A395A6B7861Ab0A64cA7F`
+- ⭐ **Star the repo** — also helps a lot; boosts us in GitHub trending.
+- 📝 **Open a PR** with a gateway report — the most valuable contribution.
+
+> 💡 **Double-check the chain before sending.** Sending from an exchange? Withdraw on **ERC20 / BSC / Polygon / Arbitrum / Base / Optimism**. **Do NOT use TRC20** (TRON) — that address doesn't exist on Tron.
+
+---
+
 ## Table of Contents
 
 - [🏆 Full Leaderboard](#-full-leaderboard)

@@ -53,6 +53,19 @@
 
 ---
 
+## 💚 赞助本项目
+
+本仓库完全免费、无广告、无付费排名。如果排行榜帮你避开了跑路站，可以考虑赞助：
+
+- **USDT（任一 EVM 链 — ERC20 / BSC / Polygon / Arbitrum / Base / Optimism）：**  
+  `0xa5c74e7D3f0c8f1c0d7A395A6B7861Ab0A64cA7F`
+- ⭐ **Star 仓库** — 也帮大忙，能上 GitHub Trending。
+- 📝 **提一个 PR** 举报或补充中转站 — 最有价值的贡献。
+
+> 💡 **转账前认准链。** 从交易所提币选择 **ERC20 / BSC / Polygon / Arbitrum / Base / Optimism** 。**切勿选 TRC20（波场）**——该地址在波场上不存在，充必丢。
+
+---
+
 ## 目录
 
 - [🏆 完整排行榜](#-完整排行榜)
