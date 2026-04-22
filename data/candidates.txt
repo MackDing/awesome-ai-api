@@ -105,7 +105,6 @@ https://docs.apiyi.com
 https://apiyi.com
 https://gptgod.online
 https://www.openai-sb.com
-https://openai-sb.com
 https://oneapi.gptnb.ai
 https://api.gptsapi.net
 https://aios.com
@@ -155,7 +154,6 @@ https://oaipro.com
 https://api.ezchat.top
 https://ezchat.top
 https://gpt.ge
-https://api.gpt.ge
 https://api.sb.gpt.ge
 https://api.chimeragpt.com
 https://chimeragpt.com
@@ -200,7 +198,6 @@ https://aiclaude.site
 https://api.aiclaude.site
 
 # ============ Batch 7: Claude-code-specific relays ============
-https://www.findcg.com
 https://api.claude-code.top
 https://claudecode.cn
 https://cc.foxaigc.com
@@ -209,7 +206,6 @@ https://relay.fingertip.ai
 https://api.siyuanapi.com
 https://siyuanapi.com
 https://www.apicore.ai
-https://apicore.ai
 https://api.ifopen.ai
 https://ifopen.ai
 https://api.ohmygpt.com
@@ -241,9 +237,7 @@ https://api.vveai.com
 https://vveai.com
 https://api.jiashi.link
 https://jiashi.link
-https://api.v36.cm
 https://www.v36.cm
-https://api.v3.cm
 https://www.v3.cm
 https://api.aigcbest.top
 https://aigcbest.top
@@ -256,39 +250,27 @@ https://kfcv50.link
 
 # ============ Batch 9: Foreign/global OpenAI-compatible gateways ============
 https://www.anyscale.com
-https://anyscale.com
 https://deepinfra.com
 https://www.replicate.com
-https://replicate.com
 https://runpod.io
-https://www.runpod.io
 https://novita.ai
 https://api.novita.ai
 https://lepton.ai
 https://octoml.ai
 https://octo.ai
-https://www.octo.ai
 https://glhf.chat
 https://api.glhf.chat
 https://hyperbolic.xyz
-https://www.hyperbolic.xyz
 https://tune.app
-https://www.tune.app
 https://cortex.so
 https://kluster.ai
-https://www.kluster.ai
 https://avian.io
-https://www.avian.io
 https://www.cerebras.ai
-https://cerebras.ai
 https://sambanova.ai
-https://www.sambanova.ai
 https://lambda.ai
-https://www.lambda.ai
 https://api.featherless.ai
 https://featherless.ai
 https://modal.com
-https://www.modal.com
 
 # ============ Batch 10: More Chinese proxy sites ============
 https://api.evilbb.ai
@@ -334,7 +316,6 @@ https://cc-api.cn
 https://github.com/Calcium-Ion/new-api
 https://github.com/QuantumNous/new-api
 https://github.com/berriai/litellm
-https://github.com/BerriAI/litellm
 https://github.com/Portkey-Ai/gateway
 https://github.com/helicone/helicone
 https://github.com/langfuse/langfuse
@@ -346,7 +327,6 @@ https://github.com/labring/FastGPT
 # ============ Batch 12: Discovered from packyapi-related and co.yes.vg links ============
 https://opnrouter.com
 https://opencat.app
-https://www.opencat.app
 https://chatbox.ai
 https://chat2api.com
 https://api.chat2api.com
@@ -354,20 +334,47 @@ https://chat2api.oaipro.com
 
 # ============ Batch 13: More overseas commercial gateways ============
 https://www.aimlapi.com
-https://aimlapi.com
 https://api.aimlapi.com
 https://reka.ai
-https://www.reka.ai
 https://vultr.com/products/cloud-inference
 https://ionet.com
-https://www.ionet.com
 https://eden.ai
-https://www.eden.ai
 https://api.edenai.run
 https://writer.com/api
 https://krutrim.com
-https://www.krutrim.com
 https://dify.ai
 https://dify.com
 https://www.datarobot.com
 https://www.langchain.com
+
+# ============ Batch 14: From aiapipk.com (中转站竞技场) + zzsting88/relayAPI ============
+http://chienapi.top
+https://35.aigcbest.top
+https://api1.zhtec.xyz
+https://api.996444.cn
+https://api.aabao.top
+https://api.ephone.ai
+https://api.gptoai.cc
+https://api.gueai.com
+https://api.nekoapi.com
+https://api.nio.gs
+https://api.openai-ch.top
+https://apipro.maynor1024.live
+https://api.tomchat.fun
+https://api.yuegle.com
+https://azapi.com.cn
+https://chatapi.onechats.top
+https://cnapi.kksj.org
+https://go.sbgpt.site
+https://gptgod.cloud
+https://new.xjai.cc
+https://new.yunai.link
+https://oneapi.paintbot.top
+https://open.api.gu28.top
+https://open.xiaojingai.com
+https://opus.gptuu.com
+https://www.ggwk1.online
+https://www.openai-labs.com
+https://xeduapi.com
+https://zen-ai.top
+https://www.hvoy.ai

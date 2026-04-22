@@ -1,8 +1,8 @@
 {
   "$schema": "./gateways.schema.json",
   "updated": "2026-04-22",
-  "updated_at": "2026-04-22 15:31 SGT",
-  "total": 201,
+  "updated_at": "2026-04-22 15:38 SGT",
+  "total": 214,
   "gateways": [
     {
       "slug": "apimart-ai",
@@ -28,7 +28,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 471,
+      "took_ms": 259,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -53,7 +53,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 445,
+      "took_ms": 317,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -79,7 +79,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 568,
+      "took_ms": 388,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -103,7 +103,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 518,
+      "took_ms": 302,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -128,7 +128,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1483,
+      "took_ms": 748,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -153,7 +153,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1318,
+      "took_ms": 1709,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -183,7 +183,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2469,
+      "took_ms": 231,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -214,7 +214,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 510,
+      "took_ms": 582,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -241,7 +241,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2076,
+      "took_ms": 2597,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -269,7 +269,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1778,
+      "took_ms": 1601,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -297,7 +297,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1948,
+      "took_ms": 1488,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -323,7 +323,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 435,
+      "took_ms": 438,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -350,7 +350,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 299,
+      "took_ms": 921,
       "score": 9.2,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -372,7 +372,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 744,
+      "took_ms": 538,
       "score": 9.1,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -394,7 +394,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2551,
+      "took_ms": 2328,
       "score": 9.1,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -416,7 +416,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 272,
+      "took_ms": 274,
       "score": 9.1,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -439,7 +439,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 482,
+      "took_ms": 508,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -462,7 +462,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 816,
+      "took_ms": 688,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -486,7 +486,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 377,
+      "took_ms": 100,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -507,7 +507,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1761,
+      "took_ms": 1766,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -532,7 +532,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 253,
+      "took_ms": 415,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -554,29 +554,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1759,
-      "score": 9.0,
-      "verdict": "likely_relay",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "avian-io",
-      "name": "Avian",
-      "url": "https://www.avian.io",
-      "final_url": "https://avian.io:443/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "claude",
-        "gpt",
-        "anthropic",
-        "openai",
-        "deepseek",
-        "llama"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 3055,
+      "took_ms": 1449,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -597,7 +575,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 808,
+      "took_ms": 769,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -618,7 +596,28 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2598,
+      "took_ms": 534,
+      "score": 9.0,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-ephone-ai",
+      "name": "ePhone AI",
+      "url": "https://api.ephone.ai",
+      "final_url": "https://platform.ephone.ai/",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gpt",
+        "gemini",
+        "openai",
+        "deepseek"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 977,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -640,7 +639,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 580,
+      "took_ms": 757,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -665,7 +664,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1363,
+      "took_ms": 1153,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -688,7 +687,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 953,
+      "took_ms": 740,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -711,7 +710,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 607,
+      "took_ms": 528,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -736,7 +735,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 663,
+      "took_ms": 1009,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -758,7 +757,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 986,
+      "took_ms": 967,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -779,28 +778,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1591,
-      "score": 9.0,
-      "verdict": "likely_relay",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "sambanova-ai",
-      "name": "SambaNova",
-      "url": "https://www.sambanova.ai",
-      "final_url": "https://sambanova.ai/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "gpt",
-        "openai",
-        "deepseek",
-        "qwen",
-        "llama"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1289,
+      "took_ms": 652,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -825,7 +803,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 653,
+      "took_ms": 380,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -849,7 +827,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 873,
+      "took_ms": 783,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -873,7 +851,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1025,
+      "took_ms": 1042,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -897,7 +875,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1029,
+      "took_ms": 1022,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -921,7 +899,30 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 915,
+      "took_ms": 790,
+      "score": 9.0,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-yuegle-com",
+      "name": "Yuegle API",
+      "url": "https://api.yuegle.com",
+      "final_url": "https://api.yuegle.com",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gpt",
+        "gemini",
+        "chatgpt",
+        "openai",
+        "deepseek",
+        "grok"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 700,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -943,7 +944,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2559,
+      "took_ms": 1191,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -968,7 +969,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1076,
+      "took_ms": 677,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -989,7 +990,49 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1942,
+      "took_ms": 791,
+      "score": 9.0,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "hvoy-ai",
+      "name": "禾维 AI",
+      "url": "https://www.hvoy.ai",
+      "final_url": "https://www.hvoy.ai",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gpt",
+        "gemini",
+        "anthropic",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 377,
+      "score": 9.0,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "apipro-maynor1024-live",
+      "name": "首页",
+      "url": "https://apipro.maynor1024.live",
+      "final_url": "https://apipro.maynor1024.live",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gpt",
+        "gemini",
+        "openai",
+        "grok"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1345,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1010,7 +1053,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 966,
+      "took_ms": 834,
       "score": 9.0,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1030,7 +1073,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1201,
+      "took_ms": 1227,
       "score": 8.9,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1050,7 +1093,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 3115,
+      "took_ms": 2558,
       "score": 8.9,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1070,7 +1113,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1216,
+      "took_ms": 836,
       "score": 8.9,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1089,7 +1132,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 740,
+      "took_ms": 572,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1108,7 +1151,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 622,
+      "took_ms": 220,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1127,7 +1170,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1131,
+      "took_ms": 2982,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1146,7 +1189,45 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1143,
+      "took_ms": 2929,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "cnapi-kksj-org",
+      "name": "KKSJ AI模型中转API",
+      "url": "https://cnapi.kksj.org",
+      "final_url": "https://cnapi.kksj.org",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1280,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "35-aigcbest-top",
+      "name": "New API",
+      "url": "https://35.aigcbest.top",
+      "final_url": "https://35.aigcbest.top",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 854,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1165,7 +1246,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 964,
+      "took_ms": 925,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1184,7 +1265,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 3609,
+      "took_ms": 579,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1203,7 +1284,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2047,
+      "took_ms": 1643,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1222,7 +1303,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 446,
+      "took_ms": 111,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1241,7 +1322,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 585,
+      "took_ms": 264,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1260,7 +1341,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1224,
+      "took_ms": 880,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1279,7 +1360,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 366,
+      "took_ms": 364,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1298,7 +1379,26 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1733,
+      "took_ms": 636,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-openai-ch-top",
+      "name": "New API",
+      "url": "https://api.openai-ch.top",
+      "final_url": "https://api.openai-ch.top",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 710,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1317,7 +1417,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1434,
+      "took_ms": 1337,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1336,7 +1436,26 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 830,
+      "took_ms": 854,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "chatapi-onechats-top",
+      "name": "New API",
+      "url": "https://chatapi.onechats.top",
+      "final_url": "https://chatapi.onechats.top",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 499,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1355,7 +1474,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 279,
+      "took_ms": 148,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1374,7 +1493,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1910,
+      "took_ms": 844,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1393,7 +1512,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 3570,
+      "took_ms": 594,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1412,7 +1531,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 432,
+      "took_ms": 242,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1431,7 +1550,45 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2009,
+      "took_ms": 756,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "oneapi-paintbot-top",
+      "name": "New API",
+      "url": "https://oneapi.paintbot.top",
+      "final_url": "https://oneapi.paintbot.top",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 227,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "terminal-pub",
+      "name": "New API",
+      "url": "https://terminal.pub",
+      "final_url": "https://terminal.pub",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 283,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1450,7 +1607,45 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 505,
+      "took_ms": 292,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "duckcoding-ai",
+      "name": "New API",
+      "url": "https://www.duckcoding.ai",
+      "final_url": "https://www.duckcoding.ai",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 897,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "ggwk1-online",
+      "name": "New API",
+      "url": "https://www.ggwk1.online",
+      "final_url": "https://www.ggwk1.online",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1740,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1469,7 +1664,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 606,
+      "took_ms": 614,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1488,7 +1683,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 818,
+      "took_ms": 312,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1507,7 +1702,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 532,
+      "took_ms": 684,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1526,7 +1721,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 573,
+      "took_ms": 354,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1545,7 +1740,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 640,
+      "took_ms": 614,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1564,7 +1759,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2012,
+      "took_ms": 1227,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
@@ -1583,38 +1778,46 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 906,
+      "took_ms": 865,
       "score": 8.8,
       "verdict": "likely_relay",
       "last_verified": "2026-04-22"
     },
     {
-      "slug": "aimlapi-com",
-      "name": "Access 400+ AI Models with a Single AI API",
-      "url": "https://aimlapi.com",
-      "final_url": "https://aimlapi.com",
-      "region": "global",
-      "payment": [
-        "crypto"
-      ],
+      "slug": "new-yunai-link",
+      "name": "首页",
+      "url": "https://new.yunai.link",
+      "final_url": "https://new.yunai.link",
+      "region": "cn",
+      "payment": [],
       "models_signaled": [
         "claude",
-        "gpt",
         "gemini",
-        "chatgpt",
-        "anthropic",
-        "openai",
-        "deepseek",
-        "qwen",
-        "mistral",
-        "grok",
-        "llama"
+        "openai"
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 998,
-      "score": 8.5,
-      "verdict": "probable_relay",
+      "took_ms": 716,
+      "score": 8.8,
+      "verdict": "likely_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-nekoapi-com",
+      "name": "NekoAPI",
+      "url": "https://api.nekoapi.com",
+      "final_url": "https://api.nekoapi.com",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1808,
+      "score": 8.7,
+      "verdict": "likely_relay",
       "last_verified": "2026-04-22"
     },
     {
@@ -1641,7 +1844,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2643,
+      "took_ms": 2748,
       "score": 8.5,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1664,7 +1867,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2772,
+      "took_ms": 2632,
       "score": 8.5,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1688,7 +1891,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1242,
+      "took_ms": 918,
       "score": 8.5,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1711,30 +1914,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1219,
-      "score": 8.4,
-      "verdict": "probable_relay",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "hyperbolic-xyz",
-      "name": "Hyperbolic – The Open-Access AI Cloud",
-      "url": "https://www.hyperbolic.xyz",
-      "final_url": "https://www.hyperbolic.ai/",
-      "region": "global",
-      "payment": [
-        "card",
-        "crypto"
-      ],
-      "models_signaled": [
-        "openai",
-        "deepseek",
-        "qwen",
-        "llama"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1174,
+      "took_ms": 1005,
       "score": 8.4,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1755,7 +1935,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 483,
+      "took_ms": 527,
       "score": 8.3,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1776,7 +1956,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1146,
+      "took_ms": 717,
       "score": 8.3,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1798,7 +1978,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 575,
+      "took_ms": 484,
       "score": 8.3,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1820,7 +2000,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 506,
+      "took_ms": 176,
       "score": 8.3,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1842,8 +2022,27 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1027,
+      "took_ms": 1545,
       "score": 8.3,
+      "verdict": "probable_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-996444-cn",
+      "name": "api-996444-cn",
+      "url": "https://api.996444.cn",
+      "final_url": "https://api.996444.cn",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 153,
+      "score": 8.1,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
     },
@@ -1861,7 +2060,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 410,
+      "took_ms": 413,
       "score": 8.1,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1880,7 +2079,26 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1112,
+      "took_ms": 1069,
+      "score": 8.1,
+      "verdict": "probable_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-gueai-com",
+      "name": "api-gueai-com",
+      "url": "https://api.gueai.com",
+      "final_url": "https://api.gueai.com",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 986,
       "score": 8.1,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1899,7 +2117,26 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1823,
+      "took_ms": 986,
+      "score": 8.1,
+      "verdict": "probable_relay",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "azapi-com-cn",
+      "name": "azapi-com-cn",
+      "url": "https://azapi.com.cn",
+      "final_url": "https://azapi.com.cn",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "claude",
+        "gemini",
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 704,
       "score": 8.1,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1918,7 +2155,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 308,
+      "took_ms": 1390,
       "score": 8.1,
       "verdict": "probable_relay",
       "last_verified": "2026-04-22"
@@ -1941,31 +2178,9 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1216,
+      "took_ms": 1077,
       "score": 7.7,
       "verdict": "open_source_tool",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "cerebras-ai",
-      "name": "Cerebras",
-      "url": "https://cerebras.ai",
-      "final_url": "https://www.cerebras.ai/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "gpt",
-        "chatgpt",
-        "anthropic",
-        "openai",
-        "qwen",
-        "llama"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1502,
-      "score": 7.5,
-      "verdict": "needs_review",
       "last_verified": "2026-04-22"
     },
     {
@@ -1985,7 +2200,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 994,
+      "took_ms": 715,
       "score": 7.5,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2007,7 +2222,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 935,
+      "took_ms": 858,
       "score": 7.5,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2029,28 +2244,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1088,
-      "score": 7.5,
-      "verdict": "open_source_tool",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "github-com-berriai-litellm",
-      "name": "GitHub",
-      "url": "https://github.com/BerriAI/litellm",
-      "final_url": "https://github.com/BerriAI/litellm",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "claude",
-        "gpt",
-        "gemini",
-        "anthropic",
-        "openai"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1219,
+      "took_ms": 1033,
       "score": 7.5,
       "verdict": "open_source_tool",
       "last_verified": "2026-04-22"
@@ -2076,7 +2270,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 859,
+      "took_ms": 863,
       "score": 7.5,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2099,29 +2293,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 269,
-      "score": 7.5,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "replicate-com",
-      "name": "Replicate",
-      "url": "https://replicate.com",
-      "final_url": "https://replicate.com",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "claude",
-        "gpt",
-        "gemini",
-        "anthropic",
-        "openai",
-        "grok"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1395,
+      "took_ms": 166,
       "score": 7.5,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2143,7 +2315,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1870,
+      "took_ms": 1364,
       "score": 7.5,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2163,7 +2335,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 6655,
+      "took_ms": 867,
       "score": 7.4,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2183,7 +2355,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1082,
+      "took_ms": 977,
       "score": 7.4,
       "verdict": "open_source_tool",
       "last_verified": "2026-04-22"
@@ -2203,7 +2375,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 983,
+      "took_ms": 2249,
       "score": 7.4,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2222,7 +2394,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 3925,
+      "took_ms": 2891,
       "score": 7.3,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2241,7 +2413,26 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1629,
+      "took_ms": 2373,
+      "score": 7.3,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-gptoai-cc",
+      "name": "Deepseek.app is for sale,only $1000000.00! You can use usdt!",
+      "url": "https://api.gptoai.cc",
+      "final_url": "https://2026-04-22.sqllq.com/en/?gptoai.cc#nolanguage",
+      "region": "global",
+      "payment": [
+        "crypto"
+      ],
+      "models_signaled": [
+        "deepseek"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 2941,
       "score": 7.3,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2260,7 +2451,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1154,
+      "took_ms": 1084,
       "score": 7.3,
       "verdict": "open_source_tool",
       "last_verified": "2026-04-22"
@@ -2279,26 +2470,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 746,
-      "score": 7.3,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "opencat-app",
-      "name": "OpenCat",
-      "url": "https://www.opencat.app",
-      "final_url": "https://opencat.app/en/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "gpt",
-        "chatgpt",
-        "openai"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1096,
+      "took_ms": 929,
       "score": 7.3,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2317,7 +2489,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 386,
+      "took_ms": 434,
       "score": 7.3,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2336,7 +2508,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1223,
+      "took_ms": 2000,
       "score": 7.3,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2354,7 +2526,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1053,
+      "took_ms": 1449,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2372,7 +2544,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2348,
+      "took_ms": 648,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2390,7 +2562,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1309,
+      "took_ms": 1079,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2408,7 +2580,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1080,
+      "took_ms": 1145,
       "score": 7.2,
       "verdict": "open_source_tool",
       "last_verified": "2026-04-22"
@@ -2426,7 +2598,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1406,
+      "took_ms": 1184,
       "score": 7.2,
       "verdict": "open_source_tool",
       "last_verified": "2026-04-22"
@@ -2444,7 +2616,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1123,
+      "took_ms": 1030,
       "score": 7.2,
       "verdict": "open_source_tool",
       "last_verified": "2026-04-22"
@@ -2462,25 +2634,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1673,
-      "score": 7.2,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "modal-com",
-      "name": "Modal: High-performance AI infrastructure",
-      "url": "https://www.modal.com",
-      "final_url": "https://modal.com/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "openai",
-        "mistral"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1783,
+      "took_ms": 1433,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2499,7 +2653,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2938,
+      "took_ms": 2655,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2517,7 +2671,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 527,
+      "took_ms": 302,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2534,7 +2688,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 507,
+      "took_ms": 725,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2552,7 +2706,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 772,
+      "took_ms": 836,
       "score": 7.2,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2569,7 +2723,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1804,
+      "took_ms": 383,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2586,24 +2740,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 878,
-      "score": 7.1,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "runpod-io",
-      "name": "AI and Cloud Infrastructure Provider",
-      "url": "https://www.runpod.io",
-      "final_url": "https://www.runpod.io",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "openai"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 476,
+      "took_ms": 787,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2620,7 +2757,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 792,
+      "took_ms": 579,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2637,7 +2774,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 592,
+      "took_ms": 605,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2654,7 +2791,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 921,
+      "took_ms": 390,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2671,7 +2808,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 463,
+      "took_ms": 422,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2688,7 +2825,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 297,
+      "took_ms": 312,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2705,7 +2842,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1122,
+      "took_ms": 1106,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2722,7 +2859,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1227,
+      "took_ms": 1062,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2739,24 +2876,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1524,
-      "score": 7.1,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "kluster-ai",
-      "name": "kluster.ai",
-      "url": "https://www.kluster.ai",
-      "final_url": "https://www.kluster.ai",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "claude"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 500,
+      "took_ms": 1160,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2773,7 +2893,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 855,
+      "took_ms": 884,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2790,7 +2910,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1275,
+      "took_ms": 990,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2807,7 +2927,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1026,
+      "took_ms": 884,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2824,7 +2944,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 3823,
+      "took_ms": 1224,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2841,7 +2961,58 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 867,
+      "took_ms": 704,
+      "score": 7.1,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "go-sbgpt-site",
+      "name": "New API",
+      "url": "https://go.sbgpt.site",
+      "final_url": "https://go.sbgpt.site",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1040,
+      "score": 7.1,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "new-xjai-cc",
+      "name": "New API",
+      "url": "https://new.xjai.cc",
+      "final_url": "https://new.xjai.cc",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 2048,
+      "score": 7.1,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "zen-ai-top",
+      "name": "New API",
+      "url": "https://zen-ai.top",
+      "final_url": "https://zen-ai.top",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [
+        "openai"
+      ],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1216,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2858,7 +3029,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1113,
+      "took_ms": 1083,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2875,7 +3046,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 864,
+      "took_ms": 856,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2892,7 +3063,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1127,
+      "took_ms": 626,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2909,24 +3080,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 299,
-      "score": 7.1,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "anyscale-com",
-      "name": "Production-scale AI with Ray",
-      "url": "https://anyscale.com",
-      "final_url": "https://www.anyscale.com/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [
-        "llama"
-      ],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1608,
+      "took_ms": 298,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2943,7 +3097,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1774,
+      "took_ms": 1518,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2960,7 +3114,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1583,
+      "took_ms": 1610,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2977,7 +3131,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 514,
+      "took_ms": 640,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -2994,7 +3148,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 765,
+      "took_ms": 583,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3011,7 +3165,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1029,
+      "took_ms": 736,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3028,7 +3182,7 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 839,
+      "took_ms": 169,
       "score": 7.1,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3045,8 +3199,23 @@
       ],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1762,
+      "took_ms": 1332,
       "score": 7.1,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-aabao-top",
+      "name": "404 Not Found",
+      "url": "https://api.aabao.top",
+      "final_url": "https://api.aabao.top",
+      "region": "global",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 809,
+      "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
     },
@@ -3060,7 +3229,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 405,
+      "took_ms": 500,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3075,7 +3244,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 652,
+      "took_ms": 571,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3090,7 +3259,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 375,
+      "took_ms": 230,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3105,7 +3274,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1548,
+      "took_ms": 550,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3120,7 +3289,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 614,
+      "took_ms": 6371,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3135,7 +3304,22 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 845,
+      "took_ms": 621,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "openai-labs-com",
+      "name": "Ai实验室全球企业级API系统",
+      "url": "https://www.openai-labs.com",
+      "final_url": "https://www.openai-labs.com",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 999,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3150,7 +3334,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1731,
+      "took_ms": 1015,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3165,7 +3349,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 545,
+      "took_ms": 928,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3180,7 +3364,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 4066,
+      "took_ms": 1006,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3195,7 +3379,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1324,
+      "took_ms": 611,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3210,7 +3394,22 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 300,
+      "took_ms": 321,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-tomchat-fun",
+      "name": "api-tomchat-fun",
+      "url": "https://api.tomchat.fun",
+      "final_url": "https://api.tomchat.fun",
+      "region": "global",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 2165,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3225,7 +3424,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1795,
+      "took_ms": 1117,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3240,7 +3439,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 722,
+      "took_ms": 562,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3255,7 +3454,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 597,
+      "took_ms": 514,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3270,7 +3469,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 943,
+      "took_ms": 846,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3285,7 +3484,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 716,
+      "took_ms": 561,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3300,7 +3499,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 226,
+      "took_ms": 123,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3315,7 +3514,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 459,
+      "took_ms": 224,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3330,7 +3529,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 317,
+      "took_ms": 282,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3345,7 +3544,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1234,
+      "took_ms": 1127,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3360,22 +3559,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1720,
-      "score": 7.0,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "ionet-com",
-      "name": "ionet-com",
-      "url": "https://www.ionet.com",
-      "final_url": "https://www.ionet.com",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 800,
+      "took_ms": 708,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3390,7 +3574,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 958,
+      "took_ms": 2100,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3405,7 +3589,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1649,
+      "took_ms": 1030,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3420,22 +3604,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1580,
-      "score": 7.0,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "krutrim-com",
-      "name": "krutrim-com",
-      "url": "https://www.krutrim.com",
-      "final_url": "https://www.krutrim.com",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1919,
+      "took_ms": 674,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3450,7 +3619,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 239,
+      "took_ms": 173,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3465,7 +3634,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 382,
+      "took_ms": 431,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3480,7 +3649,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 374,
+      "took_ms": 496,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3495,7 +3664,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 830,
+      "took_ms": 411,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3510,7 +3679,37 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1330,
+      "took_ms": 1080,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api-nio-gs",
+      "name": "Nio API",
+      "url": "https://api.nio.gs",
+      "final_url": "https://api.nio.gs",
+      "region": "global",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 2048,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "open-xiaojingai-com",
+      "name": "open-xiaojingai-com",
+      "url": "https://open.xiaojingai.com",
+      "final_url": "https://open.xiaojingai.com",
+      "region": "global",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1019,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3525,7 +3724,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 303,
+      "took_ms": 251,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3540,22 +3739,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1561,
-      "score": 7.0,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "openai-sb-com",
-      "name": "Redirecting...",
-      "url": "https://openai-sb.com",
-      "final_url": "https://openai-sb.com",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 932,
+      "took_ms": 435,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3570,7 +3754,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1162,
+      "took_ms": 612,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3585,22 +3769,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 757,
-      "score": 7.0,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "reka-ai",
-      "name": "Reka",
-      "url": "https://www.reka.ai",
-      "final_url": "https://reka.ai/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 1390,
+      "took_ms": 579,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3615,7 +3784,37 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 715,
+      "took_ms": 631,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api1-zhtec-xyz",
+      "name": "Shell API",
+      "url": "https://api1.zhtec.xyz",
+      "final_url": "https://api1.zhtec.xyz",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 956,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "gptgod-cloud",
+      "name": "Shell API",
+      "url": "https://gptgod.cloud",
+      "final_url": "https://gptgod.cloud",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1666,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3630,22 +3829,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1024,
-      "score": 7.0,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "octo-ai",
-      "name": "Test Page for the Nginx HTTP Server on Amazon Linux",
-      "url": "https://www.octo.ai",
-      "final_url": "https://www.octo.ai",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 2495,
+      "took_ms": 920,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3660,22 +3844,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 946,
-      "score": 7.0,
-      "verdict": "needs_review",
-      "last_verified": "2026-04-22"
-    },
-    {
-      "slug": "lambda-ai",
-      "name": "The Superintelligence Cloud",
-      "url": "https://www.lambda.ai",
-      "final_url": "https://lambda.ai/",
-      "region": "global",
-      "payment": [],
-      "models_signaled": [],
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 2658,
+      "took_ms": 143,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3690,7 +3859,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 717,
+      "took_ms": 680,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3705,7 +3874,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2033,
+      "took_ms": 1698,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3720,7 +3889,22 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1916,
+      "took_ms": 1566,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "xeduapi-com",
+      "name": "xeduapi-com",
+      "url": "https://xeduapi.com",
+      "final_url": "https://xeduapi.com",
+      "region": "global",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 1006,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3735,7 +3919,22 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 2561,
+      "took_ms": 1221,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "yunwu-ai",
+      "name": "YUNWU.AI (云雾 API)",
+      "url": "https://yunwu.ai",
+      "final_url": "https://yunwu.ai",
+      "region": "cn",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 2219,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3750,7 +3949,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1022,
+      "took_ms": 850,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3765,7 +3964,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 188,
+      "took_ms": 208,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3780,7 +3979,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1383,
+      "took_ms": 2051,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3795,7 +3994,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 1526,
+      "took_ms": 1139,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3810,7 +4009,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 268,
+      "took_ms": 292,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3825,7 +4024,7 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 134,
+      "took_ms": 101,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
@@ -3840,7 +4039,22 @@
       "models_signaled": [],
       "reachable": true,
       "http_status": 200,
-      "took_ms": 388,
+      "took_ms": 622,
+      "score": 7.0,
+      "verdict": "needs_review",
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "opus-gptuu-com",
+      "name": "首页",
+      "url": "https://opus.gptuu.com",
+      "final_url": "https://opus.gptuu.com",
+      "region": "global",
+      "payment": [],
+      "models_signaled": [],
+      "reachable": true,
+      "http_status": 200,
+      "took_ms": 768,
       "score": 7.0,
       "verdict": "needs_review",
       "last_verified": "2026-04-22"
