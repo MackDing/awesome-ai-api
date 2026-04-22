@@ -24,9 +24,12 @@ import time
 from pathlib import Path
 from typing import Any
 
+import html as _html
+import json as _json
 import urllib.request
 import urllib.error
 import ssl
+from urllib.parse import urlparse
 
 UA = (
     "Mozilla/5.0 (compatible; awesome-ai-api-bot/0.1; "
@@ -85,15 +88,19 @@ PAYMENT_KEYWORDS = {
 }
 
 
-def fetch(url: str, timeout: float = 12.0) -> dict[str, Any]:
-    start = time.time()
+def _ssl_ctx() -> ssl.SSLContext:
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
+    return ctx
+
+
+def fetch(url: str, timeout: float = 12.0, read_bytes: int = 200_000) -> dict[str, Any]:
+    start = time.time()
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
-        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-            body = resp.read(200_000).decode("utf-8", errors="ignore")
+        with urllib.request.urlopen(req, timeout=timeout, context=_ssl_ctx()) as resp:
+            body = resp.read(read_bytes).decode("utf-8", errors="ignore")
             return {
                 "ok": True,
                 "status": resp.status,
@@ -101,7 +108,20 @@ def fetch(url: str, timeout: float = 12.0) -> dict[str, Any]:
                 "body": body,
                 "took_ms": int((time.time() - start) * 1000),
             }
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, Exception) as e:
+    except urllib.error.HTTPError as e:
+        # HTTPError still carries a useful status + body (e.g. 401 from /v1/models)
+        try:
+            body = e.read(read_bytes).decode("utf-8", errors="ignore")
+        except Exception:
+            body = ""
+        return {
+            "ok": True,
+            "status": e.code,
+            "final_url": url,
+            "body": body,
+            "took_ms": int((time.time() - start) * 1000),
+        }
+    except (urllib.error.URLError, TimeoutError, Exception) as e:
         return {
             "ok": False,
             "status": None,
@@ -110,6 +130,65 @@ def fetch(url: str, timeout: float = 12.0) -> dict[str, Any]:
             "error": str(e)[:200],
             "took_ms": int((time.time() - start) * 1000),
         }
+
+
+# --- OpenAI-compatible endpoint probe --------------------------------------
+# Any real AI API relay must expose /v1/models. Fake / directory sites don't.
+# Expected outcome shape (success = relay behaviour confirmed):
+#   - 200 + JSON body with "data":[...] or "object":"list"
+#   - 401 / 403 with JSON mentioning "api_key" / "unauthorized" / "invalid"
+# Anything else (404 HTML, 200 HTML, redirects to marketing) → not a real API.
+
+_PROBE_SUFFIXES = ["/v1/models", "/api/v1/models"]
+
+
+def probe_api(url: str, timeout: float = 8.0) -> dict[str, Any]:
+    """Return {has_api: bool, probe_status, probe_path, probe_hint}."""
+    parsed = urlparse(url)
+    # Skip probes for github.com etc. — they're OSS repos, not live APIs
+    if parsed.netloc.endswith("github.com"):
+        return {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "github-repo"}
+    base = f"{parsed.scheme}://{parsed.netloc}"
+    for suffix in _PROBE_SUFFIXES:
+        target = base + suffix
+        r = fetch(target, timeout=timeout, read_bytes=8_000)
+        status = r.get("status")
+        body = (r.get("body") or "").lower()
+        if status is None:
+            continue
+        hint = ""
+        has_api = False
+        if status in (200,):
+            # Must look like JSON models list, not a marketing page
+            if body.startswith("{") and ("\"data\"" in body or "\"object\"" in body or "\"models\"" in body):
+                has_api = True
+                hint = "openai-models-json"
+            elif "<html" in body or "<!doctype" in body:
+                hint = "html-on-/v1/models"
+        elif status in (401, 403):
+            # Classic "missing api key" — definitive relay signal
+            if any(k in body for k in ("api_key", "api key", "unauthorized", "invalid", "missing", "authentication")):
+                has_api = True
+                hint = f"{status}-need-key"
+            else:
+                # Still a hint (auth wall present)
+                has_api = True
+                hint = f"{status}-auth"
+        elif status == 405:
+            # Some gateways only accept POST — existence of endpoint confirmed
+            has_api = True
+            hint = "405-method-not-allowed"
+        elif status in (429,):
+            has_api = True
+            hint = "429-rate-limited"
+        if has_api or status in (200, 401, 403, 405, 429):
+            return {
+                "has_api": has_api,
+                "probe_status": status,
+                "probe_path": suffix,
+                "probe_hint": hint,
+            }
+    return {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "no-endpoint"}
 
 
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
@@ -125,7 +204,9 @@ def classify(url: str, body: str) -> dict[str, Any]:
         if any(n in body if ord(n[0]) > 127 else n in low for n in needles):
             payments.append(key)
     title_match = TITLE_RE.search(body)
-    title = title_match.group(1).strip() if title_match else ""
+    raw_title = title_match.group(1).strip() if title_match else ""
+    # Strip HTML entities (&amp;, &#8211; etc.) and normalise whitespace
+    title = _html.unescape(re.sub(r"\s+", " ", raw_title))
     total_hits = len(en_hits) + len(zh_hits)
     if total_hits >= 2 and len(model_hits) >= 2:
         verdict = "likely_relay"
@@ -162,48 +243,117 @@ def load_candidates(path: Path) -> list[str]:
     return out
 
 
+def _load_overrides(path: Path) -> dict[str, dict[str, Any]]:
+    """sites.yaml uses a tiny subset we parse without PyYAML dependency."""
+    if not path.exists():
+        return {}
+    text = path.read_text(encoding="utf-8")
+    out: dict[str, dict[str, Any]] = {}
+    cur_key: str | None = None
+    for line in text.splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        if not line.startswith(" "):
+            # top-level key: url-or-domain
+            cur_key = line.rstrip(":").strip()
+            out[cur_key] = {}
+        elif cur_key is not None:
+            m = re.match(r"\s+([a-zA-Z_]+):\s*(.+)", line)
+            if m:
+                k, v = m.group(1), m.group(2).strip()
+                if v.startswith('"') and v.endswith('"'):
+                    v = v[1:-1]
+                out[cur_key][k] = v
+    return out
+
+
+def _apply_override(url: str, entry: dict[str, Any], overrides: dict[str, dict[str, Any]]) -> None:
+    if not overrides:
+        return
+    parsed = urlparse(url)
+    for key in (url, parsed.netloc, parsed.netloc.removeprefix("www.")):
+        if key in overrides:
+            ov = overrides[key]
+            if "name" in ov:
+                entry["title"] = ov["name"]
+            if "region" in ov:
+                entry["override_region"] = ov["region"]
+            if "verdict" in ov:
+                entry["verdict"] = ov["verdict"]
+            if "upstream" in ov:
+                entry["upstream"] = ov["upstream"]
+            if "note" in ov:
+                entry["note"] = ov["note"]
+            break
+
+
+def _check_one(url: str, overrides: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    r = fetch(url)
+    if r["ok"] and r.get("status") and 200 <= r["status"] < 400:
+        cls = classify(url, r["body"])
+        probe = probe_api(url)
+    else:
+        cls = {
+            "title": "",
+            "en_keywords": [],
+            "zh_keywords": [],
+            "model_keywords": [],
+            "payment_hints": [],
+            "verdict": "unreachable",
+        }
+        probe = {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "skip-unreachable"}
+    entry: dict[str, Any] = {
+        "url": url,
+        "final_url": r.get("final_url"),
+        "status": r.get("status"),
+        "took_ms": r.get("took_ms"),
+        "error": r.get("error"),
+        **cls,
+        **probe,
+    }
+    # Promote verdict when the API probe confirms a real relay.
+    # Demote when we have *no* API endpoint and no keyword evidence.
+    if entry.get("has_api") and entry["verdict"] in ("needs_review", "probable_relay"):
+        entry["verdict"] = "likely_relay"
+        entry["promoted_by"] = "api-probe"
+    elif (
+        not entry.get("has_api")
+        and entry["verdict"] in ("likely_relay", "probable_relay")
+        and len(entry.get("model_keywords", [])) < 3
+    ):
+        entry["verdict"] = "needs_review"
+        entry["demoted_by"] = "no-api-endpoint"
+    _apply_override(url, entry, overrides)
+    return entry
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", default="data/candidates.txt")
     ap.add_argument("--out", default="data/validated.json")
-    ap.add_argument("--concurrency", type=int, default=8)
+    ap.add_argument("--overrides", default="data/sites.yaml")
+    ap.add_argument("--concurrency", type=int, default=16)
     args = ap.parse_args()
 
     root = Path(__file__).resolve().parent.parent
     in_path = root / args.input
     out_path = root / args.out
+    overrides = _load_overrides(root / args.overrides)
 
     urls = load_candidates(in_path)
-    print(f"[info] validating {len(urls)} candidates …", file=sys.stderr)
+    print(f"[info] validating {len(urls)} candidates (overrides: {len(overrides)}) …", file=sys.stderr)
 
     results: list[dict[str, Any]] = []
     with cf.ThreadPoolExecutor(max_workers=args.concurrency) as ex:
-        futures = {ex.submit(fetch, u): u for u in urls}
+        futures = {ex.submit(_check_one, u, overrides): u for u in urls}
         for fut in cf.as_completed(futures):
-            u = futures[fut]
-            r = fut.result()
-            if r["ok"]:
-                cls = classify(u, r["body"])
-            else:
-                cls = {
-                    "title": "",
-                    "en_keywords": [],
-                    "zh_keywords": [],
-                    "model_keywords": [],
-                    "payment_hints": [],
-                    "verdict": "unreachable",
-                }
-            results.append(
-                {
-                    "url": u,
-                    "final_url": r.get("final_url"),
-                    "status": r.get("status"),
-                    "took_ms": r.get("took_ms"),
-                    "error": r.get("error"),
-                    **cls,
-                }
+            entry = fut.result()
+            results.append(entry)
+            api_flag = "🔌" if entry.get("has_api") else "  "
+            print(
+                f"  [{entry['verdict']:>16}] {entry.get('status')} {api_flag} {entry['url']}",
+                file=sys.stderr,
             )
-            print(f"  [{cls['verdict']:>16}] {r.get('status')} {u}", file=sys.stderr)
 
     # sort by verdict priority, then url
     priority = {

@@ -1,0 +1,118 @@
+# sites.yaml — human-curated overrides for auto-validated gateways.
+#
+# Precedence: top-level key is matched against (full URL) → (netloc) → (bare netloc).
+# Fields (all optional):
+#   name:     display name in leaderboard
+#   region:   cn | global | self-hosted
+#   verdict:  force a tier (likely_relay | probable_relay | needs_review | directory | hidden)
+#   upstream: packycode | aws-kiro | direct-anthropic | direct-openrouter | unknown
+#   note:     short comment shown in gateway detail page
+#
+# Anyone can PR edits to this file. No CI magic — the validator just reads it.
+
+apimart.ai:
+  name: "APIMart"
+  region: "global"
+
+apid.aaife.cn:
+  name: "AAIFE API"
+  region: "cn"
+  note: "Static marketing page — unverified relay; needs evidence of real /v1 endpoint."
+  verdict: "needs_review"
+
+apizhongzhuan.com:
+  name: "API中转站"
+  region: "cn"
+
+closeai-asia.com:
+  name: "CloseAI"
+  region: "cn"
+
+derouter.ai:
+  name: "DeRouter"
+  region: "cn"
+
+ofox.ai:
+  name: "OfoxAI"
+  region: "global"
+
+ominigate.com:
+  name: "OminiGate"
+  region: "global"
+
+302.ai:
+  name: "302.AI"
+  region: "cn"
+
+requesty.ai:
+  name: "Requesty"
+  region: "global"
+
+ohmygpt.com:
+  name: "OhMyGPT"
+  region: "global"
+
+deerapi.com:
+  name: "DeerAPI (小鹿API)"
+  region: "cn"
+
+aihubmix.com:
+  name: "AIHubMix"
+  region: "global"
+
+openrouter.ai:
+  name: "OpenRouter"
+  region: "global"
+  note: "Pioneer of the multi-provider aggregation pattern."
+
+github.com/songquanpeng/one-api:
+  name: "One API (open-source)"
+  region: "self-hosted"
+  verdict: "open_source_tool"
+
+github.com/Calcium-Ion/new-api:
+  name: "New API (fork of One API)"
+  region: "self-hosted"
+  verdict: "open_source_tool"
+
+github.com/QuantumNous/new-api:
+  name: "New API (QuantumNous fork)"
+  region: "self-hosted"
+  verdict: "open_source_tool"
+
+packyapi.com:
+  name: "PackyAPI (PackyCode)"
+  region: "cn"
+  note: "One of the earliest Claude-Code-focused relays; upstream to many resellers."
+
+right.codes:
+  name: "RightCode"
+  region: "cn"
+
+poixe.com:
+  name: "Poixe AI"
+  region: "cn"
+
+bltcy.ai:
+  name: "柏拉图AI (Bltcy)"
+  region: "cn"
+
+yunwu.ai:
+  name: "云雾 API (YunWu)"
+  region: "cn"
+
+hvoy.ai:
+  name: "hvoy (排行榜/评测站)"
+  region: "cn"
+  verdict: "directory"
+  note: "Review & leaderboard site, not a relay itself."
+
+aiapipk.com:
+  name: "中转站竞技场 (aiapipk)"
+  region: "cn"
+  verdict: "directory"
+
+api.daheiai.com:
+  name: "大黑 API 导航"
+  region: "cn"
+  verdict: "directory"

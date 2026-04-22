@@ -50,51 +50,76 @@ def region_of(title: str, body_hints: list[str]) -> str:
 
 
 def score_of(entry: dict[str, Any]) -> float:
-    # Very simple heuristic: reachability + keyword density + model coverage.
-    base = 7.0
+    # Scoring: reachability + API endpoint confirmation + keyword density.
+    base = 6.0
     if entry["verdict"] == "likely_relay":
         base += 1.5
     elif entry["verdict"] == "probable_relay":
         base += 0.8
+    # Huge bonus for a real /v1/models endpoint — this is the ground truth signal.
+    if entry.get("has_api"):
+        base += 1.5
     coverage = len(entry.get("model_keywords", []))
     base += min(coverage * 0.1, 0.5)
     if entry.get("payment_hints"):
         base += 0.2
-    return round(min(base, 9.8), 1)
+    # Penalise extremely slow sites (> 3s)
+    took = entry.get("took_ms") or 0
+    if took > 3000:
+        base -= 0.3
+    return round(min(base, 9.9), 1)
 
 
 def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
     out: list[dict[str, Any]] = []
     for v in validated:
-        # Include reachable sites only; we keep likely/probable/needs_review
-        # and open_source_tool so the library reflects the whole landscape.
-        if v["verdict"] in ("unreachable",):
+        # Skip unreachable + directory-only sites
+        if v["verdict"] in ("unreachable", "directory", "hidden"):
             continue
         url = v["url"]
         slug = slugify(url)
-        name = v.get("title", "").split("|")[0].split(" - ")[0].strip() or slug
-        # Trim overly long auto-titles
+        # Prefer the human-curated name from sites.yaml; fall back to parsed <title>.
+        raw = v.get("title", "") or ""
+        name = raw.split("|")[0].split(" - ")[0].strip() or slug
         if len(name) > 60:
             name = name[:60].rstrip()
+        # Reject obviously garbage titles (HTML entity left overs, extremely short, etc.)
+        if "&" in name and ";" not in name:
+            name = slug
+        # Generic titles ("New API", "首页", "one-api") are useless — prefer the domain slug.
+        generic = {"new api", "首页", "one-api", "主页", "one api", "home", "网站首页", "api", "api中转站", "new-api"}
+        if name.strip().lower() in generic:
+            from urllib.parse import urlparse as _urlparse
+            host = _urlparse(url).netloc.removeprefix("www.")
+            name = host
+        region = v.get("override_region") or region_of(v.get("title", ""), v.get("zh_keywords", []))
         out.append(
             {
                 "slug": slug,
                 "name": name,
                 "url": url,
                 "final_url": v.get("final_url"),
-                "region": region_of(v.get("title", ""), v.get("zh_keywords", [])),
+                "region": region,
                 "payment": v.get("payment_hints", []),
                 "models_signaled": v.get("model_keywords", []),
                 "reachable": True,
                 "http_status": v.get("status"),
                 "took_ms": v.get("took_ms"),
+                "has_api": bool(v.get("has_api")),
+                "probe": {
+                    "status": v.get("probe_status"),
+                    "path": v.get("probe_path"),
+                    "hint": v.get("probe_hint"),
+                },
+                "upstream": v.get("upstream"),
+                "note": v.get("note"),
                 "score": score_of(v),
                 "verdict": v["verdict"],
                 "last_verified": datetime.now(SGT).strftime("%Y-%m-%d"),
             }
         )
-    # Sort by score desc, then by name
-    out.sort(key=lambda x: (-x["score"], x["name"].lower()))
+    # Sort by: has_api desc, score desc, latency asc, name
+    out.sort(key=lambda x: (not x["has_api"], -x["score"], x["took_ms"] or 9999, x["name"].lower()))
     return out
 
 
@@ -115,27 +140,27 @@ TIER_LABELS_ZH = {
 def render_table(entries: list[dict[str, Any]], lang: str, limit: int | None = None) -> str:
     if lang == "zh":
         header = (
-            "| # | 中转站 | 地区 | 模型信号 | 支付 | 评分 | 访问 | 响应 | 分类 |\n"
-            "|---|--------|------|----------|------|------|------|------|------|\n"
+            "| # | 中转站 | 地区 | API | 模型 | 支付 | 评分 | 响应 | 分类 |\n"
+            "|---|--------|------|-----|------|------|------|------|------|\n"
         )
     else:
         header = (
-            "| # | Gateway | Region | Model signals | Payment | Score | Reach | Latency | Tier |\n"
-            "|---|---------|--------|---------------|---------|-------|-------|---------|------|\n"
+            "| # | Gateway | Region | API | Models | Payment | Score | Latency | Tier |\n"
+            "|---|---------|--------|-----|--------|---------|-------|---------|------|\n"
         )
     rows = []
     shown = entries if limit is None else entries[:limit]
     tier_labels = TIER_LABELS_ZH if lang == "zh" else TIER_LABELS_EN
     for i, e in enumerate(shown, start=1):
-        models = ", ".join(e["models_signaled"][:5]) or "—"
+        models = ", ".join(e["models_signaled"][:4]) or "—"
         payment = ", ".join(e["payment"]) or "—"
         medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(i, str(i))
-        status = f"✅ {e['http_status']}"
+        api_badge = "🔌" if e.get("has_api") else "·"
         latency = f"{e['took_ms']} ms"
         name = f"[{e['name']}]({e['url']})"
         tier = tier_labels.get(e.get("verdict", ""), e.get("verdict", ""))
         rows.append(
-            f"| {medal} | {name} | {e['region']} | {models} | {payment} | {e['score']} | {status} | {latency} | {tier} |"
+            f"| {medal} | {name} | {e['region']} | {api_badge} | {models} | {payment} | {e['score']} | {latency} | {tier} |"
         )
     return header + "\n".join(rows) + "\n"
 
@@ -155,6 +180,35 @@ def splice_readme(path: Path, marker_begin: str, marker_end: str, body: str, sta
         # Append at bottom if markers missing
         new = text.rstrip() + "\n\n" + wrapper + "\n"
     path.write_text(new, encoding="utf-8")
+
+
+def _update_stats_badges(path: Path, total: int, api_count: int, lang: str) -> None:
+    """Rewrite the shields.io badges between <!-- STATS:BEGIN --> and STATS:END."""
+    text = path.read_text(encoding="utf-8")
+    if lang == "zh":
+        begin, end = "<!-- STATS_ZH:BEGIN -->", "<!-- STATS_ZH:END -->"
+        body = (
+            f'<img src="https://img.shields.io/badge/%E4%B8%AD%E8%BD%AC%E7%AB%99-{total}-blue" alt="中转站总数">\n'
+            f'  <img src="https://img.shields.io/badge/API%E5%B7%B2%E9%AA%8C%E8%AF%81-{api_count}-success" alt="API已验证">\n'
+            f'  <img src="https://img.shields.io/badge/%E6%9B%B4%E6%96%B0-%E6%AF%8F%E6%97%A510%3A00_SGT-orange" alt="每日更新">'
+        )
+    else:
+        begin, end = "<!-- STATS:BEGIN -->", "<!-- STATS:END -->"
+        body = (
+            f'<img src="https://img.shields.io/badge/Gateways-{total}-blue" alt="Total">\n'
+            f'  <img src="https://img.shields.io/badge/API_verified-{api_count}-success" alt="API verified">\n'
+            f'  <img src="https://img.shields.io/badge/Updated-daily_10:00_SGT-orange" alt="Updated">'
+        )
+    wrapper = f"{begin}\n  {body}\n  {end}"
+    if begin in text and end in text:
+        new = re.sub(
+            re.escape(begin) + r".*?" + re.escape(end),
+            wrapper,
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+        path.write_text(new, encoding="utf-8")
 
 
 def main() -> int:
@@ -183,15 +237,18 @@ def main() -> int:
     # Tier summary
     from collections import Counter
     tier_counts = Counter(e["verdict"] for e in entries)
+    api_count = sum(1 for e in entries if e.get("has_api"))
     summary_en = (
-        f"**Total: {len(entries)} gateways** | "
+        f"**Total: {len(entries)} gateways** · "
+        f"🔌 **{api_count} with confirmed `/v1/models` endpoint** · "
         f"🟢 {tier_counts.get('likely_relay', 0)} Verified · "
         f"🟡 {tier_counts.get('probable_relay', 0)} Probable · "
         f"🧰 {tier_counts.get('open_source_tool', 0)} OSS · "
         f"🔍 {tier_counts.get('needs_review', 0)} Needs review\n\n"
     )
     summary_zh = (
-        f"**合计 {len(entries)} 个中转站** | "
+        f"**合计 {len(entries)} 个中转站** · "
+        f"🔌 **{api_count} 个已确认 `/v1/models` 端点** · "
         f"🟢 已验证 {tier_counts.get('likely_relay', 0)} · "
         f"🟡 疑似 {tier_counts.get('probable_relay', 0)} · "
         f"🧰 开源 {tier_counts.get('open_source_tool', 0)} · "
@@ -216,6 +273,10 @@ def main() -> int:
     # Splice into READMEs
     splice_readme(ROOT / "README.md", BEGIN_EN, END_EN, table_en, stamp)
     splice_readme(ROOT / "README.zh-CN.md", BEGIN_ZH, END_ZH, table_zh, stamp)
+
+    # Refresh the dynamic STATS badges in both READMEs
+    _update_stats_badges(ROOT / "README.md", len(entries), api_count, lang="en")
+    _update_stats_badges(ROOT / "README.zh-CN.md", len(entries), api_count, lang="zh")
 
     print(f"[ok] {len(entries)} gateways → gateways.json + history/{today}.json")
     return 0
