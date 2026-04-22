@@ -1,0 +1,116 @@
+{
+  "$schema": "./gateways.schema.json",
+  "updated": "2026-04-22",
+  "gateways": [
+    {
+      "slug": "openrouter",
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "region": "global",
+      "models_count": 300,
+      "claude_code": true,
+      "payment": ["card", "crypto"],
+      "score": 9.4,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "one-api",
+      "name": "One API",
+      "url": "https://github.com/songquanpeng/one-api",
+      "region": "self-hosted",
+      "models_count": null,
+      "claude_code": true,
+      "payment": [],
+      "score": 9.2,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "road2all",
+      "name": "Road2All",
+      "url": "https://road2all.com",
+      "region": "cn",
+      "models_count": 100,
+      "claude_code": true,
+      "payment": ["alipay", "wechat"],
+      "score": 9.0,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "deepbricks",
+      "name": "DeepBricks",
+      "url": "https://deepbricks.ai",
+      "region": "cn",
+      "models_count": 80,
+      "claude_code": true,
+      "payment": ["alipay"],
+      "score": 8.8,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "aihubmix",
+      "name": "AiHubMix",
+      "url": "https://aihubmix.com",
+      "region": "cn",
+      "models_count": 150,
+      "claude_code": true,
+      "payment": ["alipay", "wechat"],
+      "score": 8.7,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "ohmygpt",
+      "name": "OhMyGPT",
+      "url": "https://www.ohmygpt.com",
+      "region": "cn",
+      "models_count": 100,
+      "claude_code": true,
+      "payment": ["alipay", "wechat"],
+      "score": 8.6,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "api2d",
+      "name": "API2D",
+      "url": "https://api2d.com",
+      "region": "cn",
+      "models_count": 60,
+      "claude_code": true,
+      "payment": ["alipay", "wechat"],
+      "score": 8.5,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "together-ai",
+      "name": "Together AI",
+      "url": "https://together.ai",
+      "region": "global",
+      "models_count": 100,
+      "claude_code": false,
+      "payment": ["card"],
+      "score": 8.4,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "groq",
+      "name": "Groq",
+      "url": "https://groq.com",
+      "region": "global",
+      "models_count": 20,
+      "claude_code": false,
+      "payment": ["card"],
+      "score": 8.3,
+      "last_verified": "2026-04-22"
+    },
+    {
+      "slug": "fireworks-ai",
+      "name": "Fireworks AI",
+      "url": "https://fireworks.ai",
+      "region": "global",
+      "models_count": 50,
+      "claude_code": false,
+      "payment": ["card"],
+      "score": 8.2,
+      "last_verified": "2026-04-22"
+    }
+  ]
+}
