@@ -66,7 +66,9 @@ def score_of(entry: dict[str, Any]) -> float:
 def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
     out: list[dict[str, Any]] = []
     for v in validated:
-        if v["verdict"] not in ("likely_relay", "probable_relay"):
+        # Include reachable sites only; we keep likely/probable/needs_review
+        # and open_source_tool so the library reflects the whole landscape.
+        if v["verdict"] in ("unreachable",):
             continue
         url = v["url"]
         slug = slugify(url)
@@ -96,27 +98,44 @@ def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
-def render_table(entries: list[dict[str, Any]], lang: str) -> str:
+TIER_LABELS_EN = {
+    "likely_relay": "🟢 Verified",
+    "probable_relay": "🟡 Probable",
+    "open_source_tool": "🧰 OSS Tool",
+    "needs_review": "🔍 Needs review",
+}
+TIER_LABELS_ZH = {
+    "likely_relay": "🟢 已验证",
+    "probable_relay": "🟡 疑似",
+    "open_source_tool": "🧰 开源工具",
+    "needs_review": "🔍 待复核",
+}
+
+
+def render_table(entries: list[dict[str, Any]], lang: str, limit: int | None = None) -> str:
     if lang == "zh":
         header = (
-            "| 排名 | 中转站 | 地区 | 模型信号 | 支付 | 评分 | 访问 | 响应 |\n"
-            "|------|--------|------|----------|------|------|------|--------|\n"
+            "| # | 中转站 | 地区 | 模型信号 | 支付 | 评分 | 访问 | 响应 | 分类 |\n"
+            "|---|--------|------|----------|------|------|------|------|------|\n"
         )
     else:
         header = (
-            "| # | Gateway | Region | Model signals | Payment | Score | Reach | Latency |\n"
-            "|---|---------|--------|---------------|---------|-------|-------|---------|\n"
+            "| # | Gateway | Region | Model signals | Payment | Score | Reach | Latency | Tier |\n"
+            "|---|---------|--------|---------------|---------|-------|-------|---------|------|\n"
         )
     rows = []
-    for i, e in enumerate(entries, start=1):
+    shown = entries if limit is None else entries[:limit]
+    tier_labels = TIER_LABELS_ZH if lang == "zh" else TIER_LABELS_EN
+    for i, e in enumerate(shown, start=1):
         models = ", ".join(e["models_signaled"][:5]) or "—"
         payment = ", ".join(e["payment"]) or "—"
         medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(i, str(i))
         status = f"✅ {e['http_status']}"
         latency = f"{e['took_ms']} ms"
         name = f"[{e['name']}]({e['url']})"
+        tier = tier_labels.get(e.get("verdict", ""), e.get("verdict", ""))
         rows.append(
-            f"| {medal} | {name} | {e['region']} | {models} | {payment} | {e['score']} | {status} | {latency} |"
+            f"| {medal} | {name} | {e['region']} | {models} | {payment} | {e['score']} | {status} | {latency} | {tier} |"
         )
     return header + "\n".join(rows) + "\n"
 
@@ -161,11 +180,38 @@ def main() -> int:
         json.dumps(current, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    # Markdown fragments
-    table_en = render_table(entries, "en")
-    table_zh = render_table(entries, "zh")
-    (DATA / "_leaderboard.md").write_text(table_en, encoding="utf-8")
-    (DATA / "_leaderboard.zh.md").write_text(table_zh, encoding="utf-8")
+    # Tier summary
+    from collections import Counter
+    tier_counts = Counter(e["verdict"] for e in entries)
+    summary_en = (
+        f"**Total: {len(entries)} gateways** | "
+        f"🟢 {tier_counts.get('likely_relay', 0)} Verified · "
+        f"🟡 {tier_counts.get('probable_relay', 0)} Probable · "
+        f"🧰 {tier_counts.get('open_source_tool', 0)} OSS · "
+        f"🔍 {tier_counts.get('needs_review', 0)} Needs review\n\n"
+    )
+    summary_zh = (
+        f"**合计 {len(entries)} 个中转站** | "
+        f"🟢 已验证 {tier_counts.get('likely_relay', 0)} · "
+        f"🟡 疑似 {tier_counts.get('probable_relay', 0)} · "
+        f"🧰 开源 {tier_counts.get('open_source_tool', 0)} · "
+        f"🔍 待复核 {tier_counts.get('needs_review', 0)}\n\n"
+    )
+
+    # Markdown fragments — full list in data/, top 50 in README
+    table_en_full = render_table(entries, "en")
+    table_zh_full = render_table(entries, "zh")
+    (DATA / "_leaderboard.md").write_text(summary_en + table_en_full, encoding="utf-8")
+    (DATA / "_leaderboard.zh.md").write_text(summary_zh + table_zh_full, encoding="utf-8")
+
+    table_en = summary_en + render_table(entries, "en", limit=50) + (
+        f"\n> Top 50 shown. See [`data/_leaderboard.md`](data/_leaderboard.md) for the full list of {len(entries)} gateways.\n"
+        if len(entries) > 50 else "\n"
+    )
+    table_zh = summary_zh + render_table(entries, "zh", limit=50) + (
+        f"\n> 仅展示 Top 50。完整 {len(entries)} 个榜单见 [`data/_leaderboard.zh.md`](data/_leaderboard.zh.md)。\n"
+        if len(entries) > 50 else "\n"
+    )
 
     # Splice into READMEs
     splice_readme(ROOT / "README.md", BEGIN_EN, END_EN, table_en, stamp)
