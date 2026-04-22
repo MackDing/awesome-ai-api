@@ -106,6 +106,7 @@ def fetch(url: str, timeout: float = 12.0, read_bytes: int = 200_000) -> dict[st
                 "status": resp.status,
                 "final_url": resp.geturl(),
                 "body": body,
+                "headers": {k.lower(): v for k, v in resp.headers.items()},
                 "took_ms": int((time.time() - start) * 1000),
             }
     except urllib.error.HTTPError as e:
@@ -119,6 +120,7 @@ def fetch(url: str, timeout: float = 12.0, read_bytes: int = 200_000) -> dict[st
             "status": e.code,
             "final_url": url,
             "body": body,
+            "headers": {k.lower(): v for k, v in (e.headers.items() if e.headers else [])},
             "took_ms": int((time.time() - start) * 1000),
         }
     except (urllib.error.URLError, TimeoutError, Exception) as e:
@@ -127,9 +129,45 @@ def fetch(url: str, timeout: float = 12.0, read_bytes: int = 200_000) -> dict[st
             "status": None,
             "final_url": url,
             "body": "",
+            "headers": {},
             "error": str(e)[:200],
             "took_ms": int((time.time() - start) * 1000),
         }
+
+
+# --- Upstream engine fingerprint -------------------------------------------
+# Most CN relays are thin skins on top of a handful of OSS projects.
+# Knowing which one lets users predict: update cadence, security posture,
+# Claude-Code compatibility, etc.
+_ENGINE_SIGNATURES = [
+    # (engine_id, list of substrings to match against html/body/headers)
+    ("new-api", ["/static/js/new-api", "\"New API\"", "new-api-web", "NewAPI", "Calcium-Ion", "QuantumNous"]),
+    ("one-api", ["one-api-web", "songquanpeng/one-api", "One API", "\"oneapi\""]),
+    ("one-hub", ["MartialBE/one-hub", "OneHub", "one-hub-web"]),
+    ("fastgpt", ["FastGPT", "fastgpt", "labring"]),
+    ("dify", ["Dify", "dify.ai", "langgenius"]),
+    ("litellm", ["LiteLLM", "BerriAI", "litellm"]),
+    ("openrouter", ["openrouter.ai", "OpenRouter"]),
+    ("apipie", ["APIpie", "apipie.ai"]),
+    ("helicone", ["helicone", "Helicone"]),
+    ("portkey", ["Portkey-AI", "portkey.ai"]),
+    ("langdb", ["langdb"]),
+    ("uni-api", ["uni-api", "yym68686"]),
+    ("chatnext-web", ["NextChat", "ChatGPTNextWeb"]),
+    ("lobe-chat", ["LobeChat", "lobehub"]),
+    ("vercel-ai-gateway", ["vercel-ai-sdk", "aigateway.vercel"]),
+]
+
+
+def detect_engine(url: str, body: str, headers: dict[str, str]) -> str | None:
+    hay = body + " " + " ".join(f"{k}:{v}" for k, v in (headers or {}).items())
+    low = hay.lower()
+    for engine_id, sigs in _ENGINE_SIGNATURES:
+        for s in sigs:
+            if s.lower() in low:
+                return engine_id
+    # Check a few /v1/models and /about endpoints for additional signal
+    return None
 
 
 # --- OpenAI-compatible endpoint probe --------------------------------------
@@ -143,31 +181,47 @@ _PROBE_SUFFIXES = ["/v1/models", "/api/v1/models"]
 
 
 def probe_api(url: str, timeout: float = 8.0) -> dict[str, Any]:
-    """Return {has_api: bool, probe_status, probe_path, probe_hint}."""
+    """Return {has_api, probe_status, probe_path, probe_hint, real_models}."""
     parsed = urlparse(url)
     # Skip probes for github.com etc. — they're OSS repos, not live APIs
     if parsed.netloc.endswith("github.com"):
-        return {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "github-repo"}
+        return {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "github-repo", "real_models": []}
     base = f"{parsed.scheme}://{parsed.netloc}"
     for suffix in _PROBE_SUFFIXES:
         target = base + suffix
-        r = fetch(target, timeout=timeout, read_bytes=8_000)
+        r = fetch(target, timeout=timeout, read_bytes=100_000)
         status = r.get("status")
-        body = (r.get("body") or "").lower()
+        body = r.get("body") or ""
+        low = body.lower()
         if status is None:
             continue
         hint = ""
         has_api = False
+        real_models: list[str] = []
         if status in (200,):
             # Must look like JSON models list, not a marketing page
-            if body.startswith("{") and ("\"data\"" in body or "\"object\"" in body or "\"models\"" in body):
+            if body.lstrip().startswith("{") and ("\"data\"" in low or "\"object\"" in low or "\"models\"" in low):
                 has_api = True
                 hint = "openai-models-json"
-            elif "<html" in body or "<!doctype" in body:
+                # Extract real model ids — the ground truth of what this gateway sells
+                try:
+                    parsed_json = _json.loads(body)
+                    items = parsed_json.get("data") or parsed_json.get("models") or []
+                    if isinstance(items, list):
+                        for it in items[:500]:
+                            if isinstance(it, dict):
+                                mid = it.get("id") or it.get("model") or it.get("name")
+                                if mid and isinstance(mid, str):
+                                    real_models.append(mid)
+                            elif isinstance(it, str):
+                                real_models.append(it)
+                except Exception:
+                    pass
+            elif "<html" in low or "<!doctype" in low:
                 hint = "html-on-/v1/models"
         elif status in (401, 403):
             # Classic "missing api key" — definitive relay signal
-            if any(k in body for k in ("api_key", "api key", "unauthorized", "invalid", "missing", "authentication")):
+            if any(k in low for k in ("api_key", "api key", "unauthorized", "invalid", "missing", "authentication")):
                 has_api = True
                 hint = f"{status}-need-key"
             else:
@@ -175,7 +229,6 @@ def probe_api(url: str, timeout: float = 8.0) -> dict[str, Any]:
                 has_api = True
                 hint = f"{status}-auth"
         elif status == 405:
-            # Some gateways only accept POST — existence of endpoint confirmed
             has_api = True
             hint = "405-method-not-allowed"
         elif status in (429,):
@@ -187,8 +240,9 @@ def probe_api(url: str, timeout: float = 8.0) -> dict[str, Any]:
                 "probe_status": status,
                 "probe_path": suffix,
                 "probe_hint": hint,
+                "real_models": real_models,
             }
-    return {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "no-endpoint"}
+    return {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "no-endpoint", "real_models": []}
 
 
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
@@ -292,6 +346,7 @@ def _check_one(url: str, overrides: dict[str, dict[str, Any]]) -> dict[str, Any]
     if r["ok"] and r.get("status") and 200 <= r["status"] < 400:
         cls = classify(url, r["body"])
         probe = probe_api(url)
+        engine = detect_engine(url, r["body"], r.get("headers", {}))
     else:
         cls = {
             "title": "",
@@ -301,13 +356,15 @@ def _check_one(url: str, overrides: dict[str, dict[str, Any]]) -> dict[str, Any]
             "payment_hints": [],
             "verdict": "unreachable",
         }
-        probe = {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "skip-unreachable"}
+        probe = {"has_api": False, "probe_status": None, "probe_path": None, "probe_hint": "skip-unreachable", "real_models": []}
+        engine = None
     entry: dict[str, Any] = {
         "url": url,
         "final_url": r.get("final_url"),
         "status": r.get("status"),
         "took_ms": r.get("took_ms"),
         "error": r.get("error"),
+        "engine": engine,
         **cls,
         **probe,
     }

@@ -49,8 +49,8 @@ def region_of(title: str, body_hints: list[str]) -> str:
     return "global"
 
 
-def score_of(entry: dict[str, Any]) -> float:
-    # Scoring: reachability + API endpoint confirmation + keyword density.
+def score_of(entry: dict[str, Any], uptime: dict | None = None) -> float:
+    # Scoring: reachability + API endpoint confirmation + keyword density + uptime.
     base = 6.0
     if entry["verdict"] == "likely_relay":
         base += 1.5
@@ -59,6 +59,12 @@ def score_of(entry: dict[str, Any]) -> float:
     # Huge bonus for a real /v1/models endpoint — this is the ground truth signal.
     if entry.get("has_api"):
         base += 1.5
+    # Bonus for lots of real models returned (not just keyword matches)
+    real_model_count = len(entry.get("real_models") or [])
+    if real_model_count >= 50:
+        base += 0.4
+    elif real_model_count >= 10:
+        base += 0.2
     coverage = len(entry.get("model_keywords", []))
     base += min(coverage * 0.1, 0.5)
     if entry.get("payment_hints"):
@@ -67,10 +73,20 @@ def score_of(entry: dict[str, Any]) -> float:
     took = entry.get("took_ms") or 0
     if took > 3000:
         base -= 0.3
+    # Uptime bonus (if we have >= 3 days of history)
+    if uptime and uptime.get("samples") and uptime["samples"] >= 3:
+        pct = uptime.get("uptime_pct") or 0
+        if pct >= 99:
+            base += 0.5
+        elif pct >= 95:
+            base += 0.3
+        elif pct < 80:
+            base -= 0.4
     return round(min(base, 9.9), 1)
 
 
-def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def build_entries(validated: list[dict[str, Any]], uptime: dict[str, dict] | None = None) -> list[dict[str, Any]]:
+    uptime = uptime or {}
     out: list[dict[str, Any]] = []
     for v in validated:
         # Skip unreachable + directory-only sites
@@ -93,6 +109,7 @@ def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
             host = _urlparse(url).netloc.removeprefix("www.")
             name = host
         region = v.get("override_region") or region_of(v.get("title", ""), v.get("zh_keywords", []))
+        up = uptime.get(url) or {}
         out.append(
             {
                 "slug": slug,
@@ -102,6 +119,9 @@ def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "region": region,
                 "payment": v.get("payment_hints", []),
                 "models_signaled": v.get("model_keywords", []),
+                "real_models_count": len(v.get("real_models") or []),
+                "real_models_sample": (v.get("real_models") or [])[:8],
+                "engine": v.get("engine"),
                 "reachable": True,
                 "http_status": v.get("status"),
                 "took_ms": v.get("took_ms"),
@@ -111,9 +131,15 @@ def build_entries(validated: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "path": v.get("probe_path"),
                     "hint": v.get("probe_hint"),
                 },
+                "uptime": {
+                    "window_days": up.get("window_days"),
+                    "samples": up.get("samples"),
+                    "uptime_pct": up.get("uptime_pct"),
+                    "streak_days": up.get("streak_days"),
+                },
                 "upstream": v.get("upstream"),
                 "note": v.get("note"),
-                "score": score_of(v),
+                "score": score_of(v, up),
                 "verdict": v["verdict"],
                 "last_verified": datetime.now(SGT).strftime("%Y-%m-%d"),
             }
@@ -140,27 +166,33 @@ TIER_LABELS_ZH = {
 def render_table(entries: list[dict[str, Any]], lang: str, limit: int | None = None) -> str:
     if lang == "zh":
         header = (
-            "| # | 中转站 | 地区 | API | 模型 | 支付 | 评分 | 响应 | 分类 |\n"
-            "|---|--------|------|-----|------|------|------|------|------|\n"
+            "| # | 中转站 | 地区 | API | 模型 | 引擎 | 支付 | 评分 | 响应 | 分类 |\n"
+            "|---|--------|------|-----|------|------|------|------|------|------|\n"
         )
     else:
         header = (
-            "| # | Gateway | Region | API | Models | Payment | Score | Latency | Tier |\n"
-            "|---|---------|--------|-----|--------|---------|-------|---------|------|\n"
+            "| # | Gateway | Region | API | Models | Engine | Payment | Score | Latency | Tier |\n"
+            "|---|---------|--------|-----|--------|--------|---------|-------|---------|------|\n"
         )
     rows = []
     shown = entries if limit is None else entries[:limit]
     tier_labels = TIER_LABELS_ZH if lang == "zh" else TIER_LABELS_EN
     for i, e in enumerate(shown, start=1):
-        models = ", ".join(e["models_signaled"][:4]) or "—"
+        # Prefer real model count when available
+        real_n = e.get("real_models_count") or 0
+        if real_n:
+            models = f"**{real_n} models**"
+        else:
+            models = ", ".join(e["models_signaled"][:3]) or "—"
         payment = ", ".join(e["payment"]) or "—"
         medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(i, str(i))
         api_badge = "🔌" if e.get("has_api") else "·"
         latency = f"{e['took_ms']} ms"
         name = f"[{e['name']}]({e['url']})"
         tier = tier_labels.get(e.get("verdict", ""), e.get("verdict", ""))
+        engine = e.get("engine") or "—"
         rows.append(
-            f"| {medal} | {name} | {e['region']} | {api_badge} | {models} | {payment} | {e['score']} | {latency} | {tier} |"
+            f"| {medal} | {name} | {e['region']} | {api_badge} | {models} | {engine} | {payment} | {e['score']} | {latency} | {tier} |"
         )
     return header + "\n".join(rows) + "\n"
 
@@ -213,7 +245,15 @@ def _update_stats_badges(path: Path, total: int, api_count: int, lang: str) -> N
 
 def main() -> int:
     validated = json.loads((DATA / "validated.json").read_text(encoding="utf-8"))
-    entries = build_entries(validated)
+    # Load uptime stats if available
+    uptime_path = DATA / "uptime.json"
+    uptime = {}
+    if uptime_path.exists():
+        try:
+            uptime = json.loads(uptime_path.read_text(encoding="utf-8")).get("gateways", {})
+        except Exception:
+            uptime = {}
+    entries = build_entries(validated, uptime=uptime)
     stamp = datetime.now(SGT).strftime("%Y-%m-%d %H:%M")
     today = datetime.now(SGT).strftime("%Y-%m-%d")
 
@@ -238,6 +278,10 @@ def main() -> int:
     from collections import Counter
     tier_counts = Counter(e["verdict"] for e in entries)
     api_count = sum(1 for e in entries if e.get("has_api"))
+    engine_counts = Counter(e["engine"] for e in entries if e.get("engine"))
+    top_engines = engine_counts.most_common(5)
+    engine_str_en = " · ".join(f"`{k}` × {v}" for k, v in top_engines) or "—"
+    engine_str_zh = " · ".join(f"`{k}` × {v}" for k, v in top_engines) or "—"
     summary_en = (
         f"**Total: {len(entries)} gateways** · "
         f"🔌 **{api_count} with confirmed `/v1/models` endpoint** · "
@@ -245,6 +289,7 @@ def main() -> int:
         f"🟡 {tier_counts.get('probable_relay', 0)} Probable · "
         f"🧰 {tier_counts.get('open_source_tool', 0)} OSS · "
         f"🔍 {tier_counts.get('needs_review', 0)} Needs review\n\n"
+        f"**Top engines detected:** {engine_str_en}\n\n"
     )
     summary_zh = (
         f"**合计 {len(entries)} 个中转站** · "
@@ -253,6 +298,7 @@ def main() -> int:
         f"🟡 疑似 {tier_counts.get('probable_relay', 0)} · "
         f"🧰 开源 {tier_counts.get('open_source_tool', 0)} · "
         f"🔍 待复核 {tier_counts.get('needs_review', 0)}\n\n"
+        f"**主流引擎分布：** {engine_str_zh}\n\n"
     )
 
     # Markdown fragments — full list in data/, top 50 in README

@@ -26,6 +26,12 @@ jobs:
       - name: Validate candidate gateways
         run: python scripts/validate_candidates.py
 
+      - name: Compute 30-day uptime
+        run: python scripts/compute_uptime.py
+
+      - name: Render blacklist.md from blacklist.json
+        run: python scripts/render_blacklist.py
+
       - name: Generate leaderboard + history snapshot
         run: python scripts/generate_leaderboard.py
 

@@ -1,0 +1,21 @@
+{
+  "$schema": "./blacklist.schema.json",
+  "updated": "2026-04-22",
+  "policy": {
+    "inclusion_criteria": [
+      "At least 2 independent reports in GitHub Discussions (Reports category)",
+      "Evidence archive in data/blacklist-evidence/<slug>/",
+      "14-day response window granted to the operator",
+      "Maintainer review + merged PR"
+    ],
+    "severities": {
+      "rug_pull": "Operator disappeared with prepaid credits",
+      "fake_models": "Served a downgraded/different model while billing for the premium one",
+      "data_leak": "User prompts, API keys or payment info exposed",
+      "unauthorized_charge": "Charged without delivering the promised tokens",
+      "banned_upstream": "Account terminated by the official provider; users left holding worthless credits"
+    },
+    "removal": "Entries may be removed if the issue is verifiably resolved, ownership has changed, or the original evidence is retracted."
+  },
+  "entries": []
+}
