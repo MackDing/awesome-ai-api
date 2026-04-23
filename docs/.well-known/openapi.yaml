@@ -1,0 +1,29 @@
+openapi: 3.1.0
+info:
+  title: awesome-ai-api
+  version: '1.0'
+  description: Static JSON dataset of AI API gateways, refreshed daily.
+  license: { name: CC0, url: https://creativecommons.org/publicdomain/zero/1.0/ }
+servers:
+  - url: https://mackding.github.io/awesome-ai-api
+paths:
+  /gateways.json:
+    get:
+      summary: Full leaderboard snapshot
+      responses:
+        '200':
+          description: JSON array of gateway records
+          content:
+            application/json: {}
+  /gateways.csv:
+    get:
+      summary: Same data, CSV
+      responses: { '200': { description: CSV } }
+  /feed.xml:
+    get:
+      summary: RSS of Top-20 daily
+      responses: { '200': { description: RSS 2.0 } }
+  /llms-full.txt:
+    get:
+      summary: LLM-friendly plaintext dump
+      responses: { '200': { description: text/plain } }

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "awesome-ai-api",
+  "name_for_model": "awesome_ai_api",
+  "description_for_human": "Daily-refreshed leaderboard of 200+ AI API gateways, CC0 data.",
+  "description_for_model": "Use this dataset to look up AI API gateways (OpenAI-compatible relays). Each entry includes URL, 30-day uptime, latency, OSS engine, score, and models observed. Ground truth: the /v1/models probe runs daily.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://mackding.github.io/awesome-ai-api/.well-known/openapi.yaml"
+  },
+  "logo_url": "https://mackding.github.io/awesome-ai-api/og-image.png",
+  "contact_email": "noreply@github.com",
+  "legal_info_url": "https://github.com/MackDing/awesome-ai-api"
+}

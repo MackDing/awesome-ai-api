@@ -159,7 +159,7 @@ def check_readme() -> None:
 
 
 def check_no_duplicate_names() -> None:
-    print("\n[8/8] no duplicate display names in gateways.json")
+    print("\n[8/9] no duplicate display names in gateways.json")
     from collections import Counter
     data = json.loads((DOCS / "gateways.json").read_text(encoding="utf-8"))
     counts = Counter(g["name"] for g in data.get("gateways", []))
@@ -168,6 +168,33 @@ def check_no_duplicate_names() -> None:
         fail(f"{len(dupes)} duplicate display name(s): {dict(list(dupes.items())[:5])}")
     else:
         ok(f"all {len(counts)} display names are unique")
+
+
+def check_subpages() -> None:
+    print("\n[9/9] per-gateway + per-engine landing pages")
+    data = json.loads((DOCS / "gateways.json").read_text(encoding="utf-8"))
+    gws = data.get("gateways", [])
+    expected_gw = sum(1 for g in gws if g.get("slug"))
+    got_gw = len(list((DOCS / "g").glob("*/index.html"))) if (DOCS / "g").exists() else 0
+    if got_gw < expected_gw:
+        fail(f"per-gateway pages: got {got_gw}, expected {expected_gw}")
+    else:
+        ok(f"per-gateway pages: {got_gw}/{expected_gw}")
+
+    engines = {g["engine"] for g in gws if g.get("engine")}
+    got_eng = len(list((DOCS / "engine").glob("*/index.html"))) if (DOCS / "engine").exists() else 0
+    if got_eng < len(engines):
+        fail(f"per-engine pages: got {got_eng}, expected {len(engines)}")
+    else:
+        ok(f"per-engine pages: {got_eng}/{len(engines)}")
+
+    # .well-known assets
+    for rel in (".well-known/ai-plugin.json", ".well-known/openapi.yaml"):
+        p = DOCS / rel
+        if not p.exists() or p.stat().st_size == 0:
+            fail(f"{rel} missing or empty")
+        else:
+            ok(f"{rel} present")
 
 
 def main() -> int:
@@ -181,6 +208,7 @@ def main() -> int:
     check_assets()
     check_readme()
     check_no_duplicate_names()
+    check_subpages()
 
     print("\n" + "=" * 50)
     if failures:
