@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://mackding.github.io/awesome-ai-api/sitemap.xml
+
+# LLM-friendly manifest
+# See: /llms.txt

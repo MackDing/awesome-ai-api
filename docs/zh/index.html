@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>awesome-ai-api — AI API 中转站公开排行榜（Claude / GPT / Gemini / DeepSeek）</title>
+  <meta name="description" content="全球最大的开源双语（中文 / EN）AI API 中转站排行榜。每日探测 /v1/models 端点。引擎指纹、30 天在线率、结构化黑名单。覆盖国内中转站生态。">
+  <meta name="keywords" content="AI API 中转站, OpenAI 兼容, Claude 中转, GPT 中转, Gemini 中转, DeepSeek, Qwen, Claude Code 中转, OpenRouter, One API, New API, AI API 评测, 中转 API 排行, ChatGPT 国内 API">
+  <meta name="author" content="Mack Ding">
+
+  <link rel="canonical" href="https://mackding.github.io/awesome-ai-api/zh/">
+  <link rel="alternate" hreflang="en" href="https://mackding.github.io/awesome-ai-api/">
+  <link rel="alternate" hreflang="zh-CN" href="https://mackding.github.io/awesome-ai-api/zh/">
+  <link rel="alternate" type="application/rss+xml" title="awesome-ai-api 更新" href="../feed.xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="awesome-ai-api — AI API 中转站排行榜">
+  <meta property="og:description" content="每日探测 /v1/models。引擎指纹、30 天在线率。MIT 开源，双语，无付费排名。">
+  <meta property="og:url" content="https://mackding.github.io/awesome-ai-api/zh/">
+  <meta property="og:image" content="https://mackding.github.io/awesome-ai-api/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "什么是 AI API 中转站？",
+        "acceptedAnswer": { "@type": "Answer", "text": "第三方服务，通过统一的 OpenAI 兼容 HTTP 接口转发 Claude、GPT、Gemini、DeepSeek、Qwen 等前沿大模型。大多数在官方供应商前面做代理，通常价格更低、支持微信/支付宝。" }
+      },
+      { "@type": "Question", "name": "最靠谱的 AI API 中转站是哪个？",
+        "acceptedAnswer": { "@type": "Answer", "text": "没有唯一答案。国际一站式首选 OpenRouter；Claude Code 国内首选 PackyAPI；企业开票选柏拉图 AI 或云雾 API；想长期低成本建议自建 One API / New API。" }
+      },
+      { "@type": "Question", "name": "有免费赠额度的中转站吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "有。AnyRouter 和发现 AI 注册即送试用额度，无需绑卡。" }
+      },
+      { "@type": "Question", "name": "中转站可以大额充值吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "不建议。高分只说明当下可达、有真 API、近 30 天稳定——不代表明天不跑路。永远先小额（≤ ¥10）试用，验证模型质量后再加码。" }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root { color-scheme: light dark; --fg:#111; --bg:#fafafa; --accent:#0366d6; --muted:#666; }
+    @media (prefers-color-scheme: dark) { :root { --fg:#eee; --bg:#0d1117; --accent:#58a6ff; --muted:#8b949e; } }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; color:var(--fg); background:var(--bg); margin:0; padding:2rem 1.5rem; }
+    main { max-width: 880px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+    h2 { margin-top: 2.5rem; border-bottom: 1px solid #8886; padding-bottom: 0.3rem; }
+    a { color: var(--accent); }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+    th, td { padding: 0.4rem 0.6rem; text-align: left; border-bottom: 1px solid #8883; }
+    .hero { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem; }
+    .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 0.8rem; font-size: 0.8rem; background: #0366d622; color: var(--accent); }
+    .muted { color: var(--muted); }
+    .stat { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 2rem 0; }
+    .card { padding: 1rem; border-radius: 0.6rem; background: #8881; }
+    code { background: #8882; padding: 0.15rem 0.35rem; border-radius: 0.3rem; }
+    footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid #8883; color: var(--muted); font-size: 0.85rem; }
+    .lang-switch { position: fixed; top: 1rem; right: 1rem; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch"><a href="../">English</a> · <a href="https://github.com/MackDing/awesome-ai-api">GitHub ⭐</a></div>
+  <main>
+    <div class="hero">
+      <h1>awesome-ai-api</h1>
+      <span class="badge" id="updated-badge">每日更新</span>
+    </div>
+    <p>全球最大的开源双语 <strong>AI API 中转站排行榜</strong>。每天自动探测每个站点的 <code>/v1/models</code> 接口——不看"首页 200 OK"掺水。</p>
+
+    <div class="stats">
+      <div class="card"><div class="stat" id="s-total">—</div><div class="muted">收录中转站</div></div>
+      <div class="card"><div class="stat" id="s-api">—</div><div class="muted">已验证 API 接口</div></div>
+      <div class="card"><div class="stat" id="s-engines">—</div><div class="muted">识别出的开源引擎</div></div>
+      <div class="card"><div class="stat" id="s-updated">—</div><div class="muted">最近更新（SGT）</div></div>
+    </div>
+
+    <h2>🏆 Top 20 排行榜</h2>
+    <table>
+      <thead><tr><th>#</th><th>中转站</th><th>地区</th><th>API</th><th>模型</th><th>评分</th></tr></thead>
+      <tbody id="leaderboard-body"><tr><td colspan="6" class="muted">加载中…</td></tr></tbody>
+    </table>
+    <p class="muted">完整榜单：<a href="https://github.com/MackDing/awesome-ai-api/blob/master/data/_leaderboard.zh.md">data/_leaderboard.zh.md</a> · 原始数据：<a href="../gateways.json">gateways.json</a></p>
+
+    <h2>为什么要做这个</h2>
+    <ul>
+      <li><strong>OpenRouter /models</strong> 只列入自家路由图的站点</li>
+      <li><strong>helpaio.com</strong> 只有人写评测，无机器验证数据</li>
+      <li><strong>apicompare.best</strong> 比价格，不比真实性和存活</li>
+      <li><em>我们三件事都做</em>，并且覆盖国外榜单都忽略的国内中转站生态</li>
+    </ul>
+
+    <footer>
+      <p>由 <a href="https://github.com/MackDing">Mack Ding</a> 构建 · MIT 协议 · 无广告无付费排名 · 数据 CC0</p>
+    </footer>
+  </main>
+
+  <script>
+    (async () => {
+      try {
+        const r = await fetch("../gateways.json", { cache: "no-cache" });
+        const data = await r.json();
+        const gw = data.gateways || [];
+        document.getElementById("s-total").textContent = data.total ?? gw.length;
+        document.getElementById("s-api").textContent = gw.filter(g => g.has_api).length;
+        const engines = new Set(gw.map(g => g.engine).filter(Boolean));
+        document.getElementById("s-engines").textContent = engines.size;
+        document.getElementById("s-updated").textContent = (data.updated_at || data.updated || "—").slice(0, 16);
+        document.getElementById("updated-badge").textContent = "更新于 " + (data.updated || "—");
+        const body = document.getElementById("leaderboard-body");
+        body.innerHTML = "";
+        gw.slice(0, 20).forEach((g, i) => {
+          const tr = document.createElement("tr");
+          const medal = {0:"🥇",1:"🥈",2:"🥉"}[i] || (i+1);
+          const api = g.has_api ? "🔌" : "·";
+          const mc = g.real_models_count ? `<b>${g.real_models_count}</b>` : (g.models_signaled || []).slice(0, 3).join(", ");
+          tr.innerHTML = `<td>${medal}</td><td><a href="${g.url}" rel="noopener">${g.name}</a></td><td>${g.region||"—"}</td><td>${api}</td><td>${mc}</td><td>${g.score}</td>`;
+          body.appendChild(tr);
+        });
+      } catch (e) { console.error(e); }
+    })();
+  </script>
+</body>
+</html>

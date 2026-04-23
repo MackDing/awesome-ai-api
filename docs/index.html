@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>awesome-ai-api — Open Leaderboard of 200+ AI API Gateways (Claude, GPT, Gemini, DeepSeek)</title>
+  <meta name="description" content="The largest open-source, bilingual (EN/中文) leaderboard of AI API gateways and relays. Daily /v1/models probe. Engine fingerprint. 30-day uptime. Covers the Chinese 中转站 ecosystem Western trackers miss.">
+  <meta name="keywords" content="AI API gateway, AI API relay, OpenAI compatible, Claude API, GPT API, Gemini API, DeepSeek, Qwen, Claude Code, OpenRouter, One API, New API, Dify, LiteLLM, 中转站, AI API 评测, ChatGPT China">
+  <meta name="author" content="Mack Ding">
+
+  <link rel="canonical" href="https://mackding.github.io/awesome-ai-api/">
+  <link rel="alternate" hreflang="en" href="https://mackding.github.io/awesome-ai-api/">
+  <link rel="alternate" hreflang="zh-CN" href="https://mackding.github.io/awesome-ai-api/zh/">
+  <link rel="alternate" type="application/rss+xml" title="awesome-ai-api changelog" href="./feed.xml">
+  <link rel="alternate" type="application/json" title="awesome-ai-api leaderboard JSON" href="./gateways.json">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="awesome-ai-api">
+  <meta property="og:title" content="The open leaderboard of 200+ AI API gateways">
+  <meta property="og:description" content="Daily /v1/models probe. Engine fingerprint. 30-day uptime. MIT, bilingual, transparent.">
+  <meta property="og:url" content="https://mackding.github.io/awesome-ai-api/">
+  <meta property="og:image" content="https://mackding.github.io/awesome-ai-api/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="awesome-ai-api — 200+ AI gateways, probed daily">
+  <meta name="twitter:description" content="Open leaderboard of AI API gateways. Daily /v1/models probe. Engine fingerprint. 30-day uptime.">
+  <meta name="twitter:image" content="https://mackding.github.io/awesome-ai-api/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "awesome-ai-api gateway leaderboard",
+    "description": "Daily-refreshed open dataset of AI API gateways and relays, including reachability, confirmed /v1/models endpoint, engine fingerprint, 30-day uptime, and a structured blacklist.",
+    "url": "https://mackding.github.io/awesome-ai-api/",
+    "sameAs": "https://github.com/MackDing/awesome-ai-api",
+    "license": "https://opensource.org/licenses/MIT",
+    "keywords": ["AI API gateway", "LLM relay", "OpenAI-compatible", "中转站", "Claude", "GPT", "Gemini", "DeepSeek"],
+    "creator": { "@type": "Person", "name": "Mack Ding", "url": "https://github.com/MackDing" },
+    "distribution": [
+      { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://raw.githubusercontent.com/MackDing/awesome-ai-api/master/data/gateways.json" },
+      { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://raw.githubusercontent.com/MackDing/awesome-ai-api/master/data/gateways.csv" }
+    ],
+    "temporalCoverage": "2026-04/..",
+    "spatialCoverage": "Global",
+    "version": "daily"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is an AI API gateway (中转站)?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A third-party service that exposes Claude, GPT, Gemini, DeepSeek, Qwen and other LLMs through a single OpenAI-compatible HTTP API. Most resell capacity from the official providers, often at discounted prices and with friendlier payment options (WeChat/Alipay)." }
+      },
+      { "@type": "Question", "name": "How does awesome-ai-api validate a gateway?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Every gateway is probed daily. We HTTP GET /v1/models and /api/v1/models. A 200 with a JSON models list, or a 401/403 with an auth-hint, counts as a real API. Anything else is flagged." }
+      },
+      { "@type": "Question", "name": "What is the best AI API gateway?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There is no single best. OpenRouter leads for global one-API-for-all use. PackyAPI is the strongest Claude Code gateway in China. 柏拉图AI and 云雾API are reliable enterprise choices. Self-hosting One API or New API is the cheapest long-term path." }
+      },
+      { "@type": "Question", "name": "Can I trust high-ranked gateways with large payments?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A high score only means the gateway is currently reachable, has a real API, and has been stable for 30 days — not that it is solvent or will still be online next month. Always top up small first." }
+      },
+      { "@type": "Question", "name": "Is there a free AI API gateway with trial credit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. AnyRouter and 发现AI give free trial credit on signup with no card required." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root { color-scheme: light dark; --fg:#111; --bg:#fafafa; --accent:#0366d6; --muted:#666; }
+    @media (prefers-color-scheme: dark) { :root { --fg:#eee; --bg:#0d1117; --accent:#58a6ff; --muted:#8b949e; } }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", sans-serif; color:var(--fg); background:var(--bg); margin:0; padding:2rem 1.5rem; }
+    main { max-width: 880px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+    h2 { margin-top: 2.5rem; border-bottom: 1px solid #8886; padding-bottom: 0.3rem; }
+    a { color: var(--accent); }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+    th, td { padding: 0.4rem 0.6rem; text-align: left; border-bottom: 1px solid #8883; }
+    th { background: #8881; }
+    .hero { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem; }
+    .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 0.8rem; font-size: 0.8rem; background: #0366d622; color: var(--accent); }
+    .muted { color: var(--muted); }
+    .stat { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 2rem 0; }
+    .card { padding: 1rem; border-radius: 0.6rem; background: #8881; }
+    code { background: #8882; padding: 0.15rem 0.35rem; border-radius: 0.3rem; font-size: 0.9em; }
+    footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid #8883; color: var(--muted); font-size: 0.85rem; }
+    .lang-switch { position: fixed; top: 1rem; right: 1rem; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch"><a href="./zh/">中文</a> · <a href="https://github.com/MackDing/awesome-ai-api">GitHub ⭐</a></div>
+  <main>
+    <div class="hero">
+      <h1>awesome-ai-api</h1>
+      <span class="badge" id="updated-badge">updated daily</span>
+    </div>
+    <p>The largest open-source, bilingual leaderboard of <strong>AI API gateways &amp; relays</strong>. Every gateway is probed daily against its <code>/v1/models</code> endpoint — no "200 OK on the homepage" inflation.</p>
+
+    <div class="stats">
+      <div class="card"><div class="stat" id="s-total">—</div><div class="muted">Gateways tracked</div></div>
+      <div class="card"><div class="stat" id="s-api">—</div><div class="muted">Confirmed /v1/models</div></div>
+      <div class="card"><div class="stat" id="s-engines">—</div><div class="muted">OSS engines identified</div></div>
+      <div class="card"><div class="stat" id="s-updated">—</div><div class="muted">Last refresh (SGT)</div></div>
+    </div>
+
+    <h2 id="leaderboard">🏆 Top 20 Gateways</h2>
+    <table>
+      <thead><tr><th>#</th><th>Gateway</th><th>Region</th><th>API</th><th>Models</th><th>Score</th></tr></thead>
+      <tbody id="leaderboard-body"><tr><td colspan="6" class="muted">Loading…</td></tr></tbody>
+    </table>
+    <p class="muted">Full list: <a href="https://github.com/MackDing/awesome-ai-api/blob/master/data/_leaderboard.md">data/_leaderboard.md</a> · Raw: <a href="./gateways.json">gateways.json</a> · CSV: <a href="./gateways.csv">gateways.csv</a></p>
+
+    <h2 id="why">Why this exists</h2>
+    <ul>
+      <li><strong>OpenRouter /models</strong> only lists gateways inside OpenRouter's own graph.</li>
+      <li><strong>helpaio.com</strong> publishes human reviews, no machine-verified data.</li>
+      <li><strong>apicompare.best</strong> compares prices but not authenticity or survival.</li>
+      <li><em>We do all three</em>, and we cover the Chinese 中转站 ecosystem that Western trackers miss.</li>
+    </ul>
+
+    <h2 id="methodology">Methodology (TL;DR)</h2>
+    <ol>
+      <li>Fetch each URL with a public bot UA.</li>
+      <li>Classify against a bilingual relay-keyword lexicon.</li>
+      <li>Probe <code>/v1/models</code> and <code>/api/v1/models</code>. A JSON models list, or 401/403 with auth hints, = real API.</li>
+      <li>Fingerprint the OSS engine (<code>new-api</code>, <code>one-api</code>, <code>dify</code>, <code>litellm</code>, <code>openrouter</code>, …).</li>
+      <li>Score = reachability + API confirmation + model count + uptime − latency penalty.</li>
+    </ol>
+    <p>Full pipeline: <a href="https://github.com/MackDing/awesome-ai-api/blob/master/reviews/methodology.md">methodology.md</a></p>
+
+    <h2 id="downloads">Downloads &amp; integrations</h2>
+    <ul>
+      <li><a href="./gateways.json">gateways.json</a> — current leaderboard</li>
+      <li><a href="./gateways.csv">gateways.csv</a> — spreadsheet import</li>
+      <li><a href="./feed.xml">feed.xml</a> — RSS of leaderboard updates</li>
+      <li><a href="./llms-full.txt">llms-full.txt</a> — LLM-friendly full dump</li>
+      <li><a href="https://github.com/MackDing/awesome-ai-api/tree/master/data/history">history snapshots</a> — daily Git-tracked</li>
+    </ul>
+
+    <footer>
+      <p>Built by <a href="https://github.com/MackDing">Mack Ding</a>. MIT-licensed. No ads, no paid placement. Data is CC0.</p>
+      <p>Generated from <a href="https://github.com/MackDing/awesome-ai-api">the GitHub repo</a>.</p>
+    </footer>
+  </main>
+
+  <script>
+    (async () => {
+      try {
+        const r = await fetch("./gateways.json", { cache: "no-cache" });
+        const data = await r.json();
+        const gw = data.gateways || [];
+        document.getElementById("s-total").textContent = data.total ?? gw.length;
+        document.getElementById("s-api").textContent = gw.filter(g => g.has_api).length;
+        const engines = new Set(gw.map(g => g.engine).filter(Boolean));
+        document.getElementById("s-engines").textContent = engines.size;
+        document.getElementById("s-updated").textContent = (data.updated_at || data.updated || "—").slice(0, 16);
+        document.getElementById("updated-badge").textContent = "updated " + (data.updated || "—");
+        const body = document.getElementById("leaderboard-body");
+        body.innerHTML = "";
+        gw.slice(0, 20).forEach((g, i) => {
+          const tr = document.createElement("tr");
+          const medal = {0:"🥇",1:"🥈",2:"🥉"}[i] || (i+1);
+          const api = g.has_api ? "🔌" : "·";
+          const mc = g.real_models_count ? `<b>${g.real_models_count}</b>` : (g.models_signaled || []).slice(0, 3).join(", ");
+          tr.innerHTML = `<td>${medal}</td><td><a href="${g.url}" rel="noopener">${g.name}</a></td><td>${g.region||"—"}</td><td>${api}</td><td>${mc}</td><td>${g.score}</td>`;
+          body.appendChild(tr);
+        });
+      } catch (e) { console.error(e); }
+    })();
+  </script>
+</body>
+</html>

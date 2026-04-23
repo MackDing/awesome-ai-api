@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <text x="100" y="180" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="76" font-weight="800" fill="url(#accent)">awesome-ai-api</text>
+  <text x="100" y="240" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#d1d5db">The open leaderboard of 200+ AI API gateways</text>
+
+  <g transform="translate(100, 300)">
+    <rect width="220" height="100" rx="12" fill="#161b22" stroke="#30363d"/>
+    <text x="110" y="50" font-family="system-ui, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#58a6ff">200+</text>
+    <text x="110" y="82" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle" fill="#8b949e">Gateways tracked</text>
+  </g>
+  <g transform="translate(340, 300)">
+    <rect width="220" height="100" rx="12" fill="#161b22" stroke="#30363d"/>
+    <text x="110" y="50" font-family="system-ui, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#3fb950">100+</text>
+    <text x="110" y="82" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle" fill="#8b949e">API verified 🔌</text>
+  </g>
+  <g transform="translate(580, 300)">
+    <rect width="220" height="100" rx="12" fill="#161b22" stroke="#30363d"/>
+    <text x="110" y="50" font-family="system-ui, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#a78bfa">daily</text>
+    <text x="110" y="82" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle" fill="#8b949e">/v1/models probe</text>
+  </g>
+  <g transform="translate(820, 300)">
+    <rect width="220" height="100" rx="12" fill="#161b22" stroke="#30363d"/>
+    <text x="110" y="50" font-family="system-ui, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#f0883e">EN·中文</text>
+    <text x="110" y="82" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle" fill="#8b949e">Bilingual · MIT</text>
+  </g>
+
+  <text x="100" y="480" font-family="system-ui, sans-serif" font-size="22" fill="#8b949e">Claude · GPT · Gemini · DeepSeek · Qwen · Grok</text>
+  <text x="100" y="510" font-family="system-ui, sans-serif" font-size="20" fill="#6e7681">github.com/MackDing/awesome-ai-api</text>
+</svg>
