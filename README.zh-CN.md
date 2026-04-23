@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <b>🇨🇳 中文</b> · <a href="./README.md">English</a>
+  <b>🇨🇳 中文</b> · <a href="./README.md">English</a> · <a href="https://mackding.github.io/awesome-ai-api/zh/">🌐 在线页面</a>
 </p>
 
 ---
