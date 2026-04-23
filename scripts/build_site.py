@@ -195,11 +195,11 @@ def build_stats():
             continue
         html = html_path.read_text(encoding="utf-8")
 
-        # Inject the 4 stat numbers
-        html = html.replace('id="s-total">—<', f'id="s-total">{total}<')
-        html = html.replace('id="s-api">—<', f'id="s-api">{api_n}<')
-        html = html.replace('id="s-engines">—<', f'id="s-engines">{engines}<')
-        html = html.replace('id="s-updated">—<', f'id="s-updated">{updated}<')
+        # Inject the 4 stat numbers (idempotent: matches any prior value, not just em-dash)
+        html = re.sub(r'(id="s-total">)[^<]*(<)',    lambda m: f'{m.group(1)}{total}{m.group(2)}',   html)
+        html = re.sub(r'(id="s-api">)[^<]*(<)',      lambda m: f'{m.group(1)}{api_n}{m.group(2)}',   html)
+        html = re.sub(r'(id="s-engines">)[^<]*(<)',  lambda m: f'{m.group(1)}{engines}{m.group(2)}', html)
+        html = re.sub(r'(id="s-updated">)[^<]*(<)',  lambda m: f'{m.group(1)}{updated}{m.group(2)}', html)
 
         # Inject the updated badge text
         html = re.sub(
