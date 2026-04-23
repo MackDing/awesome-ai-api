@@ -69,6 +69,7 @@
 ## 目录
 
 - [🏆 完整排行榜](#-完整排行榜)
+- [❓ 常见问题](#-常见问题)
 - [📊 分类](#-分类)
 - [📝 评测](#-评测)
 - [⚠️ 黑名单](#️-黑名单)
@@ -154,6 +155,60 @@ _Last updated: 2026-04-22 22:51 (SGT)_
 </details>
 
 > 📌 **想上榜?** 用[中转站模板](./gateways/_template.md)提交 PR,符合[收录标准](./CONTRIBUTING.md#收录标准)即可收录。
+
+---
+
+## ❓ 常见问题
+
+<details>
+<summary><b>什么是“AI API 中转站”？</b></summary>
+
+第三方服务，通过**统一的 OpenAI 兼容 HTTP 接口**转发 Claude、GPT、Gemini、DeepSeek、Qwen 等前沿大模型。大多数在官方供应商前面做代理，通常价格更低、支持微信／支付宝、附带限流池或日志等功能。
+</details>
+
+<details>
+<summary><b>和 OpenRouter 官方列表／helpaio／apicompare 有什么不同？</b></summary>
+
+- **OpenRouter** 只列接入自家路由图的站点；我们列全球所有能找到的中转站，包括国内几十个小站。
+- **helpaio.com** 是人工评测博客；我们同时提供**机器验证数据**（实时 `/v1/models` 探测、引擎指纹、在线率）。
+- **apicompare.best** 比价；我们优先比的是**可达性、真实性、稳定性**——再便宜没直播一跑路也白搭。
+</details>
+
+<details>
+<summary><b>榜单分数怎么算的？</b></summary>
+
+综合：可达性（HTTP 2xx）、`/v1/models` 接口确认、真实模型数量、首页模型关键词密度、响应时间、3 十天在线率。公式写在 [`scripts/generate_leaderboard.py`](./scripts/generate_leaderboard.py)——无黑盒。
+</details>
+
+<details>
+<summary><b>这是收费目录吗？有人付费买排名吗？</b></summary>
+
+**没有。** 零付费位。收录靠自动发现 + 社区 PR。仓库 MIT 开源，无广告。觉得有用欢迎[赞助](#-赞助本项目)。
+</details>
+
+<details>
+<summary><b>靠谱的榜首可以大额充值吗？</b></summary>
+
+**不行。** 这个行业每周都有跑路。高分只意味着**当下**能打通、有真 API、最近 30 天稳定——不代表明天不跑。始终先小额充值（≤ ¥10）、验证模型质量、分批加码。
+</details>
+
+<details>
+<summary><b>被某个中转站骗了，怎么举报？</b></summary>
+
+到 [GitHub Discussions](https://github.com/MackDing/awesome-ai-api/discussions) 的 `Reports` 分类发帖，附公开证据（截图、交易 ID、群组链接）。2 条独立举报 + 14 天答辩窗口 = 该站入 [`data/blacklist.json`](./data/blacklist.json)。
+</details>
+
+<details>
+<summary><b>怎么添加我自己的中转站？</b></summary>
+
+将 URL 加到 [`data/candidates.txt`](./data/candidates.txt)，选填：在 [`data/sites.yaml`](./data/sites.yaml) 里写人工校对的 `name` / `region` / `verdict`。提 PR，每日 cron 会自动收录。
+</details>
+
+<details>
+<summary><b>支持非 OpenAI 兼容的 API吗（原生 Anthropic／Gemini）？</b></summary>
+
+我们以 `/v1/models` 为探测默认——这是行业通语。如果某站只暴露原生 Anthropic 或 Gemini 接口，可以在 `data/sites.yaml` 里写 `verdict: likely_relay` 覆盖，并在 `note` 里标明协议。
+</details>
 
 ---
 

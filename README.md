@@ -69,6 +69,7 @@ This repo is free, ad-free, and has no paid placement. If the leaderboard saved 
 ## Table of Contents
 
 - [🏆 Full Leaderboard](#-full-leaderboard)
+- [❓ FAQ](#-faq)
 - [📊 Categories](#-categories)
 - [📝 Reviews](#-reviews)
 - [⚠️ Blacklist](#️-blacklist)
@@ -154,6 +155,60 @@ _Last updated: 2026-04-22 22:51 (SGT)_
 </details>
 
 > 📌 **Want your gateway listed?** Open a PR with a filled [gateway template](./gateways/_template.md). We accept any provider that meets our [listing criteria](./CONTRIBUTING.md#listing-criteria).
+
+---
+
+## ❓ FAQ
+
+<details>
+<summary><b>What exactly is an "AI API gateway" or "中转站"?</b></summary>
+
+A third-party service that exposes Claude, GPT, Gemini, DeepSeek, Qwen, and other frontier LLMs through a **single OpenAI-compatible HTTP API**. Most of them sit in front of the official providers and resell capacity, often at discounted prices, with friendlier payment options (WeChat/Alipay), or with extra features (rate-limit pooling, routing, logging, invoices).
+</details>
+
+<details>
+<summary><b>How is this different from OpenRouter's /models page, helpaio.com, or apicompare.best?</b></summary>
+
+- **OpenRouter** only lists gateways running inside OpenRouter's own routing graph. We list **every relay we can find**, including the dozens of small CN players.
+- **helpaio.com** is a blog with human-written reviews. We publish **machine-verified data** (live `/v1/models` probes, engine fingerprints, uptime) alongside reviews.
+- **apicompare.best** compares prices. We compare **reachability, authenticity, and stability** — cheaper doesn't help if the gateway disappears next week.
+</details>
+
+<details>
+<summary><b>How do you decide the leaderboard score?</b></summary>
+
+We combine: reachability (HTTP 2xx), confirmed `/v1/models` endpoint, real-model count, model-keyword density on the landing page, latency, and 30-day uptime from our daily snapshots. The formula lives in [`scripts/generate_leaderboard.py`](./scripts/generate_leaderboard.py) — no black box.
+</details>
+
+<details>
+<summary><b>Is this a paid directory? Who pays you to be listed?</b></summary>
+
+**No one.** There is zero paid placement. Listings are either auto-discovered or PR'd by the community. The repo is MIT-licensed and ad-free. If the leaderboard helped you, consider [supporting the project](#-support-this-project).
+</details>
+
+<details>
+<summary><b>Can I trust the top-ranked gateways with large amounts of money?</b></summary>
+
+**No.** This industry sees weekly rug-pulls. A high score means a gateway is *currently* reachable, has a real API, and has been stable for 30 days — **not** that it is solvent or will still be online next month. Always top up small amounts first (≤ US$2), validate model quality, and scale slowly.
+</details>
+
+<details>
+<summary><b>I got scammed by a gateway. How do I report it?</b></summary>
+
+Open a [GitHub Discussion](https://github.com/MackDing/awesome-ai-api/discussions) under the `Reports` category with public evidence (screenshots, transaction IDs, Telegram group links). Two independent reports + a 14-day operator response window = the gateway lands on [`data/blacklist.json`](./data/blacklist.json).
+</details>
+
+<details>
+<summary><b>How do I add my gateway?</b></summary>
+
+Add the URL to [`data/candidates.txt`](./data/candidates.txt), then (optionally) add a human-curated `name`, `region`, and `verdict` to [`data/sites.yaml`](./data/sites.yaml). Open a PR. The daily cron will pick it up.
+</details>
+
+<details>
+<summary><b>Do you support non-OpenAI-compatible APIs (raw Anthropic, raw Gemini)?</b></summary>
+
+We primarily probe `/v1/models` (OpenAI-compatible), because it's the lingua franca. Gateways that only expose raw Anthropic or Gemini endpoints can still be listed via `data/sites.yaml` with a `verdict: likely_relay` override and a `note` explaining the protocol.
+</details>
 
 ---
 
