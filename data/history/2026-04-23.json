@@ -1,7 +1,7 @@
 {
   "$schema": "./gateways.schema.json",
   "updated": "2026-04-23",
-  "updated_at": "2026-04-23 12:50 SGT",
+  "updated_at": "2026-04-23 21:57 SGT",
   "total": 201,
   "gateways": [
     {
@@ -182,7 +182,7 @@
     },
     {
       "slug": "api-v36-cm",
-      "name": "V-API",
+      "name": "api.v36.cm",
       "url": "https://api.v36.cm",
       "final_url": "https://api.v36.cm",
       "region": "cn",
@@ -302,7 +302,7 @@
     },
     {
       "slug": "api-vveai-com",
-      "name": "V-API",
+      "name": "api.vveai.com",
       "url": "https://api.vveai.com",
       "final_url": "https://api.vveai.com",
       "region": "cn",
@@ -420,7 +420,7 @@
     },
     {
       "slug": "api-v3-cm",
-      "name": "V-API",
+      "name": "api.v3.cm",
       "url": "https://api.v3.cm",
       "final_url": "https://api.v3.cm",
       "region": "cn",
@@ -499,7 +499,7 @@
     },
     {
       "slug": "api-gpt-ge",
-      "name": "V-API",
+      "name": "api.gpt.ge",
       "url": "https://api.gpt.ge",
       "final_url": "https://api.gpt.ge",
       "region": "cn",
@@ -1543,7 +1543,7 @@
     },
     {
       "slug": "api-bltcy-ai",
-      "name": "柏拉图AI_API中转站",
+      "name": "柏拉图AI_API中转站 (api.bltcy.ai)",
       "url": "https://api.bltcy.ai",
       "final_url": "https://api.bltcy.ai",
       "region": "cn",
@@ -1579,7 +1579,7 @@
     },
     {
       "slug": "api-bltcy-top",
-      "name": "柏拉图AI_API中转站",
+      "name": "柏拉图AI_API中转站 (api.bltcy.top)",
       "url": "https://api.bltcy.top",
       "final_url": "https://api.bltcy.top",
       "region": "cn",
@@ -2652,7 +2652,7 @@
     },
     {
       "slug": "api-oaipro-com",
-      "name": "Neo API",
+      "name": "Neo API (api.oaipro.com)",
       "url": "https://api.oaipro.com",
       "final_url": "https://api.oaipro.com",
       "region": "cn",
@@ -2993,7 +2993,7 @@
     },
     {
       "slug": "api-chatanywhere-org",
-      "name": "ChatAnywhere",
+      "name": "ChatAnywhere (api.chatanywhere.org)",
       "url": "https://api.chatanywhere.org",
       "final_url": "https://api.chatanywhere.org",
       "region": "global",
@@ -3153,7 +3153,7 @@
     },
     {
       "slug": "api-aabao-top",
-      "name": "404 Not Found",
+      "name": "404 Not Found (api.aabao.top)",
       "url": "https://api.aabao.top",
       "final_url": "https://api.aabao.top",
       "region": "global",
@@ -3249,7 +3249,7 @@
     },
     {
       "slug": "gptgod-cloud",
-      "name": "Shell API",
+      "name": "Shell API (gptgod.cloud)",
       "url": "https://gptgod.cloud",
       "final_url": "https://gptgod.cloud",
       "region": "cn",
@@ -3409,7 +3409,7 @@
     },
     {
       "slug": "api-pumpkinaigc-online",
-      "name": "Shell API",
+      "name": "Shell API (api.pumpkinaigc.online)",
       "url": "https://api.pumpkinaigc.online",
       "final_url": "https://api.pumpkinaigc.online",
       "region": "cn",
@@ -3473,7 +3473,7 @@
     },
     {
       "slug": "api-chatanywhere-tech",
-      "name": "ChatAnywhere",
+      "name": "ChatAnywhere (api.chatanywhere.tech)",
       "url": "https://api.chatanywhere.tech",
       "final_url": "https://api.chatanywhere.tech",
       "region": "global",
@@ -3944,7 +3944,7 @@
     },
     {
       "slug": "apimart-ai",
-      "name": "APIMart",
+      "name": "APIMart (apimart.ai)",
       "url": "https://apimart.ai",
       "final_url": "https://apimart.ai",
       "region": "global",
@@ -4397,7 +4397,7 @@
     },
     {
       "slug": "github-com-songquanpeng-one-api",
-      "name": "GitHub",
+      "name": "GitHub (songquanpeng/one-api)",
       "url": "https://github.com/songquanpeng/one-api",
       "final_url": "https://github.com/songquanpeng/one-api",
       "region": "cn",
@@ -4636,7 +4636,7 @@
     },
     {
       "slug": "github-com-quantumnous-new-api",
-      "name": "GitHub",
+      "name": "GitHub (QuantumNous/new-api)",
       "url": "https://github.com/QuantumNous/new-api",
       "final_url": "https://github.com/QuantumNous/new-api",
       "region": "global",
@@ -4672,7 +4672,7 @@
     },
     {
       "slug": "github-com-calcium-ion-new-api",
-      "name": "GitHub",
+      "name": "GitHub (Calcium-Ion/new-api)",
       "url": "https://github.com/Calcium-Ion/new-api",
       "final_url": "https://github.com/QuantumNous/new-api",
       "region": "global",
@@ -4875,7 +4875,7 @@
     },
     {
       "slug": "apicore-ai",
-      "name": "APIMart",
+      "name": "APIMart (apicore.ai)",
       "url": "https://www.apicore.ai",
       "final_url": "https://www.apicore.ai",
       "region": "cn",
@@ -5029,7 +5029,7 @@
     },
     {
       "slug": "github-com-helicone-helicone",
-      "name": "GitHub",
+      "name": "GitHub (helicone/helicone)",
       "url": "https://github.com/helicone/helicone",
       "final_url": "https://github.com/helicone/helicone",
       "region": "global",
@@ -5311,7 +5311,7 @@
     },
     {
       "slug": "github-com-1panel-dev-maxkb",
-      "name": "GitHub",
+      "name": "GitHub (1Panel-dev/MaxKB)",
       "url": "https://github.com/1Panel-dev/MaxKB",
       "final_url": "https://github.com/1Panel-dev/MaxKB",
       "region": "global",
@@ -5462,7 +5462,7 @@
     },
     {
       "slug": "github-com-berriai-litellm",
-      "name": "GitHub",
+      "name": "GitHub (berriai/litellm)",
       "url": "https://github.com/berriai/litellm",
       "final_url": "https://github.com/berriai/litellm",
       "region": "global",
@@ -5571,7 +5571,7 @@
     },
     {
       "slug": "github-com-voltagent-voltagent",
-      "name": "GitHub",
+      "name": "GitHub (VoltAgent/voltagent)",
       "url": "https://github.com/VoltAgent/voltagent",
       "final_url": "https://github.com/VoltAgent/voltagent",
       "region": "global",
@@ -5785,7 +5785,7 @@
     },
     {
       "slug": "github-com-labring-fastgpt",
-      "name": "GitHub",
+      "name": "GitHub (labring/FastGPT)",
       "url": "https://github.com/labring/FastGPT",
       "final_url": "https://github.com/labring/FastGPT",
       "region": "global",
@@ -5820,7 +5820,7 @@
     },
     {
       "slug": "github-com-langfuse-langfuse",
-      "name": "GitHub",
+      "name": "GitHub (langfuse/langfuse)",
       "url": "https://github.com/langfuse/langfuse",
       "final_url": "https://github.com/langfuse/langfuse",
       "region": "global",
@@ -5855,7 +5855,7 @@
     },
     {
       "slug": "github-com-langgenius-dify",
-      "name": "GitHub",
+      "name": "GitHub (langgenius/dify)",
       "url": "https://github.com/langgenius/dify",
       "final_url": "https://github.com/langgenius/dify",
       "region": "global",
@@ -5959,7 +5959,7 @@
     },
     {
       "slug": "oaipro-com",
-      "name": "Neo API",
+      "name": "Neo API (oaipro.com)",
       "url": "https://oaipro.com",
       "final_url": "https://api.oaipro.com/",
       "region": "cn",
@@ -6333,7 +6333,7 @@
     },
     {
       "slug": "github-com-portkey-ai-gateway",
-      "name": "GitHub",
+      "name": "GitHub (Portkey-Ai/gateway)",
       "url": "https://github.com/Portkey-Ai/gateway",
       "final_url": "https://github.com/Portkey-Ai/gateway",
       "region": "global",
@@ -6881,7 +6881,7 @@
     },
     {
       "slug": "octo-ai",
-      "name": "World Leader in Artificial Intelligence Computing",
+      "name": "World Leader in Artificial Intelligence Computing (octo.ai)",
       "url": "https://octo.ai",
       "final_url": "https://www.nvidia.com/en-us/#referrer=octoai/",
       "region": "global",
@@ -6945,7 +6945,7 @@
     },
     {
       "slug": "octoml-ai",
-      "name": "World Leader in Artificial Intelligence Computing",
+      "name": "World Leader in Artificial Intelligence Computing (octoml.ai)",
       "url": "https://octoml.ai",
       "final_url": "https://www.nvidia.com/en-us/#referrer=octoai/",
       "region": "global",
@@ -7009,7 +7009,7 @@
     },
     {
       "slug": "lingyaai-com",
-      "name": "404 Not Found",
+      "name": "404 Not Found (lingyaai.com)",
       "url": "https://lingyaai.com",
       "final_url": "https://lingyaai.com",
       "region": "global",

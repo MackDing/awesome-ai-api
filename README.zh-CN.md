@@ -89,7 +89,7 @@
 <summary><b>📊 点击展开完整榜单</b></summary>
 
 <!-- LEADERBOARD_ZH:BEGIN -->
-_Last updated: 2026-04-23 12:50 (SGT)_
+_Last updated: 2026-04-23 21:57 (SGT)_
 
 **合计 201 个中转站** · 🔌 **101 个已确认 `/v1/models` 端点** · 🟢 已验证 127 · 🟡 疑似 8 · 🧰 开源 7 · 🔍 待复核 59
 
@@ -101,15 +101,15 @@ _Last updated: 2026-04-23 12:50 (SGT)_
 | 🥈 | [AnyRouter](https://anyrouter.dev) | global | 🔌 | **25 models** | one-api | — | 9.7 | 1176 ms | 🟢 已验证 |
 | 🥉 | [PackyAPI (PackyCode)](https://www.packyapi.com) | cn | 🔌 | claude, gpt, gemini | — | wechat | 9.6 | 190 ms | 🟢 已验证 |
 | 4 | [ClaudeCN](https://claudecn.top) | cn | 🔌 | claude, gpt, gemini | — | card | 9.6 | 202 ms | 🟢 已验证 |
-| 5 | [V-API](https://api.v36.cm) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 133 ms | 🟢 已验证 |
+| 5 | [api.v36.cm](https://api.v36.cm) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 133 ms | 🟢 已验证 |
 | 6 | [OneToken](https://onetoken.one) | cn | 🔌 | claude, gpt, gemini | new-api | — | 9.5 | 140 ms | 🟢 已验证 |
 | 7 | [api.oneabc.org](https://api.oneabc.org) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 159 ms | 🟢 已验证 |
-| 8 | [V-API](https://api.vveai.com) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 160 ms | 🟢 已验证 |
+| 8 | [api.vveai.com](https://api.vveai.com) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 160 ms | 🟢 已验证 |
 | 9 | [Flow2API](https://flow2api.com) | cn | 🔌 | claude, gpt, gemini | new-api | — | 9.5 | 191 ms | 🟢 已验证 |
 | 10 | [apipro.maynor1024.live](https://apipro.maynor1024.live) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 200 ms | 🟢 已验证 |
-| 11 | [V-API](https://api.v3.cm) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 209 ms | 🟢 已验证 |
+| 11 | [api.v3.cm](https://api.v3.cm) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 209 ms | 🟢 已验证 |
 | 12 | [ePhone AI](https://api.ephone.ai) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 224 ms | 🟢 已验证 |
-| 13 | [V-API](https://api.gpt.ge) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 312 ms | 🟢 已验证 |
+| 13 | [api.gpt.ge](https://api.gpt.ge) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 312 ms | 🟢 已验证 |
 | 14 | [Yuegle API](https://api.yuegle.com) | cn | 🔌 | claude, gpt, gemini | — | — | 9.5 | 362 ms | 🟢 已验证 |
 | 15 | [Avian](https://avian.io) | global | 🔌 | **6 models** | — | — | 9.5 | 407 ms | 🟢 已验证 |
 | 16 | [毫秒API MJ gpt claude AI luma deepseek 中转 AI中转 chatgpt中转 claud](https://api.holdai.top) | cn | 🔌 | claude, gpt, chatgpt | — | — | 9.5 | 553 ms | 🟢 已验证 |
@@ -137,8 +137,8 @@ _Last updated: 2026-04-23 12:50 (SGT)_
 | 38 | [api-deerapi-com](https://api.deerapi.com) | cn | 🔌 | claude, gemini, openai | — | — | 9.3 | 262 ms | 🟢 已验证 |
 | 39 | [openclaudecode.cn](https://www.openclaudecode.cn) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.3 | 288 ms | 🟢 已验证 |
 | 40 | [Aiberm](https://aiberm.com) | global | 🔌 | claude, gemini, openai | — | — | 9.3 | 289 ms | 🟢 已验证 |
-| 41 | [柏拉图AI_API中转站](https://api.bltcy.ai) | cn | 🔌 | claude, gpt, openai | — | — | 9.3 | 289 ms | 🟢 已验证 |
-| 42 | [柏拉图AI_API中转站](https://api.bltcy.top) | cn | 🔌 | claude, gpt, openai | — | — | 9.3 | 315 ms | 🟢 已验证 |
+| 41 | [柏拉图AI_API中转站 (api.bltcy.ai)](https://api.bltcy.ai) | cn | 🔌 | claude, gpt, openai | — | — | 9.3 | 289 ms | 🟢 已验证 |
+| 42 | [柏拉图AI_API中转站 (api.bltcy.top)](https://api.bltcy.top) | cn | 🔌 | claude, gpt, openai | — | — | 9.3 | 315 ms | 🟢 已验证 |
 | 43 | [api.ikuncode.cc](https://api.ikuncode.cc) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.3 | 335 ms | 🟢 已验证 |
 | 44 | [apirouter.ai](https://apirouter.ai) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.3 | 383 ms | 🟢 已验证 |
 | 45 | [ggwk1.online](https://www.ggwk1.online) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.3 | 386 ms | 🟢 已验证 |

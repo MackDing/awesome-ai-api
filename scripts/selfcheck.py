@@ -158,6 +158,18 @@ def check_readme() -> None:
         ok(f"README top-30 shows {api_rows} 🔌 entries")
 
 
+def check_no_duplicate_names() -> None:
+    print("\n[8/8] no duplicate display names in gateways.json")
+    from collections import Counter
+    data = json.loads((DOCS / "gateways.json").read_text(encoding="utf-8"))
+    counts = Counter(g["name"] for g in data.get("gateways", []))
+    dupes = {n: c for n, c in counts.items() if c > 1}
+    if dupes:
+        fail(f"{len(dupes)} duplicate display name(s): {dict(list(dupes.items())[:5])}")
+    else:
+        ok(f"all {len(counts)} display names are unique")
+
+
 def main() -> int:
     print("🔎 awesome-ai-api self-check\n")
     data = check_json_mirror()
@@ -168,6 +180,7 @@ def main() -> int:
     check_feed()
     check_assets()
     check_readme()
+    check_no_duplicate_names()
 
     print("\n" + "=" * 50)
     if failures:

@@ -102,12 +102,26 @@ def build_entries(validated: list[dict[str, Any]], uptime: dict[str, dict] | Non
         # Reject obviously garbage titles (HTML entity left overs, extremely short, etc.)
         if "&" in name and ";" not in name:
             name = slug
-        # Generic titles ("New API", "首页", "one-api") are useless — prefer the domain slug.
-        generic = {"new api", "首页", "one-api", "主页", "one api", "home", "网站首页", "api", "api中转站", "new-api"}
+        # Generic titles are useless — prefer the domain slug.
+        generic = {
+            "new api", "new-api", "newapi", "首页", "主页", "网站首页",
+            "one-api", "one api", "oneapi",
+            "home", "api", "api中转站", "api中转",
+            "v-api", "vapi", "v api",           # new-api fork default
+            "chat", "dify", "lobe chat", "librechat",
+        }
         if name.strip().lower() in generic:
             from urllib.parse import urlparse as _urlparse
             host = _urlparse(url).netloc.removeprefix("www.")
-            name = host
+            # Special case: github repos — use owner/repo, not the host.
+            if host == "github.com":
+                parts = _urlparse(url).path.strip("/").split("/")
+                if len(parts) >= 2:
+                    name = f"{parts[0]}/{parts[1]}"
+                else:
+                    name = host
+            else:
+                name = host
         region = v.get("override_region") or region_of(v.get("title", ""), v.get("zh_keywords", []))
         up = uptime.get(url) or {}
         out.append(
@@ -146,6 +160,25 @@ def build_entries(validated: list[dict[str, Any]], uptime: dict[str, dict] | Non
         )
     # Sort by: has_api desc, score desc, latency asc, name
     out.sort(key=lambda x: (not x["has_api"], -x["score"], x["took_ms"] or 9999, x["name"].lower()))
+
+    # De-dup duplicate names by appending the domain in parens.
+    # This catches cases like 4 different sites all self-titled "V-API" or "New API"
+    # that slipped past the `generic` set above (e.g. "V-API Pro", "V-API 中转").
+    from collections import Counter
+    from urllib.parse import urlparse as _urlparse
+    name_counts = Counter(e["name"] for e in out)
+    for e in out:
+        if name_counts[e["name"]] > 1:
+            host = _urlparse(e["url"]).netloc.removeprefix("www.")
+            # For GitHub, use owner/repo for disambiguation (not the host,
+            # which is the same for every repo).
+            if host == "github.com":
+                parts = _urlparse(e["url"]).path.strip("/").split("/")
+                suffix = f"{parts[0]}/{parts[1]}" if len(parts) >= 2 else host
+            else:
+                suffix = host
+            e["name"] = f"{e['name']} ({suffix})"
+
     return out
 
 
