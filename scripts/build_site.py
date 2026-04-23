@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import shutil
 import sys
 from datetime import datetime, timedelta, timezone
@@ -149,11 +150,83 @@ def build_llms_full():
     print(f"[ok] llms-full.txt ({len(top)} entries)")
 
 
+def build_stats():
+    """Server-side render top stats + top 20 table into docs/index.html and zh/index.html.
+
+    This means crawlers (and in-app browsers that choke on JS) see real numbers,
+    and the site renders instantly without waiting on fetch().
+    """
+    data = json.loads((DOCS / "gateways.json").read_text(encoding="utf-8"))
+    gws = data.get("gateways", [])
+    total = data.get("total", len(gws))
+    api_n = sum(1 for g in gws if g.get("has_api"))
+    engines = len({g.get("engine") for g in gws if g.get("engine")})
+    updated = (data.get("updated_at") or data.get("updated") or "—")[:16]
+    updated_badge_en = f"updated {data.get('updated','—')}"
+    updated_badge_zh = f"更新于 {data.get('updated','—')}"
+
+    def row_html(g: dict, i: int, lang: str = "en") -> str:
+        medal = {0: "🥇", 1: "🥈", 2: "🥉"}.get(i, str(i + 1))
+        api = "🔌" if g.get("has_api") else "·"
+        region = g.get("region") or "—"
+        rc = g.get("real_models_count") or 0
+        if rc:
+            models_cell = f"<b>{rc}</b>"
+        else:
+            models_cell = ", ".join((g.get("models_signaled") or [])[:3]) or "—"
+        name = g.get("name", "?")
+        url = g.get("url", "#")
+        return (
+            f'<tr><td>{medal}</td>'
+            f'<td><a href="{url}" rel="noopener">{name}</a></td>'
+            f'<td>{region}</td><td>{api}</td><td>{models_cell}</td>'
+            f'<td>{g.get("score", "—")}</td></tr>'
+        )
+
+    top = gws[:20]
+    rows_en = "\n".join(row_html(g, i, "en") for i, g in enumerate(top))
+    rows_zh = rows_en  # same data, links/numbers are language-neutral
+
+    for html_path, rows, badge in (
+        (DOCS / "index.html", rows_en, updated_badge_en),
+        (DOCS / "zh" / "index.html", rows_zh, updated_badge_zh),
+    ):
+        if not html_path.exists():
+            continue
+        html = html_path.read_text(encoding="utf-8")
+
+        # Inject the 4 stat numbers
+        html = html.replace('id="s-total">—<', f'id="s-total">{total}<')
+        html = html.replace('id="s-api">—<', f'id="s-api">{api_n}<')
+        html = html.replace('id="s-engines">—<', f'id="s-engines">{engines}<')
+        html = html.replace('id="s-updated">—<', f'id="s-updated">{updated}<')
+
+        # Inject the updated badge text
+        html = re.sub(
+            r'(<span class="badge" id="updated-badge">)[^<]*(</span>)',
+            lambda m: m.group(1) + badge + m.group(2),
+            html,
+        )
+
+        # Inject the top-20 table body
+        html = re.sub(
+            r'<tbody id="leaderboard-body">.*?</tbody>',
+            f'<tbody id="leaderboard-body">{rows}</tbody>',
+            html,
+            flags=re.DOTALL,
+        )
+
+        html_path.write_text(html, encoding="utf-8")
+
+    print(f"[ok] SSR stats injected into index.html + zh/index.html (total={total}, api={api_n}, engines={engines})")
+
+
 def main() -> int:
     copy_gateways()
     build_csv()
     build_rss()
     build_llms_full()
+    build_stats()
     return 0
 
 
