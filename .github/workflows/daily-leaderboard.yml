@@ -38,6 +38,9 @@ jobs:
       - name: Build GitHub Pages site exports (CSV, RSS, llms-full)
         run: python scripts/build_site.py
 
+      - name: Self-check site consistency
+        run: python scripts/selfcheck.py
+
       - name: Commit & push changes
         run: |
           git config user.name  "awesome-ai-api-bot"
