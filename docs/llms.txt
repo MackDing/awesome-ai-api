@@ -12,23 +12,23 @@
 - [Scoring methodology](https://github.com/MackDing/awesome-ai-api/blob/master/reviews/methodology.md)
 
 ## Top 20 gateways (detailed pages)
-- [api.v36.cm](https://mackding.github.io/awesome-ai-api/g/api-v36-cm/) — score 9.9, API✓, engine unknown
+- [Avian](https://mackding.github.io/awesome-ai-api/g/avian-io/) — score 9.9, API✓, engine unknown
+- [OneToken](https://mackding.github.io/awesome-ai-api/g/onetoken-one/) — score 9.9, API✓, engine new-api
+- [老张API](https://mackding.github.io/awesome-ai-api/g/api-laozhang-ai/) — score 9.9, API✓, engine unknown
+- [apipro.maynor1024.live](https://mackding.github.io/awesome-ai-api/g/apipro-maynor1024-live/) — score 9.9, API✓, engine unknown
 - [api.vveai.com](https://mackding.github.io/awesome-ai-api/g/api-vveai-com/) — score 9.9, API✓, engine unknown
 - [ClaudeCN](https://mackding.github.io/awesome-ai-api/g/claudecn-top/) — score 9.9, API✓, engine unknown
-- [Flow2API](https://mackding.github.io/awesome-ai-api/g/flow2api-com/) — score 9.9, API✓, engine new-api
-- [OneToken](https://mackding.github.io/awesome-ai-api/g/onetoken-one/) — score 9.9, API✓, engine new-api
-- [api.v3.cm](https://mackding.github.io/awesome-ai-api/g/api-v3-cm/) — score 9.9, API✓, engine unknown
-- [PackyAPI (PackyCode)](https://mackding.github.io/awesome-ai-api/g/packyapi-com/) — score 9.9, API✓, engine unknown
-- [api.oneabc.org](https://mackding.github.io/awesome-ai-api/g/api-oneabc-org/) — score 9.9, API✓, engine unknown
-- [老张API](https://mackding.github.io/awesome-ai-api/g/api-laozhang-ai/) — score 9.9, API✓, engine unknown
-- [毫秒API MJ gpt claude AI luma deepseek 中转 AI中转 chatgpt中转 claud](https://mackding.github.io/awesome-ai-api/g/api-holdai-top/) — score 9.9, API✓, engine unknown
-- [ePhone AI](https://mackding.github.io/awesome-ai-api/g/api-ephone-ai/) — score 9.9, API✓, engine unknown
 - [api.gpt.ge](https://mackding.github.io/awesome-ai-api/g/api-gpt-ge/) — score 9.9, API✓, engine unknown
-- [TiMi CC](https://mackding.github.io/awesome-ai-api/g/timicc-com/) — score 9.9, API✓, engine unknown
+- [api.v36.cm](https://mackding.github.io/awesome-ai-api/g/api-v36-cm/) — score 9.9, API✓, engine unknown
+- [Flow2API](https://mackding.github.io/awesome-ai-api/g/flow2api-com/) — score 9.9, API✓, engine new-api
+- [ePhone AI](https://mackding.github.io/awesome-ai-api/g/api-ephone-ai/) — score 9.9, API✓, engine unknown
+- [api.oneabc.org](https://mackding.github.io/awesome-ai-api/g/api-oneabc-org/) — score 9.9, API✓, engine unknown
+- [api.v3.cm](https://mackding.github.io/awesome-ai-api/g/api-v3-cm/) — score 9.9, API✓, engine unknown
 - [AIHubMix](https://mackding.github.io/awesome-ai-api/g/aihubmix-com/) — score 9.9, API✓, engine openrouter
+- [TiMi CC](https://mackding.github.io/awesome-ai-api/g/timicc-com/) — score 9.9, API✓, engine unknown
+- [PackyAPI (PackyCode)](https://mackding.github.io/awesome-ai-api/g/packyapi-com/) — score 9.9, API✓, engine unknown
 - [api-gptgod-work](https://mackding.github.io/awesome-ai-api/g/api-gptgod-work/) — score 9.9, API✓, engine unknown
-- [Avian](https://mackding.github.io/awesome-ai-api/g/avian-io/) — score 9.9, API✓, engine unknown
 - [AnyRouter](https://mackding.github.io/awesome-ai-api/g/anyrouter-dev/) — score 9.9, API✓, engine unknown
 - [jeniya.cn](https://mackding.github.io/awesome-ai-api/g/jeniya-cn/) — score 9.9, API✓, engine unknown
-- [apipro.maynor1024.live](https://mackding.github.io/awesome-ai-api/g/apipro-maynor1024-live/) — score 9.9, API✓, engine unknown
+- [毫秒API MJ gpt claude AI luma deepseek 中转 AI中转 chatgpt中转 claud](https://mackding.github.io/awesome-ai-api/g/api-holdai-top/) — score 9.9, API✓, engine unknown
 - [便携AI聚合API](https://mackding.github.io/awesome-ai-api/g/api-bianxieai-com/) — score 9.9, API✓, engine new-api
