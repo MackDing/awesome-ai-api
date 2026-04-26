@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # for `gh workflow run pages.yml` (default GITHUB_TOKEN otherwise gets 403)
 
 jobs:
   refresh:
