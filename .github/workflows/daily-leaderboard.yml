@@ -59,7 +59,7 @@ jobs:
         if: success()
         run: |
           if ! git diff --cached --quiet 2>/dev/null || git log -1 --format=%s | grep -q "daily refresh"; then
-            gh workflow run pages.yml
+            gh workflow run pages.yml --repo "$GITHUB_REPOSITORY"
           fi
         env:
           GH_TOKEN: ${{ github.token }}
