@@ -1,6 +1,6 @@
 # Blacklist | 黑名单
 
-_Last updated: 2026-04-30 (SGT) · auto-generated from [blacklist.json](./blacklist.json)_
+_Last updated: 2026-05-01 (SGT) · auto-generated from [blacklist.json](./blacklist.json)_
 
 Gateways flagged for **serious**, **verified** issues. Listing here requires multiple independent reports and public evidence.
 
