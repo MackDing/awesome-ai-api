@@ -94,6 +94,7 @@ https://api.ekan8.com
 # ============ Batch 3: From search & aggregator sites ============
 https://anyrouter.top
 https://anyrouter.dev
+https://ai-router.dev
 https://88code.ai
 https://duckcoding.com
 https://www.closeai-asia.com

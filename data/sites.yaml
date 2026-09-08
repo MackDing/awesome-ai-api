@@ -14,6 +14,11 @@ apimart.ai:
   name: "APIMart"
   region: "global"
 
+ai-router.dev:
+  name: "AI-ROUTER"
+  region: "global"
+  note: "Operator self-submission; independent ChatGPT and Claude relay with a public catalog and authenticated OpenAI-compatible endpoint."
+
 apid.aaife.cn:
   name: "AAIFE API"
   region: "cn"
