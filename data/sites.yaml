@@ -80,6 +80,12 @@ github.com/QuantumNous/new-api:
   region: "self-hosted"
   verdict: "open_source_tool"
 
+github.com/maximhq/bifrost:
+  name: "Bifrost (Maxim AI)"
+  region: "self-hosted"
+  verdict: "open_source_tool"
+  note: "Open-source Go AI gateway with a unified OpenAI-compatible API."
+
 packyapi.com:
   name: "PackyAPI (PackyCode)"
   region: "cn"

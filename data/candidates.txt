@@ -318,6 +318,7 @@ https://github.com/QuantumNous/new-api
 https://github.com/berriai/litellm
 https://github.com/Portkey-Ai/gateway
 https://github.com/helicone/helicone
+https://github.com/maximhq/bifrost
 https://github.com/langfuse/langfuse
 https://github.com/langgenius/dify
 https://github.com/VoltAgent/voltagent
