@@ -1,192 +1,196 @@
 rank,name,url,region,score,verdict,has_api,engine,http_status,latency_ms,real_models_count,models_signaled,payment,uptime_pct,streak_days,last_verified
-1,PackyAPI (PackyCode),https://www.packyapi.com,cn,9.9,likely_relay,Y,,200,142,0,claude|gpt|gemini|openai,wechat,96.7,0,2026-09-08
-2,Avian,https://avian.io,global,9.9,likely_relay,Y,,200,357,13,claude|gpt|anthropic|openai|deepseek|llama,,96.7,0,2026-09-08
-3,AIHubMix,https://aihubmix.com,global,9.9,likely_relay,Y,one-api,200,574,415,claude|gpt|gemini|chatgpt|openai|deepseek|qwen,,96.7,0,2026-09-08
-4,BUZZ,https://buzzai.cc,global,9.9,likely_relay,Y,one-api,200,682,0,claude|gpt|gemini|anthropic|openai|grok,card,96.7,0,2026-09-08
-5,呆呆兽中转站｜Claude、Codex、GLM、Kimi 折扣 API,https://www.ddshub.cc,cn,9.9,likely_relay,Y,,200,708,0,claude|gpt|anthropic|openai,alipay|wechat|card,96.7,0,2026-09-08
-6,APIMart (apimart.ai),https://apimart.ai,global,9.9,likely_relay,Y,one-api,200,1190,0,claude|gpt|gemini|anthropic|openai|qwen|grok,alipay|wechat|card|crypto,96.7,0,2026-09-08
-7,Featherless,https://featherless.ai,global,9.8,likely_relay,Y,one-api,200,171,0,gpt|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-08
-8,apipro.maynor1024.live,https://apipro.maynor1024.live,global,9.8,likely_relay,Y,,200,176,0,claude|gpt|gemini|chatgpt|openai,,96.7,0,2026-09-08
-9,ePhone AI,https://api.ephone.ai,cn,9.8,likely_relay,Y,,200,215,0,claude|gpt|gemini|openai|deepseek,,96.7,0,2026-09-08
-10,api.vveai.com,https://api.vveai.com,cn,9.8,likely_relay,Y,,200,238,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-08
-11,api.gpt.ge,https://api.gpt.ge,cn,9.8,likely_relay,Y,,200,248,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-08
-12,api.v3.cm,https://api.v3.cm,cn,9.8,likely_relay,Y,,200,315,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-08
-13,TiMi CC,https://timicc.com,cn,9.8,likely_relay,Y,,200,422,0,gpt|openai|qwen,wechat|card,96.7,0,2026-09-08
-14,api.v36.cm,https://api.v36.cm,cn,9.8,likely_relay,Y,,200,472,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-08
-15,Doro AI,https://doro.lol,cn,9.8,likely_relay,Y,new-api,200,639,0,claude|gpt|gemini|chatgpt|anthropic,,96.7,0,2026-09-08
-16,便携AI聚合API,https://api.bianxieai.com,cn,9.8,likely_relay,Y,new-api,200,1444,0,claude|gemini|openai|deepseek|grok,,96.7,0,2026-09-08
-17,jeniya.cn,https://jeniya.cn,cn,9.8,likely_relay,Y,,200,1515,0,claude|gpt|chatgpt|openai|deepseek,,96.7,0,2026-09-08
-18,ggwk1.online,https://www.ggwk1.online,cn,9.7,likely_relay,Y,new-api,200,241,0,claude|gpt|gemini|openai,,96.7,0,2026-09-08
-19,api-gptgod-work,https://api.gptgod.work,global,9.7,likely_relay,Y,,200,842,319,,,96.7,0,2026-09-08
-20,ClaudeCN,https://claudecn.top,cn,9.7,likely_relay,Y,,200,878,0,claude|gpt|gemini|openai,,96.7,0,2026-09-08
-21,api.onechats.top,https://api.onechats.top,cn,9.6,likely_relay,Y,new-api,200,186,0,claude|gemini|openai,,96.7,0,2026-09-08
-22,new.yunai.link,https://new.yunai.link,cn,9.6,likely_relay,Y,,200,254,0,claude|gemini|openai,,96.7,0,2026-09-08
-23,onetoken.one,https://onetoken.one,cn,9.6,likely_relay,Y,new-api,200,279,0,claude|gemini|openai,,96.7,0,2026-09-08
-24,api-holdai-top,https://api.holdai.top,cn,9.6,likely_relay,Y,,200,315,0,claude|gemini|openai,,96.7,0,2026-09-08
-25,api.soruxgpt.com,https://api.soruxgpt.com,cn,9.6,likely_relay,Y,new-api,200,322,0,claude|gemini|openai,,96.7,0,2026-09-08
-26,Aiberm,https://aiberm.com,global,9.6,likely_relay,Y,,200,330,0,claude|gemini|openai,,96.7,0,2026-09-08
-27,api-deerapi-com,https://api.deerapi.com,cn,9.6,likely_relay,Y,,200,333,0,claude|gemini|openai,,96.7,0,2026-09-08
-28,api-chatfire-cn,https://api.chatfire.cn,cn,9.6,likely_relay,Y,,200,400,0,claude|gemini|openai,,96.7,0,2026-09-08
-29,api.cursorai.art,https://api.cursorai.art,global,9.6,likely_relay,Y,,200,657,0,claude|gpt|chatgpt,,96.7,0,2026-09-08
-30,柏拉图AI_API中转站 (api.bltcy.ai),https://api.bltcy.ai,cn,9.6,likely_relay,Y,,200,672,0,claude|gpt|openai,,96.7,0,2026-09-08
-31,DeerAPI (小鹿API),https://deerapi.com,cn,9.6,likely_relay,Y,,200,759,0,claude|gemini|openai,,96.7,0,2026-09-08
-32,api.aipaibox.com,https://api.aipaibox.com,cn,9.6,likely_relay,Y,new-api,200,851,0,claude|gemini|openai,,96.7,0,2026-09-08
-33,LingxiCode,https://new.050602.xyz,cn,9.6,likely_relay,Y,new-api,200,1238,0,claude|gemini|openai,,96.7,0,2026-09-08
-34,Yuegle API,https://api.yuegle.com,cn,9.5,likely_relay,Y,,200,305,0,claude|gpt|gemini|chatgpt|openai|deepseek|grok,,93.3,0,2026-09-08
-35,marting.pro,https://marting.pro,global,9.5,likely_relay,Y,,200,377,0,gpt|chatgpt,,96.7,0,2026-09-08
-36,comfly,https://ai.comfly.chat,global,9.5,likely_relay,Y,,200,1420,0,gpt|openai,,96.7,0,2026-09-08
-37,Tokencloud.ai,https://ai.tokencloud.ai,global,9.5,likely_relay,Y,,200,1921,0,,wechat,96.7,0,2026-09-08
-38,zen-ai.top,https://zen-ai.top,cn,9.4,likely_relay,Y,,200,146,0,openai,,96.7,0,2026-09-08
-39,API Management,https://sparkcode.top,cn,9.4,likely_relay,Y,,200,172,0,openai,,96.7,0,2026-09-08
-40,api.aikeji.vip,https://api.aikeji.vip,cn,9.4,likely_relay,Y,,200,191,0,openai,,96.7,0,2026-09-08
-41,LaoZhang API,https://api.laozhang.ai,global,9.4,likely_relay,Y,,200,242,0,gpt,,96.7,0,2026-09-08
-42,钱多多 API (api.ifopen.ai),https://api.ifopen.ai,cn,9.4,likely_relay,Y,new-api,200,266,0,openai,,96.7,0,2026-09-08
-43,GPTNB ONEAPI,https://oneapi.gptnb.ai,cn,9.4,likely_relay,Y,,200,349,0,gpt,,96.7,0,2026-09-08
-44,Unified API,https://unifiedapi.cloud,cn,9.4,likely_relay,Y,,200,715,0,openai,,96.7,0,2026-09-08
-45,AI302 Api (api.302ai.com),https://api.302ai.com,global,9.4,likely_relay,Y,,200,744,0,gpt,,96.7,0,2026-09-08
-46,api.nekoapi.com,https://api.nekoapi.com,global,9.3,likely_relay,Y,new-api,200,116,0,,,96.7,0,2026-09-08
-47,欢迎访问无限API,https://infai.cc,cn,9.3,likely_relay,Y,,200,194,0,,,96.7,0,2026-09-08
-48,chatapi.onechats.top,https://chatapi.onechats.top,global,9.3,likely_relay,Y,new-api,200,203,0,,,96.7,0,2026-09-08
-49,api.ikuncode.cc,https://api.ikuncode.cc,global,9.3,likely_relay,Y,new-api,200,208,0,,,96.7,0,2026-09-08
-50,zerocode.sbs,https://zerocode.sbs,global,9.3,likely_relay,Y,new-api,200,220,0,,,96.7,0,2026-09-08
-51,云雾 API (YunWu),https://yunwu.ai,cn,9.3,likely_relay,Y,,200,224,0,,,96.7,0,2026-09-08
-52,api-featherless-ai,https://api.featherless.ai,global,9.3,likely_relay,Y,,200,238,0,,,96.7,0,2026-09-08
-53,404 Not Found,https://api.aabao.top,global,9.3,likely_relay,Y,,200,245,0,,,96.7,0,2026-09-08
-54,api.dzzi.ai,https://api.dzzi.ai,global,9.3,likely_relay,Y,new-api,200,249,0,,,96.7,0,2026-09-08
-55,api-gptsapi-net,https://api.gptsapi.net,global,9.3,likely_relay,Y,,200,251,0,,,96.7,0,2026-09-08
-56,Loading...,https://co.yes.vg,global,9.3,likely_relay,Y,,200,255,0,,,96.7,0,2026-09-08
-57,api.gemai.cc,https://api.gemai.cc,global,9.3,likely_relay,Y,new-api,200,259,0,,,96.7,0,2026-09-08
-58,apirouter.ai,https://apirouter.ai,global,9.3,likely_relay,Y,new-api,200,263,0,,,96.7,0,2026-09-08
-59,KKSJ API,https://cnapi.kksj.org,global,9.3,likely_relay,Y,new-api,200,265,0,,,96.7,0,2026-09-08
-60,api.kissapi.ai,https://api.kissapi.ai,global,9.3,likely_relay,Y,new-api,200,271,0,,,96.7,0,2026-09-08
-61,aigcbest.top,https://aigcbest.top,global,9.3,likely_relay,Y,new-api,200,279,0,,,96.7,0,2026-09-08
-62,Ai实验室,https://www.openai-labs.com,cn,9.3,likely_relay,Y,,200,288,0,,,96.7,0,2026-09-08
-63,Nio API,https://api.nio.gs,global,9.3,likely_relay,Y,new-api,200,290,0,,,96.7,0,2026-09-08
-64,KFC V50 API,https://kfcv50.link,cn,9.3,likely_relay,Y,,200,317,0,,,96.7,0,2026-09-08
-65,Shell API (gptgod.cloud),https://gptgod.cloud,cn,9.3,likely_relay,Y,,200,334,0,,,96.7,0,2026-09-08
-66,Xcode,https://xcode.best,global,9.3,likely_relay,Y,new-api,200,353,0,,,96.7,0,2026-09-08
-67,api.ekan8.com,https://api.ekan8.com,global,9.3,likely_relay,Y,new-api,200,374,0,,,96.7,0,2026-09-08
-68,duckcoding.ai,https://www.duckcoding.ai,global,9.3,likely_relay,Y,new-api,200,405,0,,,96.7,0,2026-09-08
-69,api.openai-ch.top,https://api.openai-ch.top,global,9.3,likely_relay,Y,new-api,200,438,0,,,96.7,0,2026-09-08
-70,api-mnapi-com,https://api.mnapi.com,cn,9.3,likely_relay,Y,,200,486,0,claude|gemini|openai,,93.3,0,2026-09-08
-71,YUNWU.AI (云雾 API),https://api.wlai.vip,cn,9.3,likely_relay,Y,,200,561,0,,,96.7,0,2026-09-08
-72,柏拉图AI_API中转站 (api.bltcy.top),https://api.bltcy.top,cn,9.3,likely_relay,Y,,200,612,0,claude|gpt|openai,,90.0,0,2026-09-08
-73,api.aigcbest.top,https://api.aigcbest.top,global,9.3,likely_relay,Y,new-api,200,660,0,,,96.7,0,2026-09-08
-74,Shell API (api.pumpkinaigc.online),https://api.pumpkinaigc.online,cn,9.3,likely_relay,Y,,200,681,0,,,96.7,0,2026-09-08
-75,dawclaudecode.com,https://dawclaudecode.com,global,9.3,likely_relay,Y,new-api,200,753,0,,,96.7,0,2026-09-08
-76,api.aabao.vip,https://api.aabao.vip,global,9.3,likely_relay,Y,new-api,200,805,0,,,96.7,0,2026-09-08
-77,xeduapi.com,https://xeduapi.com,global,9.3,likely_relay,Y,new-api,200,912,0,,,96.7,0,2026-09-08
-78,chatfire.cn,https://chatfire.cn,global,9.3,likely_relay,Y,new-api,200,1069,0,,,96.7,0,2026-09-08
-79,MixrAI,https://api.mixrai.com,global,9.3,likely_relay,Y,new-api,200,1151,0,,,96.7,0,2026-09-08
-80,api-moonshot-cn,https://api.moonshot.cn,global,9.3,likely_relay,Y,,200,1557,0,,,96.7,0,2026-09-08
-81,anyrouter-top,https://anyrouter.top,global,9.3,likely_relay,Y,,200,1704,0,,,96.7,0,2026-09-08
-82,go.sbgpt.site,https://go.sbgpt.site,cn,9.1,likely_relay,Y,new-api,200,206,0,openai,,86.7,0,2026-09-08
-83,new.xjai.cc,https://new.xjai.cc,cn,9.1,likely_relay,Y,,200,219,0,openai,,86.7,0,2026-09-08
-84,钱多多 API (35.aigcbest.top),https://35.aigcbest.top,cn,9.1,likely_relay,Y,new-api,200,255,0,openai,,93.3,0,2026-09-08
-85,AnyRouter · Universal AI Model Router,https://anyrouter.dev,cn,9.1,likely_relay,Y,openrouter,200,532,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral|grok|llama,,76.7,0,2026-09-08
-86,AI302 Api (api.302ai.cn),https://api.302ai.cn,global,9.1,likely_relay,Y,,200,1706,0,gpt,,93.3,0,2026-09-08
-87,open.xiaojingai.com,https://open.xiaojingai.com,global,9.0,likely_relay,Y,new-api,200,371,0,,,93.3,0,2026-09-08
-88,ChatAnywhere (api.chatanywhere.org),https://api.chatanywhere.org,global,9.0,likely_relay,Y,,200,1143,0,,,93.3,0,2026-09-08
-89,LLM Relay,https://terminal.pub,global,9.0,likely_relay,Y,,200,1224,0,,,93.3,0,2026-09-08
-90,ChatAnywhere (api.chatanywhere.tech),https://api.chatanywhere.tech,global,9.0,likely_relay,Y,,200,1345,0,,,93.3,0,2026-09-08
-91,数标标API,https://api.ai-gaochao.cn,cn,9.0,likely_relay,Y,,200,2030,0,,,93.3,0,2026-09-08
-92,SoonStudio API,https://comfly.chat,cn,8.7,likely_relay,Y,,200,2118,0,openai,,23.3,0,2026-09-08
-93,CloseAI,https://www.closeai-asia.com,cn,8.5,likely_relay,N,,200,125,0,claude|gpt|gemini|chatgpt|anthropic|openai,alipay,96.7,0,2026-09-08
-94,Requesty,https://www.requesty.ai,global,8.5,likely_relay,N,one-api,200,157,0,claude|gpt|gemini|anthropic|openai|deepseek,card,96.7,0,2026-09-08
-95,PoloAPI-直连官转中转API,https://poloapi.com,cn,8.5,likely_relay,N,,200,215,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|mistral|grok|llama,wechat,96.7,0,2026-09-08
-96,QuickRouter.AI,https://quickrouter.ai,cn,8.5,likely_relay,N,,200,220,0,claude|gpt|gemini|anthropic|openai|deepseek|mistral|grok|llama,alipay|wechat|card,96.7,0,2026-09-08
-97,API易,https://docs.apiyi.com,cn,8.5,likely_relay,N,,200,228,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|grok,alipay|wechat,96.7,0,2026-09-08
-98,litellm-ai,https://litellm.ai,global,8.5,likely_relay,N,one-api,200,276,0,claude|gpt|gemini|anthropic|openai|mistral|llama,card,96.7,0,2026-09-08
-99,OminiGate,https://ominigate.com,global,8.5,likely_relay,N,one-api,200,412,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral,card,96.7,0,2026-09-08
-100,gpt.ge,https://gpt.ge,cn,8.5,likely_relay,N,,200,422,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|grok,wechat,96.7,0,2026-09-08
-101,LLM Gateway,https://llmgateway.io,global,8.5,likely_relay,N,one-api,200,425,0,claude|gpt|gemini|anthropic|openai|deepseek|mistral|llama,card,96.7,0,2026-09-08
-102,OhMyGPT,https://www.ohmygpt.com,global,8.5,likely_relay,N,,200,474,0,claude|gpt|gemini|chatgpt|openai|deepseek,alipay|wechat|card,96.7,0,2026-09-08
-103,MegaLLM,https://megallm.io,global,8.5,likely_relay,N,one-api,200,486,0,claude|gpt|gemini|anthropic|openai|mistral|grok|llama,card,96.7,0,2026-09-08
-104,aimlapi-com,https://www.aimlapi.com,global,8.5,likely_relay,N,one-api,200,818,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|grok,crypto,96.7,0,2026-09-08
-105,DeRouter,https://derouter.ai,cn,8.5,likely_relay,N,one-api,200,1292,0,claude|gpt|chatgpt|anthropic|openai,alipay|wechat|card|crypto,96.7,0,2026-09-08
-106,302.AI,https://302.ai,cn,8.5,likely_relay,N,chatnext-web,200,1645,0,gpt|gemini|anthropic|openai|deepseek|qwen|mistral|grok,wechat,96.7,0,2026-09-08
-107,接口AI 一站式多模型 API 中转平台，快速集成智能应用,https://jiekou.ai,cn,8.5,likely_relay,N,,200,2709,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|qwen|mistral|llama,alipay|wechat|card|crypto,96.7,0,2026-09-08
-108,API Access 文档中心,https://aigateway.vercel.app,cn,8.3,likely_relay,N,,200,199,0,claude|gpt|gemini|anthropic|openai|mistral|grok|llama,,96.7,0,2026-09-08
-109,OpenRouter,https://openrouter.ai,global,8.3,likely_relay,N,openrouter,200,202,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-08
-110,APIYI,https://apiyi.com,global,8.3,likely_relay,N,,200,326,0,claude|gpt|gemini|openai|grok,,96.7,0,2026-09-08
-111,Poixe AI,https://poixe.com,cn,8.3,likely_relay,N,,200,542,0,claude|gpt|gemini|chatgpt|deepseek|grok,,96.7,0,2026-09-08
-112,aiproxy-io,https://aiproxy.io,cn,8.3,likely_relay,N,one-api,200,673,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|grok,,96.7,0,2026-09-08
-113,GitHub (songquanpeng/one-api),https://github.com/songquanpeng/one-api,cn,8.3,likely_relay,N,one-api,200,802,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|mistral|llama,,96.7,0,2026-09-08
-114,UIUIAPI,https://uiuiapi.com,cn,8.3,likely_relay,N,,200,1203,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|grok,,96.7,0,2026-09-08
-115,api-aiproxy-io,https://api.aiproxy.io,cn,8.3,likely_relay,N,one-api,200,1391,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|grok,,96.7,0,2026-09-08
-116,OfoxAI,https://ofox.ai,global,8.3,likely_relay,N,one-api,200,1486,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral|grok,,96.7,0,2026-09-08
-117,SambaNova,https://sambanova.ai,global,8.1,likely_relay,N,dify,200,120,0,gpt|openai|deepseek,,96.7,0,2026-09-08
-118,GitHub (QuantumNous/new-api),https://github.com/QuantumNous/new-api,global,8.1,likely_relay,N,new-api,200,523,0,claude|gemini|openai,,96.7,0,2026-09-08
-119,RightCode,https://www.right.codes,cn,8.1,likely_relay,N,,200,608,0,claude|gemini|grok,,96.7,0,2026-09-08
-120,GitHub (Calcium-Ion/new-api),https://github.com/Calcium-Ion/new-api,global,8.1,likely_relay,N,new-api,200,742,0,claude|gemini|openai,,96.7,0,2026-09-08
-121,HolySheep AI,https://holysheep.ai,cn,8.1,likely_relay,N,,200,962,0,claude|anthropic|openai,,96.7,0,2026-09-08
-122,helicone-ai,https://helicone.ai,global,7.8,probable_relay,N,litellm,200,260,0,gemini|anthropic|openai|deepseek|mistral|llama,card,96.7,0,2026-09-08
-123,Jan,https://cortex.so,global,7.6,probable_relay,N,,200,274,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-08
-124,APIMart (apicore.ai),https://www.apicore.ai,cn,7.6,probable_relay,N,,200,805,0,claude|gpt|gemini|chatgpt|openai,,96.7,0,2026-09-08
-125,azapi-com-cn,https://azapi.com.cn,cn,7.4,probable_relay,N,,200,496,0,claude|gemini|openai,,96.7,0,2026-09-08
-126,AI实验室,https://aigc369.com,cn,7.1,probable_relay,N,,200,1296,0,claude|gpt|gemini|chatgpt|openai,wechat,70.0,0,2026-09-08
-127,GitHub (helicone/helicone),https://github.com/helicone/helicone,global,7.0,open_source_tool,N,helicone,200,671,0,claude|gpt|gemini|anthropic|openai,card,96.7,0,2026-09-08
-128,Own Your Specialized Intelligence,https://fireworks.ai,global,6.8,needs_review,N,,200,431,0,gpt|anthropic|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-08
-129,Together AI,https://together.ai,global,6.8,needs_review,N,,200,440,0,gpt|openai|deepseek|qwen|llama,,96.7,0,2026-09-08
-130,GitHub (1Panel-dev/MaxKB),https://github.com/1Panel-dev/MaxKB,global,6.8,open_source_tool,N,,200,459,0,claude|gemini|openai|deepseek|qwen|llama,,96.7,0,2026-09-08
-131,OneAI — All Local AI Tools for Your PC,https://oneai.icu,global,6.8,needs_review,N,,200,531,0,claude|gpt|gemini|chatgpt|qwen|mistral|grok|llama,,96.7,0,2026-09-08
-132,AI Chatbot,https://chatbox.ai,global,6.7,needs_review,N,,200,317,0,claude|gpt|gemini|deepseek,,96.7,0,2026-09-08
-133,The AI Developer Cloud,https://runpod.io,global,6.7,needs_review,N,,200,382,0,claude|openai,crypto,96.7,0,2026-09-08
-134,CCFly,https://ccfly.codes,cn,6.7,needs_review,N,,200,579,0,claude|anthropic,crypto,96.7,0,2026-09-08
-135,GitHub (berriai/litellm),https://github.com/berriai/litellm,global,6.7,open_source_tool,N,litellm,200,593,0,claude|gemini|anthropic|openai,,96.7,0,2026-09-08
-136,Replicate,https://www.replicate.com,global,6.7,needs_review,N,,200,640,0,claude|gpt|anthropic|openai,,96.7,0,2026-09-08
-137,OpenCat,https://opencat.app,global,6.6,needs_review,N,,200,397,0,gpt|chatgpt|openai,,96.7,0,2026-09-08
-138,GitHub (VoltAgent/voltagent),https://github.com/VoltAgent/voltagent,global,6.6,open_source_tool,N,,200,745,0,claude|anthropic|openai,,96.7,0,2026-09-08
-139,All-in-one AI platform with multiple chat models,https://lorka.ai,global,6.6,needs_review,N,,200,868,0,gpt|gemini|deepseek,,96.7,0,2026-09-08
-140,硅基流动 SiliconFlow,https://siliconflow.cn,cn,6.6,needs_review,N,,200,2190,0,deepseek,wechat,96.7,0,2026-09-08
-141,dify.ai,https://dify.ai,global,6.5,needs_review,N,dify,200,105,0,,card,96.7,0,2026-09-08
-142,Machine Learning Models and Infrastructure,https://deepinfra.com,global,6.5,needs_review,N,,200,122,0,claude|gemini|anthropic|deepseek|qwen|mistral|llama,,93.3,0,2026-09-08
-143,Cubence,https://cubence.com,global,6.5,needs_review,N,,200,159,0,claude|gemini,,96.7,0,2026-09-08
-144,Deepbricks,https://deepbricks.ai,global,6.5,needs_review,N,,200,297,0,gpt|llama,,96.7,0,2026-09-08
-145,Cerebras,https://www.cerebras.ai,global,6.5,needs_review,N,,200,371,0,gpt|openai,,96.7,0,2026-09-08
-146,Novita AI,https://novita.ai,global,6.5,needs_review,N,one-api,200,441,0,deepseek|qwen,,96.7,0,2026-09-08
-147,最新@网址,https://api.gptoai.cc,cn,6.5,needs_review,N,,200,583,0,,alipay,96.7,0,2026-09-08
-148,GitHub (langfuse/langfuse),https://github.com/langfuse/langfuse,global,6.5,open_source_tool,N,litellm,200,615,0,claude|openai,,96.7,0,2026-09-08
-149,AIGoCode,https://aigocode.com,global,6.5,needs_review,N,,200,744,0,,wechat,96.7,0,2026-09-08
-150,Cloudflare AI Cloud,https://ai.cloudflare.com/gateway,global,6.5,needs_review,N,,200,889,0,gpt|llama,,96.7,0,2026-09-08
-151,The Fastest Enterprise AI Gateway,https://langdb.ai,global,6.4,needs_review,N,langdb,200,106,0,openai,,96.7,0,2026-09-08
-152,Reka,https://reka.ai,global,6.4,needs_review,N,,200,205,0,gemini,,96.7,0,2026-09-08
-153,hyperbolic-xyz,https://hyperbolic.xyz,global,6.4,needs_review,N,,200,253,0,openai,,96.7,0,2026-09-08
-154,Production-scale AI with Ray,https://www.anyscale.com,global,6.4,needs_review,N,,200,346,0,llama,,96.7,0,2026-09-08
-155,siliconflow-com,https://www.siliconflow.com,global,6.4,needs_review,N,,200,424,0,gpt,,96.7,0,2026-09-08
-156,GitHub (langgenius/dify),https://github.com/langgenius/dify,self-hosted,6.4,needs_review,N,dify,200,435,0,claude,,96.7,0,2026-09-08
-157,GitHub (Portkey-Ai/gateway),https://github.com/Portkey-Ai/gateway,global,6.4,needs_review,N,portkey,200,617,0,claude,,96.7,0,2026-09-08
-158,codesome.ai,https://codesome.ai,global,6.4,needs_review,N,,200,892,0,claude,,96.7,0,2026-09-08
-159,88code,https://88code.ai,cn,6.4,needs_review,N,,200,1292,0,claude,,96.7,0,2026-09-08
-160,AI compute in the cloud,https://lambda.ai,global,6.3,needs_review,N,,200,98,0,,,96.7,0,2026-09-08
-161,Connect Developers to Global GPU Compute,https://lepton.ai,global,6.3,needs_review,N,,200,113,0,,,96.7,0,2026-09-08
-162,token-ai-com,https://token-ai.com,global,6.3,needs_review,N,,200,141,0,,,96.7,0,2026-09-08
-163,Production Stack for Gen AI Builders,https://portkey.ai,global,6.3,needs_review,N,portkey,200,151,0,,,96.7,0,2026-09-08
-164,Zensors,https://turnaround.ai,global,6.3,needs_review,N,,200,152,0,,,96.7,0,2026-09-08
-165,OpenPipe,https://openpipe.ai,global,6.3,needs_review,N,,200,169,0,,,96.7,0,2026-09-08
-166,DataRobot,https://www.datarobot.com,global,6.3,needs_review,N,,200,201,0,,,96.7,0,2026-09-08
-167,Modal: High-performance AI infrastructure,https://modal.com,global,6.3,needs_review,N,,200,215,0,,,96.7,0,2026-09-08
-168,chatgptid-com,https://chatgptid.com,global,6.3,needs_review,N,,200,234,0,,,96.7,0,2026-09-08
-169,LangChain: the open agent platform to own your intelligence,https://www.langchain.com,global,6.3,needs_review,N,,200,268,0,,,96.7,0,2026-09-08
-170,Groq is the premier neocloud for fast inference,https://groq.com,global,6.3,needs_review,N,,200,325,0,,,96.7,0,2026-09-08
-171,辣椒炒肉,https://cursorai.art,global,6.3,needs_review,N,,200,356,0,,,96.7,0,2026-09-08
-172,World Leader in Artificial Intelligence Computing (octo.ai),https://octo.ai,global,6.3,needs_review,N,,200,363,0,,,96.7,0,2026-09-08
-173,gptgod-online,https://gptgod.online,global,6.3,needs_review,N,,200,368,0,,,96.7,0,2026-09-08
-174,kodbase-com,https://kodbase.com,global,6.3,needs_review,N,,200,492,0,,,96.7,0,2026-09-08
-175,World Leader in Artificial Intelligence Computing (octoml.ai),https://octoml.ai,global,6.3,needs_review,N,,200,536,0,,,96.7,0,2026-09-08
-176,AI世界 — 7×24 AI 快讯,https://aiclaude.site,cn,6.3,needs_review,N,,200,558,0,,,96.7,0,2026-09-08
-177,智谱丨BigModel 平台,https://open.bigmodel.cn,cn,6.3,needs_review,N,,200,701,0,,,96.7,0,2026-09-08
-178,api-tomchat-fun,https://api.tomchat.fun,global,6.3,needs_review,N,,200,735,0,,,96.7,0,2026-09-08
-179,七牛云开发者平台,https://portal.qiniu.com/ai,global,6.3,needs_review,N,,200,900,0,,,96.7,0,2026-09-08
-180,Vaultwarden Web,https://ssvip.xyz,global,6.3,needs_review,N,,200,981,0,,,96.7,0,2026-09-08
-181,ChatMoss,https://api.aihao123.cn,global,6.3,needs_review,N,,200,1041,0,,,96.7,0,2026-09-08
-182,网站正在升级,https://foxaigc.com,global,6.3,needs_review,N,,200,1220,0,,,96.7,0,2026-09-08
-183,易客API市场,https://yikeapi.com,global,6.3,needs_review,N,,200,1323,0,,,96.7,0,2026-09-08
-184,GitHub (labring/FastGPT),https://github.com/labring/FastGPT,global,6.1,needs_review,N,fastgpt,200,751,0,gpt,,93.3,0,2026-09-08
-185,豆子智创,https://mixrai.com,cn,6.1,needs_review,N,,200,1269,0,gpt,,90.0,0,2026-09-08
-186,Redirecting...,https://www.openai-sb.com,global,6.0,needs_review,N,,200,39,0,,,93.3,0,2026-09-08
-187,用户登录,https://api.996444.cn,global,6.0,needs_review,N,,200,1997,0,,,93.3,0,2026-09-08
-188,AAIFE API,https://apid.aaife.cn,cn,6.0,needs_review,N,,,12349,0,,,96.7,0,2026-09-08
-189,gptapi.us (gptapi.us),https://gptapi.us,global,5.7,needs_review,N,,200,264,0,gpt,,56.7,0,2026-09-08
-190,gptapi.us (api.gptapi.us),https://api.gptapi.us,global,5.7,needs_review,N,,200,311,0,gpt,,56.7,0,2026-09-08
-191,nextweb-dev,https://nextweb.dev,global,5.6,needs_review,N,,200,249,0,,,53.3,0,2026-09-08
+1,Avian,https://avian.io,global,9.9,likely_relay,Y,,200,38,13,claude|gpt|anthropic|openai|deepseek|llama,,96.7,0,2026-09-09
+2,AIHubMix,https://aihubmix.com,global,9.9,likely_relay,Y,one-api,200,297,416,claude|gpt|gemini|chatgpt|openai|deepseek|qwen,,96.7,0,2026-09-09
+3,PackyAPI (PackyCode),https://www.packyapi.com,cn,9.9,likely_relay,Y,,200,412,0,claude|gpt|gemini|openai,wechat,96.7,0,2026-09-09
+4,BUZZ,https://buzzai.cc,global,9.9,likely_relay,Y,one-api,200,842,0,claude|gpt|gemini|anthropic|openai|grok,card,96.7,0,2026-09-09
+5,呆呆兽中转站｜Claude、Codex、GLM、Kimi 折扣 API,https://www.ddshub.cc,cn,9.9,likely_relay,Y,,200,996,0,claude|gpt|anthropic|openai,alipay|wechat|card,96.7,0,2026-09-09
+6,APIMart (apimart.ai),https://apimart.ai,global,9.9,likely_relay,Y,one-api,200,1366,0,claude|gpt|gemini|anthropic|openai|qwen|grok,alipay|wechat|card|crypto,96.7,0,2026-09-09
+7,api.vveai.com,https://api.vveai.com,cn,9.8,likely_relay,Y,,200,233,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-09
+8,Featherless,https://featherless.ai,global,9.8,likely_relay,Y,one-api,200,275,0,gpt|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-09
+9,api.v3.cm,https://api.v3.cm,cn,9.8,likely_relay,Y,,200,308,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-09
+10,TiMi CC,https://timicc.com,cn,9.8,likely_relay,Y,,200,308,0,gpt|openai|qwen,wechat|card,96.7,0,2026-09-09
+11,api.v36.cm,https://api.v36.cm,cn,9.8,likely_relay,Y,,200,317,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-09
+12,api.gpt.ge,https://api.gpt.ge,cn,9.8,likely_relay,Y,,200,358,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|grok,,96.7,0,2026-09-09
+13,apipro.maynor1024.live,https://apipro.maynor1024.live,global,9.8,likely_relay,Y,,200,375,0,claude|gpt|gemini|chatgpt|openai,,96.7,0,2026-09-09
+14,ePhone AI,https://api.ephone.ai,cn,9.8,likely_relay,Y,,200,493,0,claude|gpt|gemini|openai|deepseek,,96.7,0,2026-09-09
+15,Doro AI,https://doro.lol,cn,9.8,likely_relay,Y,new-api,200,728,0,claude|gpt|gemini|chatgpt|anthropic,,96.7,0,2026-09-09
+16,jeniya.cn,https://jeniya.cn,cn,9.8,likely_relay,Y,,200,1293,0,claude|gpt|chatgpt|openai|deepseek,,96.7,0,2026-09-09
+17,便携AI聚合API,https://api.bianxieai.com,cn,9.8,likely_relay,Y,new-api,200,2476,0,claude|gemini|openai|deepseek|grok,,96.7,0,2026-09-09
+18,ggwk1.online,https://www.ggwk1.online,cn,9.7,likely_relay,Y,new-api,200,170,0,claude|gpt|gemini|openai,,96.7,0,2026-09-09
+19,api-gptgod-work,https://api.gptgod.work,global,9.7,likely_relay,Y,,200,777,321,,,96.7,0,2026-09-09
+20,ClaudeCN,https://claudecn.top,cn,9.7,likely_relay,Y,,200,1239,0,claude|gpt|gemini|openai,,96.7,0,2026-09-09
+21,api-chatfire-cn,https://api.chatfire.cn,cn,9.6,likely_relay,Y,,200,139,0,claude|gemini|openai,,96.7,0,2026-09-09
+22,new.yunai.link,https://new.yunai.link,cn,9.6,likely_relay,Y,,200,239,0,claude|gemini|openai,,96.7,0,2026-09-09
+23,onetoken.one,https://onetoken.one,cn,9.6,likely_relay,Y,new-api,200,270,0,claude|gemini|openai,,96.7,0,2026-09-09
+24,api.cursorai.art,https://api.cursorai.art,global,9.6,likely_relay,Y,,200,282,0,claude|gpt|chatgpt,,96.7,0,2026-09-09
+25,Aiberm,https://aiberm.com,global,9.6,likely_relay,Y,,200,297,0,claude|gemini|openai,,96.7,0,2026-09-09
+26,api-deerapi-com,https://api.deerapi.com,cn,9.6,likely_relay,Y,,200,321,0,claude|gemini|openai,,96.7,0,2026-09-09
+27,api.soruxgpt.com,https://api.soruxgpt.com,cn,9.6,likely_relay,Y,new-api,200,329,0,claude|gemini|openai,,96.7,0,2026-09-09
+28,api.onechats.top,https://api.onechats.top,cn,9.6,likely_relay,Y,new-api,200,440,0,claude|gemini|openai,,96.7,0,2026-09-09
+29,api-holdai-top,https://api.holdai.top,cn,9.6,likely_relay,Y,,200,526,0,claude|gemini|openai,,96.7,0,2026-09-09
+30,LingxiCode,https://new.050602.xyz,cn,9.6,likely_relay,Y,new-api,200,551,0,claude|gemini|openai,,96.7,0,2026-09-09
+31,柏拉图AI_API中转站,https://api.bltcy.ai,cn,9.6,likely_relay,Y,,200,820,0,claude|gpt|openai,,96.7,0,2026-09-09
+32,DeerAPI (小鹿API),https://deerapi.com,cn,9.6,likely_relay,Y,,200,1013,0,claude|gemini|openai,,96.7,0,2026-09-09
+33,api.aipaibox.com,https://api.aipaibox.com,cn,9.6,likely_relay,Y,new-api,200,1170,0,claude|gemini|openai,,96.7,0,2026-09-09
+34,marting.pro,https://marting.pro,global,9.5,likely_relay,Y,,200,347,0,gpt|chatgpt,,96.7,0,2026-09-09
+35,Yuegle API,https://api.yuegle.com,cn,9.5,likely_relay,Y,,200,398,0,claude|gpt|gemini|chatgpt|openai|deepseek|grok,,93.3,0,2026-09-09
+36,comfly,https://ai.comfly.chat,global,9.5,likely_relay,Y,,200,1181,0,gpt|openai,,96.7,0,2026-09-09
+37,Tokencloud.ai,https://ai.tokencloud.ai,global,9.5,likely_relay,Y,,200,2184,0,,wechat,96.7,0,2026-09-09
+38,api.aikeji.vip,https://api.aikeji.vip,cn,9.4,likely_relay,Y,,200,228,0,openai,,96.7,0,2026-09-09
+39,zen-ai.top,https://zen-ai.top,cn,9.4,likely_relay,Y,,200,317,0,openai,,96.7,0,2026-09-09
+40,API Management,https://sparkcode.top,cn,9.4,likely_relay,Y,,200,319,0,openai,,96.7,0,2026-09-09
+41,GPTNB ONEAPI,https://oneapi.gptnb.ai,cn,9.4,likely_relay,Y,,200,413,0,gpt,,96.7,0,2026-09-09
+42,LaoZhang API,https://api.laozhang.ai,global,9.4,likely_relay,Y,,200,464,0,gpt,,96.7,0,2026-09-09
+43,钱多多 API (api.ifopen.ai),https://api.ifopen.ai,cn,9.4,likely_relay,Y,new-api,200,521,0,openai,,96.7,0,2026-09-09
+44,Unified API,https://unifiedapi.cloud,cn,9.4,likely_relay,Y,,200,749,0,openai,,96.7,0,2026-09-09
+45,AI302 Api (api.302ai.com),https://api.302ai.com,global,9.4,likely_relay,Y,,200,836,0,gpt,,96.7,0,2026-09-09
+46,api.nekoapi.com,https://api.nekoapi.com,global,9.3,likely_relay,Y,new-api,200,161,0,,,96.7,0,2026-09-09
+47,apirouter.ai,https://apirouter.ai,global,9.3,likely_relay,Y,new-api,200,167,0,,,96.7,0,2026-09-09
+48,Nio API,https://api.nio.gs,global,9.3,likely_relay,Y,new-api,200,216,0,,,96.7,0,2026-09-09
+49,api-featherless-ai,https://api.featherless.ai,global,9.3,likely_relay,Y,,200,221,0,,,96.7,0,2026-09-09
+50,KKSJ API,https://cnapi.kksj.org,global,9.3,likely_relay,Y,new-api,200,230,0,,,96.7,0,2026-09-09
+51,云雾 API (YunWu),https://yunwu.ai,cn,9.3,likely_relay,Y,,200,239,0,,,96.7,0,2026-09-09
+52,api.gemai.cc,https://api.gemai.cc,global,9.3,likely_relay,Y,new-api,200,266,0,,,96.7,0,2026-09-09
+53,Xcode,https://xcode.best,global,9.3,likely_relay,Y,new-api,200,272,0,,,96.7,0,2026-09-09
+54,api.kissapi.ai,https://api.kissapi.ai,global,9.3,likely_relay,Y,new-api,200,282,0,,,96.7,0,2026-09-09
+55,api.ekan8.com,https://api.ekan8.com,global,9.3,likely_relay,Y,new-api,200,298,0,,,96.7,0,2026-09-09
+56,api-gptsapi-net,https://api.gptsapi.net,global,9.3,likely_relay,Y,,200,317,0,,,96.7,0,2026-09-09
+57,zerocode.sbs,https://zerocode.sbs,global,9.3,likely_relay,Y,new-api,200,317,0,,,96.7,0,2026-09-09
+58,KFC V50 API,https://kfcv50.link,cn,9.3,likely_relay,Y,,200,322,0,,,96.7,0,2026-09-09
+59,api.ikuncode.cc,https://api.ikuncode.cc,global,9.3,likely_relay,Y,new-api,200,329,0,,,96.7,0,2026-09-09
+60,api.dzzi.ai,https://api.dzzi.ai,global,9.3,likely_relay,Y,new-api,200,336,0,,,96.7,0,2026-09-09
+61,欢迎访问无限API,https://infai.cc,cn,9.3,likely_relay,Y,,200,353,0,,,96.7,0,2026-09-09
+62,Ai实验室,https://www.openai-labs.com,cn,9.3,likely_relay,Y,,200,364,0,,,96.7,0,2026-09-09
+63,chatapi.onechats.top,https://chatapi.onechats.top,global,9.3,likely_relay,Y,new-api,200,369,0,,,96.7,0,2026-09-09
+64,Loading...,https://co.yes.vg,global,9.3,likely_relay,Y,,200,441,0,,,96.7,0,2026-09-09
+65,aigcbest.top,https://aigcbest.top,global,9.3,likely_relay,Y,new-api,200,450,0,,,96.7,0,2026-09-09
+66,404 Not Found,https://api.aabao.top,global,9.3,likely_relay,Y,,200,463,0,,,96.7,0,2026-09-09
+67,YUNWU.AI (云雾 API),https://api.wlai.vip,cn,9.3,likely_relay,Y,,200,499,0,,,96.7,0,2026-09-09
+68,Shell API (gptgod.cloud),https://gptgod.cloud,cn,9.3,likely_relay,Y,,200,531,0,,,96.7,0,2026-09-09
+69,api.openai-ch.top,https://api.openai-ch.top,global,9.3,likely_relay,Y,new-api,200,566,0,,,96.7,0,2026-09-09
+70,api-mnapi-com,https://api.mnapi.com,cn,9.3,likely_relay,Y,,200,673,0,claude|gemini|openai,,93.3,0,2026-09-09
+71,Shell API (api.pumpkinaigc.online),https://api.pumpkinaigc.online,cn,9.3,likely_relay,Y,,200,696,0,,,96.7,0,2026-09-09
+72,dawclaudecode.com,https://dawclaudecode.com,global,9.3,likely_relay,Y,new-api,200,800,0,,,96.7,0,2026-09-09
+73,api.aabao.vip,https://api.aabao.vip,global,9.3,likely_relay,Y,new-api,200,885,0,,,96.7,0,2026-09-09
+74,xeduapi.com,https://xeduapi.com,global,9.3,likely_relay,Y,new-api,200,886,0,,,96.7,0,2026-09-09
+75,chatfire.cn,https://chatfire.cn,global,9.3,likely_relay,Y,new-api,200,1002,0,,,96.7,0,2026-09-09
+76,api.aigcbest.top,https://api.aigcbest.top,global,9.3,likely_relay,Y,new-api,200,1014,0,,,96.7,0,2026-09-09
+77,MixrAI,https://api.mixrai.com,global,9.3,likely_relay,Y,new-api,200,1238,0,,,96.7,0,2026-09-09
+78,api-moonshot-cn,https://api.moonshot.cn,global,9.3,likely_relay,Y,,200,1428,0,,,96.7,0,2026-09-09
+79,duckcoding.ai,https://www.duckcoding.ai,global,9.3,likely_relay,Y,new-api,200,1655,0,,,96.7,0,2026-09-09
+80,anyrouter-top,https://anyrouter.top,global,9.3,likely_relay,Y,,200,1777,0,,,96.7,0,2026-09-09
+81,go.sbgpt.site,https://go.sbgpt.site,cn,9.1,likely_relay,Y,new-api,200,203,0,openai,,86.7,0,2026-09-09
+82,钱多多 API (35.aigcbest.top),https://35.aigcbest.top,cn,9.1,likely_relay,Y,new-api,200,206,0,openai,,93.3,0,2026-09-09
+83,AnyRouter · Universal AI Model Router,https://anyrouter.dev,cn,9.1,likely_relay,Y,openrouter,200,458,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral|grok|llama,,76.7,0,2026-09-09
+84,AI302 Api (api.302ai.cn),https://api.302ai.cn,global,9.1,likely_relay,Y,,200,1948,0,gpt,,93.3,0,2026-09-09
+85,new.xjai.cc,https://new.xjai.cc,global,9.0,likely_relay,Y,new-api,200,188,0,,,86.7,0,2026-09-09
+86,数标标API,https://api.ai-gaochao.cn,cn,9.0,likely_relay,Y,,200,715,0,,,93.3,0,2026-09-09
+87,LLM Relay,https://terminal.pub,global,9.0,likely_relay,Y,,200,1018,0,,,93.3,0,2026-09-09
+88,ChatAnywhere (api.chatanywhere.org),https://api.chatanywhere.org,global,9.0,likely_relay,Y,,200,1154,0,,,93.3,0,2026-09-09
+89,ChatAnywhere (api.chatanywhere.tech),https://api.chatanywhere.tech,global,9.0,likely_relay,Y,,200,1248,0,,,93.3,0,2026-09-09
+90,open.xiaojingai.com,https://open.xiaojingai.com,global,9.0,likely_relay,Y,new-api,200,1766,0,,,93.3,0,2026-09-09
+91,SoonStudio API,https://comfly.chat,cn,8.7,likely_relay,Y,,200,2136,0,openai,,26.7,0,2026-09-09
+92,linkapi.ai,https://linkapi.ai,global,8.6,likely_relay,Y,new-api,200,240,0,,,60.0,0,2026-09-09
+93,CloseAI,https://www.closeai-asia.com,cn,8.5,likely_relay,N,,200,77,0,claude|gpt|gemini|chatgpt|anthropic|openai,alipay,96.7,0,2026-09-09
+94,PoloAPI-直连官转中转API,https://poloapi.com,cn,8.5,likely_relay,N,,200,109,0,claude|gpt|gemini|chatgpt|openai|deepseek|qwen|mistral|grok|llama,wechat,96.7,0,2026-09-09
+95,Requesty,https://www.requesty.ai,global,8.5,likely_relay,N,one-api,200,112,0,claude|gpt|gemini|anthropic|openai|deepseek,card,96.7,0,2026-09-09
+96,API易,https://docs.apiyi.com,cn,8.5,likely_relay,N,,200,158,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|grok,alipay|wechat,96.7,0,2026-09-09
+97,LLM Gateway,https://llmgateway.io,global,8.5,likely_relay,N,one-api,200,189,0,claude|gpt|gemini|anthropic|openai|deepseek|mistral|llama,card,96.7,0,2026-09-09
+98,MegaLLM,https://megallm.io,global,8.5,likely_relay,N,one-api,200,228,0,claude|gpt|gemini|anthropic|openai|mistral|grok|llama,card,96.7,0,2026-09-09
+99,litellm-ai,https://litellm.ai,global,8.5,likely_relay,N,one-api,200,345,0,claude|gpt|gemini|anthropic|openai|mistral|llama,card,96.7,0,2026-09-09
+100,QuickRouter.AI,https://quickrouter.ai,cn,8.5,likely_relay,N,,200,365,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|mistral|grok|llama,alipay|wechat|card,96.7,0,2026-09-09
+101,OhMyGPT,https://www.ohmygpt.com,global,8.5,likely_relay,N,,200,421,0,claude|gpt|gemini|chatgpt|openai|deepseek,alipay|wechat|card,96.7,0,2026-09-09
+102,OminiGate,https://ominigate.com,global,8.5,likely_relay,N,one-api,200,474,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral,card,96.7,0,2026-09-09
+103,gpt.ge,https://gpt.ge,cn,8.5,likely_relay,N,,200,489,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|grok,wechat,96.7,0,2026-09-09
+104,aimlapi-com,https://www.aimlapi.com,global,8.5,likely_relay,N,one-api,200,779,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|grok,crypto,96.7,0,2026-09-09
+105,DeRouter,https://derouter.ai,cn,8.5,likely_relay,N,one-api,200,983,0,claude|gpt|chatgpt|anthropic|openai,alipay|wechat|card|crypto,96.7,0,2026-09-09
+106,302.AI,https://302.ai,cn,8.5,likely_relay,N,chatnext-web,200,1788,0,gpt|gemini|anthropic|openai|deepseek|qwen|mistral|grok,wechat,96.7,0,2026-09-09
+107,接口AI 一站式多模型 API 中转平台，快速集成智能应用,https://jiekou.ai,cn,8.5,likely_relay,N,,200,1870,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|qwen|mistral|llama,alipay|wechat|card|crypto,96.7,0,2026-09-09
+108,OpenRouter,https://openrouter.ai,global,8.3,likely_relay,N,openrouter,200,213,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-09
+109,API Access 文档中心,https://aigateway.vercel.app,cn,8.3,likely_relay,N,,200,261,0,claude|gpt|gemini|anthropic|openai|mistral|grok|llama,,96.7,0,2026-09-09
+110,APIYI,https://apiyi.com,global,8.3,likely_relay,N,,200,391,0,claude|gpt|gemini|openai|grok,,96.7,0,2026-09-09
+111,Poixe AI,https://poixe.com,cn,8.3,likely_relay,N,,200,444,0,claude|gpt|gemini|chatgpt|deepseek|grok,,96.7,0,2026-09-09
+112,GitHub (songquanpeng/one-api),https://github.com/songquanpeng/one-api,cn,8.3,likely_relay,N,one-api,200,654,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|mistral|llama,,96.7,0,2026-09-09
+113,aiproxy-io,https://aiproxy.io,cn,8.3,likely_relay,N,one-api,200,660,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|grok,,96.7,0,2026-09-09
+114,api-aiproxy-io,https://api.aiproxy.io,cn,8.3,likely_relay,N,one-api,200,1156,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|grok,,96.7,0,2026-09-09
+115,UIUIAPI,https://uiuiapi.com,cn,8.3,likely_relay,N,,200,1356,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|grok,,96.7,0,2026-09-09
+116,OfoxAI,https://ofox.ai,global,8.3,likely_relay,N,one-api,200,2576,0,claude|gpt|gemini|anthropic|openai|deepseek|qwen|mistral|grok,,96.7,0,2026-09-09
+117,SambaNova,https://sambanova.ai,global,8.1,likely_relay,N,dify,200,63,0,gpt|openai|deepseek,,96.7,0,2026-09-09
+118,RightCode,https://www.right.codes,cn,8.1,likely_relay,N,,200,155,0,claude|gemini|grok,,96.7,0,2026-09-09
+119,GitHub (QuantumNous/new-api),https://github.com/QuantumNous/new-api,global,8.1,likely_relay,N,new-api,200,280,0,claude|gemini|openai,,96.7,0,2026-09-09
+120,GitHub (Calcium-Ion/new-api),https://github.com/Calcium-Ion/new-api,global,8.1,likely_relay,N,new-api,200,465,0,claude|gemini|openai,,96.7,0,2026-09-09
+121,HolySheep AI,https://holysheep.ai,cn,8.1,likely_relay,N,,200,1169,0,claude|anthropic|openai,,96.7,0,2026-09-09
+122,helicone-ai,https://helicone.ai,global,7.8,probable_relay,N,litellm,200,466,0,gemini|anthropic|openai|deepseek|mistral|llama,card,96.7,0,2026-09-09
+123,APIMart (apicore.ai),https://www.apicore.ai,cn,7.6,probable_relay,N,,200,298,0,claude|gpt|gemini|chatgpt|openai,,96.7,0,2026-09-09
+124,AI Chatbot,https://chatbox.ai,global,7.6,probable_relay,N,,200,315,0,claude|gpt|gemini|deepseek|grok,,96.7,0,2026-09-09
+125,Jan,https://cortex.so,global,7.6,probable_relay,N,,200,844,0,claude|gpt|gemini|chatgpt|anthropic|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-09
+126,azapi-com-cn,https://azapi.com.cn,cn,7.4,probable_relay,N,,200,323,0,claude|gemini|openai,,96.7,0,2026-09-09
+127,AI实验室,https://aigc369.com,cn,7.1,probable_relay,N,,200,1372,0,claude|gpt|gemini|chatgpt|openai,wechat,73.3,0,2026-09-09
+128,GitHub (helicone/helicone),https://github.com/helicone/helicone,global,7.0,open_source_tool,N,helicone,200,519,0,claude|gpt|gemini|anthropic|openai,card,96.7,0,2026-09-09
+129,Own Your Specialized Intelligence,https://fireworks.ai,global,6.8,needs_review,N,,200,352,0,gpt|anthropic|openai|deepseek|qwen|mistral|llama,,96.7,0,2026-09-09
+130,GitHub (1Panel-dev/MaxKB),https://github.com/1Panel-dev/MaxKB,global,6.8,open_source_tool,N,,200,416,0,claude|gemini|openai|deepseek|qwen|llama,,96.7,0,2026-09-09
+131,Together AI,https://together.ai,global,6.8,needs_review,N,,200,466,0,gpt|openai|deepseek|qwen|llama,,96.7,0,2026-09-09
+132,OneAI — All Local AI Tools for Your PC,https://oneai.icu,global,6.8,needs_review,N,,200,649,0,claude|gpt|gemini|chatgpt|qwen|mistral|grok|llama,,96.7,0,2026-09-09
+133,CCFly,https://ccfly.codes,cn,6.7,needs_review,N,,200,253,0,claude|anthropic,crypto,96.7,0,2026-09-09
+134,GitHub (berriai/litellm),https://github.com/berriai/litellm,global,6.7,open_source_tool,N,litellm,200,542,0,claude|gemini|anthropic|openai,,96.7,0,2026-09-09
+135,Replicate,https://www.replicate.com,global,6.7,needs_review,N,,200,578,0,claude|gpt|anthropic|openai,,96.7,0,2026-09-09
+136,OpenCat,https://opencat.app,global,6.6,needs_review,N,,200,186,0,gpt|chatgpt|openai,,96.7,0,2026-09-09
+137,The AI Developer Cloud,https://runpod.io,global,6.6,needs_review,N,,200,395,0,claude|openai|qwen,,96.7,0,2026-09-09
+138,GitHub (VoltAgent/voltagent),https://github.com/VoltAgent/voltagent,global,6.6,open_source_tool,N,,200,505,0,claude|anthropic|openai,,96.7,0,2026-09-09
+139,All-in-one AI platform with multiple chat models,https://lorka.ai,global,6.6,needs_review,N,,200,658,0,gpt|gemini|deepseek,,96.7,0,2026-09-09
+140,硅基流动 SiliconFlow,https://siliconflow.cn,cn,6.6,needs_review,N,,200,2061,0,deepseek,wechat,96.7,0,2026-09-09
+141,Machine Learning Models and Infrastructure,https://deepinfra.com,global,6.5,needs_review,N,,200,102,0,claude|gemini|anthropic|deepseek|qwen|mistral|llama,,93.3,0,2026-09-09
+142,Cubence,https://cubence.com,global,6.5,needs_review,N,,200,123,0,claude|gemini,,96.7,0,2026-09-09
+143,dify.ai,https://dify.ai,global,6.5,needs_review,N,dify,200,252,0,,card,96.7,0,2026-09-09
+144,Cerebras,https://www.cerebras.ai,global,6.5,needs_review,N,,200,297,0,gpt|openai,,96.7,0,2026-09-09
+145,Deepbricks,https://deepbricks.ai,global,6.5,needs_review,N,,200,359,0,gpt|llama,,96.7,0,2026-09-09
+146,AIGoCode,https://aigocode.com,global,6.5,needs_review,N,,200,535,0,,wechat,96.7,0,2026-09-09
+147,GitHub (langfuse/langfuse),https://github.com/langfuse/langfuse,global,6.5,open_source_tool,N,litellm,200,625,0,claude|openai,,96.7,0,2026-09-09
+148,Novita AI,https://novita.ai,global,6.5,needs_review,N,one-api,200,700,0,deepseek|qwen,,96.7,0,2026-09-09
+149,Cloudflare AI Cloud,https://ai.cloudflare.com/gateway,global,6.5,needs_review,N,,200,949,0,gpt|llama,,96.7,0,2026-09-09
+150,最新@网址,https://api.gptoai.cc,cn,6.5,needs_review,N,,200,1006,0,,alipay,96.7,0,2026-09-09
+151,Production-scale AI with Ray,https://www.anyscale.com,global,6.4,needs_review,N,,200,87,0,llama,,96.7,0,2026-09-09
+152,Reka,https://reka.ai,global,6.4,needs_review,N,,200,92,0,gemini,,96.7,0,2026-09-09
+153,The Fastest Enterprise AI Gateway,https://langdb.ai,global,6.4,needs_review,N,langdb,200,92,0,openai,,96.7,0,2026-09-09
+154,siliconflow-com,https://www.siliconflow.com,global,6.4,needs_review,N,,200,279,0,gpt,,96.7,0,2026-09-09
+155,hyperbolic-xyz,https://hyperbolic.xyz,global,6.4,needs_review,N,,200,331,0,openai,,96.7,0,2026-09-09
+156,GitHub (langgenius/dify),https://github.com/langgenius/dify,self-hosted,6.4,needs_review,N,dify,200,421,0,claude,,96.7,0,2026-09-09
+157,GitHub (Portkey-Ai/gateway),https://github.com/Portkey-Ai/gateway,global,6.4,needs_review,N,portkey,200,529,0,claude,,96.7,0,2026-09-09
+158,codesome.ai,https://codesome.ai,global,6.4,needs_review,N,,200,915,0,claude,,96.7,0,2026-09-09
+159,88code,https://88code.ai,cn,6.4,needs_review,N,,200,1089,0,claude,,96.7,0,2026-09-09
+160,token-ai-com,https://token-ai.com,global,6.3,needs_review,N,,200,69,0,,,96.7,0,2026-09-09
+161,Modal: High-performance AI infrastructure,https://modal.com,global,6.3,needs_review,N,,200,77,0,,,96.7,0,2026-09-09
+162,OpenPipe,https://openpipe.ai,global,6.3,needs_review,N,,200,90,0,,,96.7,0,2026-09-09
+163,LangChain: the open agent platform to own your intelligence,https://www.langchain.com,global,6.3,needs_review,N,,200,99,0,,,96.7,0,2026-09-09
+164,Zensors,https://turnaround.ai,global,6.3,needs_review,N,,200,106,0,,,96.7,0,2026-09-09
+165,DataRobot,https://www.datarobot.com,global,6.3,needs_review,N,,200,124,0,,,96.7,0,2026-09-09
+166,chatgptid-com,https://chatgptid.com,global,6.3,needs_review,N,,200,131,0,,,96.7,0,2026-09-09
+167,辣椒炒肉,https://cursorai.art,global,6.3,needs_review,N,,200,146,0,,,96.7,0,2026-09-09
+168,AI世界 — 7×24 AI 快讯,https://aiclaude.site,cn,6.3,needs_review,N,,200,224,0,,,96.7,0,2026-09-09
+169,Production Stack for Gen AI Builders,https://portkey.ai,global,6.3,needs_review,N,portkey,200,231,0,,,96.7,0,2026-09-09
+170,AI compute in the cloud,https://lambda.ai,global,6.3,needs_review,N,,200,263,0,,,96.7,0,2026-09-09
+171,Groq is the premier neocloud for fast inference,https://groq.com,global,6.3,needs_review,N,,200,309,0,,,96.7,0,2026-09-09
+172,World Leader in Artificial Intelligence Computing (octoml.ai),https://octoml.ai,global,6.3,needs_review,N,,200,346,0,,,96.7,0,2026-09-09
+173,Connect Developers to Global GPU Compute,https://lepton.ai,global,6.3,needs_review,N,,200,363,0,,,96.7,0,2026-09-09
+174,gptgod-online,https://gptgod.online,global,6.3,needs_review,N,,200,383,0,,,96.7,0,2026-09-09
+175,智谱丨BigModel 平台,https://open.bigmodel.cn,cn,6.3,needs_review,N,,200,414,0,,,96.7,0,2026-09-09
+176,七牛云开发者平台,https://portal.qiniu.com/ai,global,6.3,needs_review,N,,200,439,0,,,96.7,0,2026-09-09
+177,kodbase-com,https://kodbase.com,global,6.3,needs_review,N,,200,544,0,,,96.7,0,2026-09-09
+178,api-tomchat-fun,https://api.tomchat.fun,global,6.3,needs_review,N,,200,640,0,,,96.7,0,2026-09-09
+179,World Leader in Artificial Intelligence Computing (octo.ai),https://octo.ai,global,6.3,needs_review,N,,200,722,0,,,96.7,0,2026-09-09
+180,ChatMoss,https://api.aihao123.cn,global,6.3,needs_review,N,,200,854,0,,,96.7,0,2026-09-09
+181,Vaultwarden Web,https://ssvip.xyz,global,6.3,needs_review,N,,200,1134,0,,,96.7,0,2026-09-09
+182,网站正在升级,https://foxaigc.com,global,6.3,needs_review,N,,200,1189,0,,,96.7,0,2026-09-09
+183,易客API市场,https://yikeapi.com,global,6.3,needs_review,N,,200,1725,0,,,96.7,0,2026-09-09
+184,GitHub (labring/FastGPT),https://github.com/labring/FastGPT,global,6.1,needs_review,N,fastgpt,200,455,0,gpt,,93.3,0,2026-09-09
+185,豆子智创,https://mixrai.com,cn,6.1,needs_review,N,,200,1068,0,gpt,,90.0,0,2026-09-09
+186,Redirecting... (openai-sb.com),https://www.openai-sb.com,global,6.0,needs_review,N,,200,227,0,,,93.3,0,2026-09-09
+187,用户登录,https://api.996444.cn,global,6.0,needs_review,N,,200,1905,0,,,93.3,0,2026-09-09
+188,Redirecting... (bltcy.top),https://bltcy.top,global,6.0,needs_review,N,,200,2805,0,,,,,2026-09-09
+189,AAIFE API,https://apid.aaife.cn,cn,6.0,needs_review,N,,,12314,0,,,96.7,0,2026-09-09
+190,gptapi.us (api.gptapi.us),https://api.gptapi.us,global,5.7,needs_review,N,,200,289,0,gpt,,60.0,0,2026-09-09
+191,gptapi.us (gptapi.us),https://gptapi.us,global,5.7,needs_review,N,,200,343,0,gpt,,60.0,0,2026-09-09
+192,Redirecting... (api.bltcy.top),https://api.bltcy.top,global,5.7,needs_review,N,,200,5179,0,,,90.0,0,2026-09-09
+193,nextweb-dev,https://nextweb.dev,global,5.6,needs_review,N,,200,65,0,,,56.7,0,2026-09-09
+194,SEO技术博客,https://topjl.cn,cn,5.6,needs_review,N,,200,386,0,,,56.7,0,2026-09-09
+195,内容营销中心,https://api.topjl.cn,cn,5.6,needs_review,N,,200,751,0,,,50.0,0,2026-09-09
