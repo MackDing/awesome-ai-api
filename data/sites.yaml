@@ -116,3 +116,8 @@ api.daheiai.com:
   name: "大黑 API 导航"
   region: "cn"
   verdict: "directory"
+
+88api.ai:
+  name: "88API"
+  region: "global"
+  note: "Operator self-submission; Hong Kong-operated managed New API gateway with public model-level pricing, documented multi-provider routing, and rolling 24-hour model performance metrics."

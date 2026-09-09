@@ -378,3 +378,6 @@ https://www.openai-labs.com
 https://xeduapi.com
 https://zen-ai.top
 https://www.hvoy.ai
+
+# ============ Batch 15: Operator-submitted managed gateways ============
+https://88api.ai
